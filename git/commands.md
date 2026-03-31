@@ -1,5 +1,7 @@
 # Comandos Básicos
 
+## Inicia repositório
+
 - git clone
 
 ```bash
@@ -14,12 +16,31 @@ git clone https://github.com/usuario/projeto.git
 git init meu-projeto
 ```
 
+## Modificando Commits
+
 - git add
 
 ```bash
 # adicionar arquivos para o próximo commit
 git add index.html        # um arquivo específico
 git add .                 # todos os arquivos alterados
+```
+
+- git add -i
+
+```bash
+# ativa o modo iterativo
+git add -i
+
+# select > enter
+```
+
+- git reset
+
+```bash
+# volta atrás no comando add
+git reset index.html      # um arquivo específico
+git reset --              # todos os arquivos alterados
 ```
 
 - git mv
@@ -43,7 +64,18 @@ git restore arquivo.txt   # desfaz mudanças no arquivo
 git rm arquivo.txt
 ```
 
-# Histórico
+- git add -p
+
+```bash
+# adicione as mudanças de forma mais controlada
+git add -p
+
+# y > yes confirma e segue para próxima alteração
+# n > no pula para próxima alteração que deseja adiciona
+```
+
+
+## Histórico
 
 - git bisect
 
@@ -94,7 +126,8 @@ git show a3f5c1b         # hash do commit
 git status  
 ```
 
-# Branches
+
+## Branches
 
 - git branch
 
@@ -148,7 +181,7 @@ git tag v1.0.0
 ```
 
 
-# Colaborando
+## Baixar, Aplicar e Enviar
 
 - git fetch
 

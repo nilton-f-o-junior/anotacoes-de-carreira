@@ -66,7 +66,7 @@ cat ~/.ssh/id_pessoal.pub
 cat ~/.ssh/id_trabalho.pub
 ```
 
-# config file
+# config file - # ~/.ssh/config
 
 ```bash
 # Conta pessoal
