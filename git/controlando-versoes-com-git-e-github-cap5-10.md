@@ -33,24 +33,24 @@
 
 ## Controlando versões do código com tags
 
-- [] 8.1 Criando, listando e deletando tags
-- [] 8.2 Mais informações com tags anotadas
-- [] 8.3 Compartilhando tags com a sua equipe
+- [x] 8.1 Criando, listando e deletando tags
+- [x] 8.2 Mais informações com tags anotadas
+- [x] 8.3 Compartilhando tags com a sua equipe
 
 ## Lidando com conflitos
 
-- [] 9.1 Mesclando mudanças em um mesmo arquivo sem conflitos
-- [] 9.2 Conflitos após um merge com mudanças em um mesmo arquivo
-- [] 9.3 Resolvendo conflitos após um rebase
-- [] 9.4 Usando uma ferramenta para resolver conflitos
+- [x] 9.1 Mesclando mudanças em um mesmo arquivo sem conflitos
+- [x] 9.2 Conflitos após um merge com mudanças em um mesmo arquivo
+- [x] 9.3 Resolvendo conflitos após um rebase
+- [x] 9.4 Usando uma ferramenta para resolver conflitos
 
 ## Maneiras de trabalhar com Git
 
-- [] 10.1 Utilizando só a branch master com um repositório central
-- [] 10.2 Utilizando branches por funcionalidade com um repositório central
-- [] 10.3 Utilizando branches por etapa de desenvolvimento com um repositório central
-- [] 10.4 Colaborando com projetos open source com Fork e Pull Request
-- [] 10.5 Organizando projetos open source gigantescos com Ditador e Tenentes
+- [x] 10.1 Utilizando só a branch master com um repositório central
+- [x] 10.2 Utilizando branches por funcionalidade com um repositório central
+- [x] 10.3 Utilizando branches por etapa de desenvolvimento com um repositório central
+- [x] 10.4 Colaborando com projetos open source com Fork e Pull Request
+- [x] 10.5 Organizando projetos open source gigantescos com Ditador e Tenentes
 
 
 ## Hospedando o repositório no GitHu
@@ -167,31 +167,142 @@ repositório e alguns commits são reescritos.
 ## Trabalhando em equipe com branches remotas
 
 7.1 Branches remotas
+
+```bash
+# Lista apenas as branches remotas
+git branch -r
+
+# Lista todas as branches (locais e remotas)
+git branch -a -v
+```
+
 7.2 Compartilhando branches
-7.3 Obtendo novas branches remotas em outros repositórios
+
+```bash
+# Envia a branch para o repositório remoto
+git push origin [nome-da-branch]
+```
+
+7.3 Obtendo novas branches remotas
+
+Cria uma branch local (tracking branch) para trabalhar em uma branch que já existe no servidor.
+
+```bash
+# Cria branch local rastreando a remota
+git checkout -b [nome] origin/[nome]
+
+# Atalho para criar tracking branch
+git checkout -t origin/[nome]
+```
+
 7.4 Enviando commits para o repositório central
+
+```bash
+# Sincroniza os novos commits com o servidor
+git push origin [nome-da-branch]
+```
+
 7.5 Obtendo commits de uma branch remota
+
+```bash
+# Baixa as mudanças do servidor (sem merge)
+git fetch origin
+```
+
 7.6 Mesclando branches remotas e locais
+
+```bash
+# Atalho para baixar e mesclar (fetch + merge)
+git pull
+
+# Atalho para baixar e aplicar rebase (fetch + rebase)
+git pull --rebase
+
+# Mescla manualmente após um fetch
+git merge origin/[nome-da-branch]
+```
+
 7.7 Deletando branches remotas
+
+```bash
+# Deleta a branch diretamente no servidor
+git push origin :[nome-da-branch]
+```
 
 ## Controlando versões do código com tags
 
 8.1 Criando, listando e deletando tags
+
+```bash
+# Cria uma tag no commit atual
+git tag [nome-da-tag]
+
+# Cria uma tag para um commit específico do passado
+git tag [nome-da-tag] [codigo-do-commit]
+
+# Lista as tags existentes no repositório
+git tag
+
+# Remove uma tag localmente
+git tag -d [nome-da-tag]
+```
+
 8.2 Mais informações com tags anotadas
+
+```bash
+# Cria uma tag anotada com mensagem descritiva
+git tag -a [nome-da-tag] -m "[mensagem]"
+
+# Exibe informações detalhadas da tag e do commit relacionado
+git show [nome-da-tag]
+```
+
 8.3 Compartilhando tags com a sua equipe
 
+```bash
+# Envia uma tag específica para o servidor remoto (ex: GitHub)
+git push origin [nome-da-tag]
+
+# Envia todas as tags locais para o servidor de uma só vez
+git push origin --tags
+```
 
 ## Lidando com conflitos
 
 9.1 Mesclando mudanças em um mesmo arquivo sem conflitos
+
+Leia e veja um vídeo Youtube
+
 9.2 Conflitos após um merge com mudanças em um mesmo arquivo
+
+Leia e veja um vídeo Youtube
+
 9.3 Resolvendo conflitos após um rebase
+
+Leia e veja um vídeo Youtube
+
 9.4 Usando uma ferramenta para resolver conflitos
+
+Leia e veja um vídeo Youtube
 
 ## Maneiras de trabalhar com Git
 
 10.1 Utilizando só a branch master com um repositório central
+
+Leia e veja um vídeo Youtube
+
 10.2 Utilizando branches por funcionalidade com um repositório central
+
+Leia e veja um vídeo Youtube
+
 10.3 Utilizando branches por etapa de desenvolvimento com um repositório central
+
+Leia e veja um vídeo Youtube
+
 10.4 Colaborando com projetos open source com Fork e Pull Request
+
+Leia e veja um vídeo Youtube
+
 10.5 Organizando projetos open source gigantescos com Ditador e Tenentes
+
+Leia e veja um vídeo Youtube
