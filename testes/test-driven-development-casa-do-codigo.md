@@ -1,37 +1,122 @@
-# Teste e Design no Mundo Real - Mauricio Aniche
+# Sumário
 
-## Sumário
+## 1 Introdução
 
-- Introdução
-  - [x] 1.1 Era uma vez um projeto sem testes
-  - [x] 1.2 Por que devemos testar?
-  - [x] 1.3 Por que não testamos?
-  - [x] 1.4 Testes automatizados e TDD
-  - [x] 1.5 Conclusão
+- [x] 1.1 Era uma vez um projeto sem testes
+- [x] 1.2 Por que devemos testar?
+- [x] 1.3 Por que não testamos?
+- [x] 1.4 Testes automatizados e TDD
+- [x] 1.5 Conclusão
 
-- Testes de Unidade
-  - [x] 2.1 O que é um teste de unidade?
-  - [x] 2.2 Preciso mesmo escrevê-los?
-  - [x] 2.3 O Primeiro Teste de Unidade
-  - [x] 2.4 Continuando a testar
-  - [x] 2.5 Conclusão
+## 2 Testes de Unidade
 
-- Introdução ao Test-Driven Development
-  - [x] 3.1 O problema dos números romanos
-  - [x] 3.2 O primeiro teste
-  - [x] 3.3 Refletindo sobre o assunto
-  - [x] 3.4 Quais as vantagens?
-  - [x] 3.5 Um pouco da história de TDD
-  - [x] 3.6 Conclusão
+- [x] 2.1 O que é um teste de unidade?
+- [x] 2.2 Preciso mesmo escrevê-los?
+- [x] 2.3 O Primeiro Teste de Unidade
+- [x] 2.4 Continuando a testar
+- [x] 2.5 Conclusão
 
-- Simplicidade e Baby Steps
-  - [x] 4.1 O Problema do Cálculo de Salário
-  - [x] 4.2 Implementando da maneira mais simples possível
-  - [x] 4.3 Passos de Bebê (ou Baby Steps)
-  - [x] 4.4 Usando baby steps de maneira consciente
-  - [x] 4.5 Conclusão
+## 3 Introdução ao Test-Driven Development
 
-## Introdução
+- [x] 3.1 O problema dos números romanos
+- [x] 3.2 O primeiro teste
+- [x] 3.3 Refletindo sobre o assunto
+- [x] 3.4 Quais as vantagens?
+- [x] 3.5 Um pouco da história de TDD
+- [x] 3.6 Conclusão
+
+## 4 Simplicidade e Baby Steps
+
+- [x] 4.1 O Problema do Cálculo de Salário
+- [x] 4.2 Implementando da maneira mais simples possível
+- [x] 4.3 Passos de Bebê (ou Baby Steps)
+- [x] 4.4 Usando baby steps de maneira consciente
+- [x] 4.5 Conclusão
+
+## 5 TDD e Design de Classes
+
+- [x] 5.1 O Problema do Carrinho de Compras
+- [x] 5.2 Testes que influenciam no design de classes
+- [x] 5.3 Diferenças entre TDD e testes da maneira tradicional
+- [x] 5.4 Testes como rascunho
+- [x] 5.5 Conclusão
+
+## 6 Qualidade no Código do Teste
+
+- [x] 6.1 Repetição de código entre testes
+- [x] 6.2 Nomenclatura dos testes
+- [x] 6.3 Test Data Builders
+- [x] 6.4 Testes Repetidos
+- [x] 6.5 Escrevendo boas asserções
+- [x] 6.6 Testando listas
+- [x] 6.7 Separando as Classes de Teste
+- [x] 6.8 Conclusão
+
+## 7 TDD e a Coesão
+
+- [] 7.1 Novamente o Problema do Cálculo de Salário
+- [] 7.2 Ouvindo o feedback dos testes
+- [] 7.3 Testes em métodos privados?
+- [] 7.4 Resolvendo o Problema da Calculadora de Salário
+- [] 7.5 O que olhar no teste em relação a coesão?
+- [] 7.6 Conclusão
+
+## 8 TDD e o Acoplamento
+
+- [] 8.1 O Problema da Nota Fiscal
+- [] 8.2 Mock Objects
+- [] 8.3 Dependências explícitas
+- [] 8.4 Ouvindo o feedback dos testes
+- [] 8.5 Classes estáveis
+- [] 8.6 Resolvendo o Problema da Nota Fiscal
+- [] 8.7 Testando métodos estáticos
+- [] 8.8 TDD e a constante criação de interfaces
+- [] 8.9 O que olhar no teste em relação ao acoplamento?
+- [] 8.10 Conclusão
+
+## 9 TDD e o Encapsulamento
+
+- [] 9.1 O Problema do Processador de Boleto
+- [] 9.2 Ouvindo o feedback dos testes
+- [] 9.3 Tell, Don’t Ask e Lei de Demeter
+- [] 9.4 Resolvendo o Problema do Processador de Boletos
+- [] 9.5 O que olhar no teste em relação ao encapsulamento?
+- [] 9.6 Conclusão
+
+## 10 Testes de Integração e TDD
+
+- [] 10.1 Testes de unidade, integração e sistema
+- [] 10.2 Quando não usar mocks?
+- [] 10.3 Testes em DAOs
+- [] 10.4 Devo usar TDD em testes de integração?
+- [] 10.5 Testes em aplicações Web
+- [] 10.6 Conclusão
+
+## 11 Quando não usar TDD?
+
+- [] 11.1 Quando não praticar TDD?
+- [] 11.2 100% de cobertura de código?
+- [] 11.3 Devo testar códigos simples?
+- [] 11.4 Erros comuns durante a prática de TDD
+- [] 11.5 Como convencer seu chefe sobre TDD?
+- [] 11.6 TDD em Sistemas Legados
+- [] 11.7 Conclusão
+
+## 12 E agora?
+
+- [] 12.1 O que ler agora?
+- [] 12.2 Dificuldade no aprendizado
+- [] 12.3 Como interagir com outros praticantes?
+- [] 12.4 Conclusão Final
+
+## 13 Sumário Casa do Código
+
+- 13 Apêndice: Princípios SOLID
+- 13.1 Sintomas de Projetos de Classes em Degradação
+- 13.2 Princípios de Projeto de Classes
+- 13.3 Conclusão
+
+## 1 Introdução
 
 1.1 Era uma vez um projeto sem testes
 
@@ -57,7 +142,7 @@ Testes Automatizados e TDD: A solução proposta é escrever programas que testa
 
 Analogia com a Medicina: O autor compara o desenvolvimento de software com a cirurgia. Assim como um médico jamais deixaria de lavar as mãos para ganhar tempo, um desenvolvedor não deve abrir mão da qualidade e dos testes para entregar uma funcionalidade mais rápido ou usar "gambiarras".
 
-## Testes de Unidade
+## 2 Testes de Unidade
 
 2.1 O que é um teste de unidade?
 
@@ -97,7 +182,7 @@ Vantagens Práticas:
 
 Nada de novo, pode seguir!
 
-## Introdução ao Test-Driven Development
+## 3 Introdução ao Test-Driven Development
 
 3.1 O problema dos números romanos
 
@@ -150,7 +235,7 @@ Ciclo de Feedback:
   - Ciclo 4: [código]
   - Ciclo 5: [teste + feedback] + [código]
 
-  3.5 Um pouco da história de TDD
+    3.5 Um pouco da história de TDD
 
 História e Origens: O capítulo menciona que a prática foi popularizada por Kent Beck no início dos anos 2000, embora a ideia de separar o que o programa faz da sua implementação já existisse anteriormente.
 
@@ -158,7 +243,7 @@ História e Origens: O capítulo menciona que a prática foi popularizada por Ke
 
 Pula!
 
-## Simplicidade e Baby Steps
+## 4 Simplicidade e Baby Steps
 
 4.1 O Problema do Cálculo de Salário
 
@@ -184,3 +269,147 @@ Ele complementa a explicação e mostra como simnplificar a solução.
   4.5 Conclusão
 
 Em suma, o capítulo ensina que a simplicidade deve ser buscada tanto no código quanto no design das classes, e que os Baby Steps são uma ferramenta para aprender sobre o problema à medida que se desenvolve.
+
+## 5 TDD e Design de Classes
+
+5.1 O Problema do Carrinho de Compras
+
+Ele contextualiza o problema e implementa o código.
+
+5.2 Testes que influenciam no design de classes
+
+- A prática de TDD não guia o desenvolvedor para um bom projeto de classes de forma automática; a experiência e conhecimento do desenvolvedor são fundamentais ao criar software orientado a objetos.
+
+  5.3 Diferenças entre TDD e testes da maneira tradicional
+
+Contexto! Não encha o código e fique criando classes como se isso fosse pokemon, evolua a que criou.
+
+5.4 Testes como rascunho
+
+- O teste serve como um rascunho para o desenvolvedor, onde ele pode experimentar as diferentes maneiras de se projetar a classe.
+
+  5.5 Conclusão
+
+Passo a passo:
+
+- A escrita do cenário;
+- A execução da ação sob teste;
+- A garantia que o comportamento foi executado de acordo com o esperado.
+
+## 6 Qualidade no Código do Teste
+
+6.1 Repetição de código entre testes
+
+- Se a mesma linha se repete várias vezes, organize isso melhor para quando precisar alterar, isso aconteça de forma tranquila.
+
+  6.2 Nomenclatura dos testes
+
+Esse é aquele ponto em que um nome maior e que ajuda a você entender melhor o que está sendo testado, é melhor que um nome menor e que não vai entender, além de que separar as palavras facilita a visualização do nome.
+
+- Os nomes dos métodos de teste devem deixar claro o comportamento esperado:
+- Não use isso: deveRetornarZeroSeCarrinhoVazio;
+- Use isso: deve_retornar_zero_se_carrinho_vazio;
+
+  6.3 Test Data Builders
+
+- Se usa junit leia!
+
+  6.4 Testes Repetidos
+
+- Mantenha testes que fazem sentido dentro do seu código;
+- Atualizou o código? Atualize os teste;
+- Retire os testes que dentro da sua aplicação não fazem mais sentido;
+- Não repita o óbvio:
+  - Em vez de teste: 1 + 1, 2 + 2;
+  - Faça: soma de 2 números positivos;
+
+    6.5 Escrevendo boas asserções
+
+- A ordem no assertEquals deve ser sempre (esperado, atual) para que as mensagens de erro do JUnit façam sentido.
+- Os testes devem ser curtos e validar apenas uma única responsabilidade;
+- `Testar múltiplos comportamentos em um só método torna o feedback confuso e o cenário difícil de montar.
+
+  6.6 Testando listas
+
+- O teste não deve válidar apenas o tamanho da lista, mas também o conteúdo de cada um dos objetos pertencentes à lista.
+
+  6.7 Separando as Classes de Teste
+
+- Recomenda-se criar pastas distintas:
+  - Produção: src/main/java
+  - Testes: src/test/java
+- Manutenção nos mesmos Pacotes: Embora fiquem em pastas físicas diferentes, as classes de teste devem pertencer ao mesmo pacote da classe de produção (ex: ambos no pacote br.com.caelum.leilao);
+- Organize bem a ordem de testes.
+
+Privados e Públicos
+
+- Um cliente externo de uma classe só enxerga o que é público:
+  - Se o teste precisa acessar as "entranhas" da classe (métodos privados) para garantir que ela funciona, isso significa que a classe não está encapsulando bem sua lógica.
+
+    6.8 Conclusão
+
+Pula!
+
+## 7 TDD e a Coesão
+
+7.1 Novamente o Problema do Cálculo de Salário
+7.2 Ouvindo o feedback dos testes
+7.3 Testes em métodos privados?
+7.4 Resolvendo o Problema da Calculadora de Salário
+7.5 O que olhar no teste em relação a coesão?
+7.6 Conclusão
+
+## 8 TDD e o Acoplamento
+
+8.1 O Problema da Nota Fiscal
+8.2 Mock Objects
+8.3 Dependências explícitas
+8.4 Ouvindo o feedback dos testes
+8.5 Classes estáveis
+8.6 Resolvendo o Problema da Nota Fiscal
+8.7 Testando métodos estáticos
+8.8 TDD e a constante criação de interfaces
+8.9 O que olhar no teste em relação ao acoplamento?
+8.10 Conclusão
+
+## 9 TDD e o Encapsulamento
+
+9.1 O Problema do Processador de Boleto
+9.2 Ouvindo o feedback dos testes
+9.3 Tell, Don’t Ask e Lei de Demeter
+9.4 Resolvendo o Problema do Processador de Boletos
+9.5 O que olhar no teste em relação ao encapsulamento?
+9.6 Conclusão
+
+## 10 Testes de Integração e TDD
+
+10.1 Testes de unidade, integração e sistema
+10.2 Quando não usar mocks?
+10.3 Testes em DAOs
+10.4 Devo usar TDD em testes de integração?
+10.5 Testes em aplicações Web
+10.6 Conclusão
+
+## 11 Quando não usar TDD?
+
+11.1 Quando não praticar TDD?
+11.2 100% de cobertura de código?
+11.3 Devo testar códigos simples?
+11.4 Erros comuns durante a prática de TDD
+11.5 Como convencer seu chefe sobre TDD?
+11.6 TDD em Sistemas Legados
+11.7 Conclusão
+
+## 12 E agora?
+
+12.1 O que ler agora?
+12.2 Dificuldade no aprendizado
+12.3 Como interagir com outros praticantes?
+12.4 Conclusão Final
+
+## 13 Sumário Casa do Código
+
+13 Apêndice: Princípios SOLID
+13.1 Sintomas de Projetos de Classes em Degradação
+13.2 Princípios de Projeto de Classes
+13.3 Conclusão
