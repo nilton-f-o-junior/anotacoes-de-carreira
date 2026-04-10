@@ -1,14 +1,13 @@
 # Sumário
 
-## 1. Cosole Log
-## 2. let
-## 3. Reatribuição
-## 4. const
-## 5. Declaração Múltipla
-## 6. Operadores
-## 7. Operadores de Atribuição
-## 8. Operadores de Comparação
-
+- [1. Console Log](#1-console-log)
+- [2. let](#2-let)
+- [3. Reatribuição](#3-reatribuição)
+- [4. const](#4-const)
+- [5. Declaração Múltipla](#5-declaração-múltipla)
+- [6. Operadores Matemáticos](#6-operadores-matemáticos)
+- [7. Operadores de Atribuição](#7-operadores-de-atribuição)
+- [8. Operadores de Comparação](#8-operadores-de-comparação)
 
 ## Cosole Log
 

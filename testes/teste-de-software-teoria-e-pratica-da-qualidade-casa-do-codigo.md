@@ -20,24 +20,24 @@
 
 ## 4 Conceitos de teste de software
 
-- [] 4.1 O que é testar um software?
-- [] 4.2 Erro vs. defeito vs. falha
-- [] 4.3 Os pilares de um teste
-- [] 4.4 Dimensões do teste
-- [] 4.5 Conclusão
+- [x] 4.1 O que é testar um software?
+- [x] 4.2 Erro vs. defeito vs. falha
+- [x] 4.3 Os pilares de um teste
+- [x] 4.4 Dimensões do teste
+- [x] 4.5 Conclusão
 
 ## 5 Aplicação de exemplo
 
-- [] 5.1 Apresentação
-- [] 5.2 Componentes para os testes
-- [] 5.3 Conclusão
+- [x] 5.1 Apresentação
+- [x] 5.2 Componentes para os testes
+- [x] 5.3 Conclusão
 
 ## 6 Técnicas de teste: Como
 
-- [] 6.1 Teste de Caixa Branca (estrutural)
-- [] 6.2 Teste de Caixa Preta (funcional)
-- [] 6.3 Teste de Caixa Cinza
-- [] 6.4 Conclusão
+- [x] 6.1 Teste de Caixa Branca (estrutural)
+- [x] 6.2 Teste de Caixa Preta (funcional)
+- [x] 6.3 Teste de Caixa Cinza
+- [x] 6.4 Conclusão
 
 ## 7 Níveis de teste: Quando
 
@@ -357,11 +357,39 @@ Técnicas de Teste (Como testar?): esta dimensão define a perspectiva avaliativ
 
 ## 7 Níveis de teste: Quando
 
-- [] 7.1 Unidade
-- [] 7.2 Integração
-- [] 7.3 Sistema
-- [] 7.4 Aceitação
-- [] 7.5 Conclusão
+### 7.1 Unidade
+
+É o nível mais baixo e foca na menor porção de código executável, como métodos e funções.
+
+- Responsabilidade: deve ser realizado pelas próprias pessoas desenvolvedoras;
+- Objetivo: garantir que a lógica interna do código esteja correta para entradas específicas, prevenindo bugs de escrita e falta de tratamento de exceções.
+
+### 7.2 Integração
+
+Verifica a execução combinada de classes, módulos, componentes e camadas, além de conexões com APIs externas.
+
+- Abordagens: pode ser não incremental (Big-Bang, testando tudo ao final) ou incremental (Cima-baixo ou Baixo-cima, testando partes durante a construção);
+- Objetivo: assegurar que as partes do sistema funcionem bem em conjunto e troquem informações corretamente.
+
+### 7.3 Sistema
+
+Acontece quando o software está completamente integrado (ou em versão MVP) e é testado como um todo.
+
+- Responsabilidade: deve ser feito por uma equipe de testes independente para evitar testes "viciados";
+- Objetivo: identificar falhas sob a ótica do usuário final em um ambiente similar ao de produção, usando requisitos funcionais e não funcionais;
+- Modalidades: pode ser manual (seguindo scripts passo a passo) ou automatizado (simulando interações humanas).
+
+### 7.4 Aceitação
+
+É o nível mais alto, realizado quando o software está pronto para implantação.
+
+- Responsabilidade: realizado pelo cliente ou usuários finais (também chamado de homologação);
+- Objetivo: avaliar a qualidade percebida e verificar se o sistema atende às necessidades reais de quem o solicitou;
+- Fases: pode ocorrer na fase alfa (ambiente de desenvolvimento) ou beta (ambiente que emula a produção).
+
+### 7.5 Conclusão
+
+- Leia!
 
 ## 8 Tipos de teste: O quê
 
@@ -378,18 +406,139 @@ Técnicas de Teste (Como testar?): esta dimensão define a perspectiva avaliativ
 
 ## 9 Como realizar testes
 
-- [] 9.1 Planejar
-- [] 9.2 Projetar
-- [] 9.3 Implementar
-- [] 9.4 Executar
-- [] 9.5 Avaliar
-- [] 9.6 Conclusão
+### 9.1 Planejar
+
+- Escopo: consiste em selecionar as partes do software que serão testadas, priorizando as funcionalidades com maior valor de negócio para o cliente. Também define os limites do sistema, identificando o que é interno ao domínio e o que está fora dele para evitar falhas na qualidade final;
+
+- Recursos: envolve a escolha de ferramentas e componentes adequados (como JUnit, Mockito e Selenium para Java, ou Jasmine e Karma para Angular), além da definição da equipe e da infraestrutura necessária. O ambiente de teste deve, preferencialmente, ser igual ao de produção para garantir resultados fidedignos;
+
+- Estimativas: busca mensurar o tempo e os custos para a execução de todas as etapas (planejamento, projeto, implementação, execução e avaliação). Embora prazos em software sejam delicados, essas estimativas são essenciais para a criação de cronogramas.
+
+- Estratégias e técnicas: define quais estratégias de teste e técnicas (como Caixa Preta, Branca ou Cinza) serão aplicadas em cenários específicos.
+
+Para realizar o planejamento, os insumos necessários:
+
+- Requisitos do software (casos de uso, histórias de usuário);;
+- Cronograma geral do projeto;
+- Configurações de hardware e software.
+
+Resultados
+
+- Plano de Testes, que detalha como os testes serão executados;
+- Cronograma de Teste, com os períodos de cada tarefa.
+
+### 9.2 Projetar
+
+- Projetar os casos de teste: as funcionalidades são analisadas para definir se serão validadas por testes unitários, de integração ou sistema manual, além da identificação dos dados de entrada e saída (falsos, reais ou embaralhados);
+
+- Avaliar possibilidade de reúso: verifica-se se scripts de testes de outros softwares podem ser adaptados para reduzir tempo e custos;
+
+- Identificar produtos e componentes de apoio: selecionam-se ferramentas para simular integrações externas (como mocks) ou para configurar limites de infraestrutura que viabilizem os cenários reais;
+
+- Elaborar modelo de performance: caso necessário, identificam-se características de arquitetura, rede e hardware que impactam a eficiência do sistema;
+
+- Projetar ambiente de teste: definem-se os ambientes de implementação (máquina do desenvolvedor) e de execução (similar à produção), especificando sistemas operacionais e versões de componentes;
+
+- Projetar massa de teste: define-se a coleção de dados considerando quatro atributos de qualidade: profundidade (volume), largura (variância), escopo (relevância) e arquitetura (estrutura física);
+
+- Verificar modelo de teste: realização de uma revisão final pela equipe para garantir que o projeto atenderá às necessidades do software.
+
+Para realizar essa etapa, os insumos necessários são:
+
+- Requisitos de software;
+- Modelo de análise e projeto;
+- Configurações de hardware/software;
+- Plano de Teste.
+
+Resultados
+
+- Modelo de Teste (casos, dados e carga);
+- Configurações do Ambiente de Teste;
+- Simuladores de Teste.
+
+### 9.3 Implementar
+
+- Criar scripts de teste: elaboração do passo a passo para testes manuais (Sistema ou Aceitação) ou de pseudocódigos que guiarão a codificação de testes automatizados (Unitário, Integração ou Sistema);
+
+- Implementar massa de teste: criação física dos dados em arquivos ou bancos de dados, definindo sua origem (produção ou externa), critérios (aleatórios ou reais embaralhados) e objetivos (funcionalidade, segurança ou performance);
+
+- Implementar ambiente de teste: montagem (instalação de SO e navegadores) e configuração (ajuste de CPU e memória) da infraestrutura para que seja o mais fiel possível ao ambiente de produção;
+
+- Implementar produtos e componentes de apoio: codificação de mocks para simular funcionalidades internas ainda não desenvolvidas ou integrações com softwares externos;
+
+- Montar suíte de teste: agrupamento de vários Casos de Teste interdependentes que cobrem diferentes caminhos de uma mesma funcionalidade (ex: fluxos de sucesso e fluxos de erro no cadastro).
+
+Para realizar essa etapa, os insumos necessários são:
+
+- Modelo de Análise e Projeto;
+- Configurações de hardware/software;
+- Plano de Teste;
+- Casos de Teste projetados.
+
+Resultados
+
+- Modelo de Teste.
+
+### 9.4 Executar
+
+- Executar teste: consiste na rodagem dos scripts manuais (utilizando o software diretamente) ou disparo dos códigos automatizados via ferramentas de integração contínua, sempre verificando se a versão disponibilizada (build) atende aos requisitos mínimos;
+
+- Registrar defeitos: as falhas detectadas devem ser documentadas em ferramentas de Bug Tracker, detalhando obrigatoriamente o roteiro executado e os dados usados para que a equipe de desenvolvimento consiga reproduzir e corrigir o erro;
+
+- Analisar defeitos dos testes: envolve uma análise crítica dos relatos para determinar se os defeitos permanecem abertos para correção ou se são descartados por inconformidade, podendo resultar na reexecução de todos os testes caso os resultados sejam insatisfatórios.
+
+Para realizar essa etapa, os insumos necessários são:
+
+- Modelo de Teste (contendo as suítes, scripts e dados de massa);
+- Build do software.
+
+Resultados
+
+- Relatórios de execução;
+- Registros formais de bugs.
+
+### 9.5 Avaliar
+
+- Avaliar a completude dos testes: analisa se a execução seguiu os critérios de aceitação definidos e o Modelo de Teste projetado;
+
+- Avaliar cobertura dos testes: verifica se os testes exercitaram as linhas de código responsáveis pelas funcionalidades e se os comportamentos previstos nos requisitos foram validados;
+
+- Avaliar resultados de testes: mensura a qualidade do software e documenta as conclusões no Relatório de Avaliação de Testes;
+
+- Avaliar atividades de testes: revisa todo o processo, desde o planejamento até a execução, com o intuito de aprimorar a metodologia para futuros projetos.
+
+Para realizar essa etapa, os insumos necessários são:
+
+- Relatório de Execução de Teste;
+- Plano de Teste;
+- Modelo de Teste;
+- Requisitos de software.
+
+Resultados
+
+- Relatório de Avaliação de Teste: detalha a severidade dos problemas, quantitativos de erros e a relação entre defeitos e funcionalidades.
+
+### 9.6 Conclusão
+
+- Pula!
 
 ## 10 Testes ágeis
 
-- [] 10.1 O manifesto ágil dos testes
-- [] 10.2 Aplicando testes ágeis
-- [] 10.3 Conclusão
+### 10.1 O manifesto ágil dos testes
+
+- Testar durante todo o ciclo, e não apenas ao final do desenvolvimento;
+- Prevenir bugs em vez de apenas encontrá-los;
+- Testar o valor de negócio e não apenas o comportamento técnico;
+- Buscar a melhoria constante do software em vez de apenas apontar suas fraquezas;
+- Responsabilidade coletiva, tornando a qualidade um dever de todo o time e não apenas da pessoa testadora.
+
+### 10.2 Aplicando testes ágeis
+
+Testador Ágil, a pessoa testadora deixa de ser apenas uma executora para se tornar uma ponte estratégica entre o cliente e o time de desenvolvimento. Ela participa desde a descoberta de requisitos até a entrega final, auxiliando desenvolvedores a criarem códigos mais testáveis e agregando valor de negócio ao produto.
+
+### 10.3 Conclusão
+
+- Pula!
 
 ## 11 Apêndice I: Padrões de validação de código
 
@@ -400,10 +549,10 @@ Técnicas de Teste (Como testar?): esta dimensão define a perspectiva avaliativ
 
 ## 12 Apêndice II: Modelos de testes
 
-- []12.1 TDD — Test Driven Development
-- []12.2 BDD — Behavior Driven Development
-- []12.3 ATDD — Acceptance Test-Driven Development
-- []12.4 Conclusão
+- [] 12.1 TDD — Test Driven Development
+- [] 12.2 BDD — Behavior Driven Development
+- [] 12.3 ATDD — Acceptance Test-Driven Development
+- [] 12.4 Conclusão
 
 ## 13 Apêndice III: Exemplo de Plano de Teste e Cronograma de Teste
 
@@ -412,6 +561,8 @@ Técnicas de Teste (Como testar?): esta dimensão define a perspectiva avaliativ
 
 ## 14 Apêndice IV: Exemplo de uso do Testlink e Mantis
 
-- [] 14.1 Testlink
-- [] 14.2 Mantis
-- [] 14.3 Conclusão
+### 14.1 Testlink
+
+### 14.2 Mantis
+
+### 14.3 Conclusão
