@@ -3,6 +3,8 @@
 - [getElementById](#getelementbyid)
 - [getElementsByTagName](#getelementsbytagname)
 - [getElementsByClassName](#getelementsbyclassname)
+- [querySelector](#querySelector)
+- [querySelectorAll](#querySelectorAll)
 
 ## getElementById
 

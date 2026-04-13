@@ -69,7 +69,31 @@
 
 ### 7 Os males da duplicação
 
+O Princípio NSR: cada bloco de conhecimento deve ter uma representação única, exclusiva e sem ambiguidades dentro de um sistema para evitar inconsistências. A duplicação é o "pesadelo da manutenção", pois se você altera uma informação em um lugar, deve lembrar de alterá-la em todos os outros.
+
+- Duplicação Imposta: ocorre quando o ambiente, as ferramentas ou as linguagens parecem exigir que a mesma informação seja repetida em múltiplos locais.
+  - Para combatê-la, podem-se usar geradores de código ou filtros para derivar representações diferentes a partir de uma única fonte autorizada.
+
+- Duplicação Inadvertida e Impaciente: a inadvertida surge por erros de projeto ou dados não normalizados, enquanto a impaciente vem de "atalhos" tomados sob pressão de prazos. Atalhos como copiar e colar código economizam segundos agora, mas causam grandes atrasos e erros no futuro.
+
+- Duplicação entre Desenvolvedores: acontece quando membros diferentes de uma equipe implementam a mesma funcionalidade de forma isolada por falta de comunicação.
+  - A solução envolve encorajar a comunicação ativa, compartilhar conhecimentos e designar um "bibliotecário" do projeto para facilitar a reutilização.
+
 ### 8 Ortogonalidade
+
+O Conceito de Independência:
+
+- Sistema ortogonal é quando seus componentes, como o banco de dados e a interface do usuário, são independentes entre si;
+- Sistemas não ortogonais são difíceis de mudar, pois cada alteração gera efeitos secundários complexos.
+
+Vantagens:
+
+- Ganho de Produtividade: mudanças localizadas reduzem o tempo de desenvolvimento e teste, permitindo que componentes pequenos e autônomos sejam codificados isoladamente, favorecendo a reutilização e gera mais funcionalidade por esforço unitário ao combinar componentes independentes;
+- Redução de Riscos: seções de código danificadas ficam isoladas, diminuindo a probabilidade de uma falha se espalhar por todo o sistema;
+- Aplicação em Equipes e Projetos: equipes ortogonais são organizadas com responsabilidades bem definidas e mínima sobreposição, o que reduz a necessidade de reuniões constantes;
+- Elimine efeitos entre elementos não relacionados: mantenha seu código desvinculado seguindo a Lei de Deméter e evite o uso de dados globais que criam dependências desnecessárias;
+- Ortogonalidade no Teste: sistemas ortogonais são mais fáceis de testar em nível de unidade, pois não exigem que grande parte do resto do sistema seja carregada para validar um módulo;
+- Ortogonalidade na documentação: a ortogonalidade é aplicada ao separar o conteúdo da apresentação, permitindo alterar a aparência sem mexer no texto original;
 
 ### 9 Reversibilidade
 
