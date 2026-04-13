@@ -163,6 +163,7 @@ mod test_a {
 }
 ```
 
+
 Em rust mesmo que tenhamos uma ideia que o código é escrito para não ter erros como estouro de memoria, podemos testar situações assim e segue o cógido:
 
 
@@ -181,5 +182,51 @@ mod tests_a {
         sub(127, -1); // 127 - (-1) = 128, estoura i8!
     }
 }
+```
 
+Podemos também testar modulos em rust e como eles interagem entre si.
+
+
+```rust
+pub mod calculadora {
+
+    pub fn soma(a: i8, b: i8) -> i8 {
+        a + b
+    }
+
+    pub fn sub(a: i8, b: i8) -> i8 {
+        a - b
+    }
+
+    pub fn mult(a: i8, b: i8) -> i8 {
+        a * b
+    }
+ 
+    pub fn div(a: i8, b: i8) -> Option<i8> {
+        if b == 0 { None } else { Some(a / b) }
+    }
+}
+
+#[cfg(test)]
+mod testes {
+
+    use super::calculadora;
+
+    #[test]
+    fn teste_calculadore() {
+        assert_eq!(calculadora::soma(2, 2), 4);
+        assert_eq!(calculadora::sub(2, 2), 0);
+        assert_eq!(calculadora::mult(2, 2), 4);
+        assert_eq!(calculadora::div(2, 2), Some(1));
+        assert_eq!(calculadora::div(2, 0), None);
+    }
+
+    #[test]
+    fn teste_calculadora_variaveis() {
+        let soma: i8 = calculadora::soma(2, 2);
+        let resultado: i8 = calculadora::mult(soma, 2);
+
+        assert_eq!(resultado, 8);
+    }
+}
 ```
