@@ -1,5 +1,82 @@
 # Sumário
 
+## ] 1 Uma Filosofia Pragmática
+
+- [x] 1. O gato comeu meu código-fonte
+- [x] 2. Entropia de software
+- [x] 3. Sopa de pedras e sapos cozidos
+- [x] 4. Software satisfatório
+- [x] 5. Sua carteira de conhecimentos
+- [x] 6. Comunique-se!
+
+## 2 Uma Abordagem Pragmática
+
+- [x] 7. Os males da duplicação
+- [x] 8. Ortogonalidade
+- [x] 9. Reversibilidade
+- [] 10. Projéteis luminosos
+- [] 11. Protótipos e notas post-it
+- [] 12. Linguagens de domínio
+- [] 13. Estimando
+
+## 3 As Ferramentas Básicas
+
+- [x] 14. O poder do texto simples
+- [x] 15. Jogos de shell
+- [x] 16. Edição avançada
+- [x] 17. Controle do código-fonte
+- [x] 18. Depurando
+- [x] 19. Manipulação de texto
+- [x] 20. Geradores de código
+
+## 4 Paranoia Pragmática
+
+- [] 21. Projeto por contrato
+- [] 22. Programas mortos não contam mentiras
+- [] 23. Programação assertiva
+- [] 24. Quando usar exceções
+- [] 25. Como balancear recursos
+
+## 5 Seja Flexível 159
+
+- [] 26. A desvinculação e a Lei de Deméter
+- [] 27. Metaprogramação
+- [] 28. Vinculação temporal
+- [] 29. Apenas um modo de ver
+- [] 30. Quadros-negros
+
+## 6 Enquanto Você Está Codificando 193
+
+- [] 31. Programação baseada no acaso
+- [] 32. Velocidade do algoritmo
+- [] 33. Refatoração
+- [] 34. Código que seja fácil de testar
+- [] 35. Assistentes do mal
+
+## 7 Antes do Projeto 223
+
+- [] 36. O abismo dos requisitos
+- [] 37. Resolvendo problemas impossíveis
+- [] 38. Não antes de você estar pronto
+- [] 39. A armadilha das especificações
+- [] 40. Círculos e setas
+
+## 8 Projetos Pragmáticos
+
+- [] 41. Equipes pragmáticas
+- [] 42. Automação onipresente
+- [] 43. Testando incansavelmente
+- [] 44. Tudo se resume a escrever
+- [] 45. Grandes expectativas
+- [] 46. Orgulho e preconceito
+
+## A Recursos 283
+
+- [] Sociedades profissionais
+- [] Construindo uma biblioteca
+- [] Recursos da Internet
+- [] Bibliografia
+
 ## 1 Uma Filosofia Pragmática 23
 
 ### 1 O gato comeu meu código-fonte
@@ -60,9 +137,13 @@
 
 - Bom senso
   - Conheça as necessidades do seu público para garantir que sua ideia seja bem compreendida e aceita;
+
   - Escolha o momento ideal para falar, tornando o conteúdo relevante para as prioridades e o estado emocional de quem o ouve;
+
   - Adapte seu estilo de comunicação, seja formal ou casual, para atender cada destinatário ou grupo de pessoas;
+
   - Mantenha as pessoas informadas e dê retorno constante, respondendo prontamente a e-mails e mensagens para que ninguém se sinta ignorado;
+
   - Escute as pessoas, transformar reuniões em diálogos eficientes, encorajando as pessoas a falarem para que você também possa falar.
 
 ## 2 Uma Abordagem Pragmática 47
@@ -89,10 +170,15 @@ O Conceito de Independência:
 Vantagens:
 
 - Ganho de Produtividade: mudanças localizadas reduzem o tempo de desenvolvimento e teste, permitindo que componentes pequenos e autônomos sejam codificados isoladamente, favorecendo a reutilização e gera mais funcionalidade por esforço unitário ao combinar componentes independentes;
+
 - Redução de Riscos: seções de código danificadas ficam isoladas, diminuindo a probabilidade de uma falha se espalhar por todo o sistema;
+
 - Aplicação em Equipes e Projetos: equipes ortogonais são organizadas com responsabilidades bem definidas e mínima sobreposição, o que reduz a necessidade de reuniões constantes;
+
 - Elimine efeitos entre elementos não relacionados: mantenha seu código desvinculado seguindo a Lei de Deméter e evite o uso de dados globais que criam dependências desnecessárias;
+
 - Ortogonalidade no Teste: sistemas ortogonais são mais fáceis de testar em nível de unidade, pois não exigem que grande parte do resto do sistema seja carregada para validar um módulo;
+
 - Ortogonalidade na documentação: a ortogonalidade é aplicada ao separar o conteúdo da apresentação, permitindo alterar a aparência sem mexer no texto original;
 
 ### 9 Reversibilidade
@@ -107,19 +193,40 @@ Vantagens:
 
 ## 3 As Ferramentas Básicas 93
 
+Essa parte foi difícil, de verdade nada contra o livro, mas tem momento em que ele escreve texto demais para falar o óbvio, em diversos momentos isso é ótimo, pois fica didático, porém quando isso se repeti diversas versos em diversos momentos em que não é necessário o texto apenas fica cansativo e te faz pegar um longo caminho para chegar num ponto que você chegaria com 3x menos texto.
+
 ### 14 O poder do texto simples
+
+- Use texto sempre que possível, melhor doque códigos complexo, um bom texto facilita muito sua vida.
 
 ### 15 Jogos de shell
 
+Comece a usar:
+
+- Linux;
+- Terminal;
+- Automação.
+
 ### 16 Edição avançada
+
+- Não complique, use um bom editor de código e aprenda de verdade o que ele pode oferecer;
+- Recomendo que tenha um segunda opção, nunca se sabe.
 
 ### 17 Controle do código-fonte
 
+- Use git.
+
 ### 18 Depurando
+
+- Pula!
 
 ### 19 Manipulação de texto
 
+- Pula!
+
 ### 20 Geradores de código
+
+Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre buscavam forma de fazer o trabalho repetitivo de formas a resolver o problema acertivamente, não se limite a IA ou a usar ela de uma forma repetitiva sempre.
 
 ## 4 Paranoia Pragmática 129
 
