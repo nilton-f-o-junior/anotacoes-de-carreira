@@ -41,11 +41,11 @@
 
 ## 7 Níveis de teste: Quando
 
-- [] 7.1 Unidade
-- [] 7.2 Integração
-- [] 7.3 Sistema
-- [] 7.4 Aceitação
-- [] 7.5 Conclusão
+- [x] 7.1 Unidade
+- [x] 7.2 Integração
+- [x] 7.3 Sistema
+- [x] 7.4 Aceitação
+- [x] 7.5 Conclusão
 
 ## 8 Tipos de teste: O quê
 
@@ -62,18 +62,18 @@
 
 ## 9 Como realizar testes
 
-- [] 9.1 Planejar
-- [] 9.2 Projetar
-- [] 9.3 Implementar
-- [] 9.4 Executar
-- [] 9.5 Avaliar
-- [] 9.6 Conclusão
+- [x] 9.1 Planejar
+- [x] 9.2 Projetar
+- [x] 9.3 Implementar
+- [x] 9.4 Executar
+- [x] 9.5 Avaliar
+- [x] 9.6 Conclusão
 
 ## 10 Testes ágeis
 
-- [] 10.1 O manifesto ágil dos testes
-- [] 10.2 Aplicando testes ágeis
-- [] 10.3 Conclusão
+- [x] 10.1 O manifesto ágil dos testes
+- [x] 10.2 Aplicando testes ágeis
+- [x] 10.3 Conclusão
 
 ## 11 Apêndice I: Padrões de validação de código
 
@@ -393,16 +393,79 @@ Acontece quando o software está completamente integrado (ou em versão MVP) e �
 
 ## 8 Tipos de teste: O quê
 
-- [] 8.1 Funcional
-- [] 8.2 Regressão
-- [] 8.3 Performance
-- [] 8.4 Usabilidade
-- [] 8.5 Segurança
-- [] 8.6 Acessibilidade
-- [] 8.7 Portabilidade
-- [] 8.8 Como + Quando + O que: como testes de fato são realizados
-- [] 8.9 Fatores McCall e Atributos ISO 9126 vs. Tipos de Teste
-- [] 8.10 Conclusão
+### 8.1 Funcional
+
+Avalia se as funcionalidades do software se comportam de acordo com suas especificações e requisitos.
+
+- Execução: são realizados cenários de uso com massas de dados (reais ou fictícias) para verificar se as regras de negócio e casos de uso foram codificados adequadamente;
+- Roteiros: uma forma simples de aplicação é seguir roteiros de teste, como validar se um login é efetuado com sucesso ou se exibe a mensagem correta para senhas inválidas;
+- Teste de Fumaça (Smoke Test): uma estratégia complementar que foca em testar funcionalmente apenas as partes principais e críticas do sistema;
+- Responsabilidade: geralmente realizado pela equipe de desenvolvimento para checar verificações mínimas antes de liberar o software para uma equipe de testes independente.
+
+### 8.2 Regressão
+
+Embora tratado como um tipo, funciona mais como uma estratégia de execução.
+
+- Propósito: consiste em reexecutar todos os testes do software após qualquer modificação ou correção em uma funcionalidade específica;
+- Efeitos colaterais: o objetivo principal é garantir que as novas alterações não criaram, inadvertidamente, problemas ou erros em outros pontos que já estavam funcionando
+- Automação: como a abordagem manual se torna inviável conforme o software cresce, o uso de scripts automáticos acionados via ferramentas de Integração Contínua (CI) é a prática mais comum.
+
+### 8.3 Performance
+
+Foca nos requisitos não funcionais, avaliando o comportamento do software em cenários atípicos de execução. Ele é subdividido em três categorias:
+
+- Desempenho: testa o software em situações de pico máximo de acesso previsto para identificar gargalos em conexões HTTP, bancos de dados ou APIs lentas;
+
+- Carga: avalia o comportamento sob situações de estresse não previstas (ex: acessos 5 vezes maiores que o normal) ou mudanças bruscas de infraestrutura, como redução de memória disponível;
+
+- Volume: foca especificamente no comportamento do banco de dados ao lidar com grandes quantidades de dados, seja para armazenamento (inserts) ou recuperação (selects).
+
+### 8.4 Usabilidade
+
+Avalia o nível de facilidade de uso, manuseio e interatividade do software sob a ótica do usuário final.
+
+- Heurísticas: Baseia-se frequentemente nos 10 quesitos de Nielsen, que incluem a visibilidade do status do sistema, prevenção de erros e estética minimalista;
+- Métodos: Pode ser realizado via rastreamento ocular (eye-tracking) para mapear o foco visual, ou através de testes exploratórios e de avaliação com tarefas predefinidas;
+- Abordagens: Os testes podem ser moderados (com acompanhamento) ou não moderados, além de serem realizados de forma presencial ou remota.
+
+### 8.5 Segurança
+
+O foco deste tipo de teste é garantir que o software e seus dados sejam acessados apenas por usuários autorizados, detectando brechas que comprometam o sigilo.
+
+- OWASP: utiliza as diretrizes do projeto OWASP para mitigar vulnerabilidades críticas como SQL Injection e Cross-Site Scripting (XSS);
+- SAST e DAST: aplica o SAST para análise estática do código-fonte (caixa branca) e o DAST para avaliar o software em execução simulando ataques externos (caixa preta);
+- Times Coloridos: a segurança pode envolver times especializados: Red Team (ataque), Blue Team (defesa) e Purple Team (integração entre ambos);
+- PenTest: realização de Testes de Penetração, que são ataques simulados para encontrar falhas em aplicações, redes, hardware ou no fator humano.
+
+### 8.6 Acessibilidade
+
+Visa garantir que o software possa ser utilizado por todas as pessoas de forma autônoma, incluindo portadores de necessidades especiais.
+
+- Padrões W3C: segue as diretrizes internacionais da W3C/WCAG, organizadas em três níveis de conformidade: A (mínimo), AA (padrão recomendado) e AAA (máximo);
+- Princípios: baseia-se em quatro pilares fundamentais: Perceptibilidade, Operacionalidade, Compreensibilidade e Robustez;
+- Contexto Brasileiro: no Brasil, utiliza-se também o modelo eMAG e a ferramenta ASES para validar a acessibilidade em sítios do governo.
+
+### 8.7 Portabilidade
+
+Visa garantir que o software funcione corretamente e mantenha a usabilidade em diferentes plataformas e versões.
+
+- Cenário: essencial para aplicações que precisam rodar em múltiplos navegadores (Chrome, Firefox, etc.) e diferentes sistemas operacionais móveis (iOS e Android);
+- Execução: o software deve ser testado em dispositivos físicos variados para detectar comportamentos inesperados, podendo combinar testes funcionais e de desempenho durante essa validação.
+
+### 8.8 Como + Quando + O que: como testes de fato são realizados
+
+Na prática, as três dimensões de teste se completam e são utilizadas simultaneamente.
+
+- Sinergia: não se trabalha de forma isolada; cada dimensão provê uma porção necessária para cobrir as partes eleitas para teste. Exemplo?:
+  - Testar um método de classe envolve técnica de caixa branca (Como), nível unitário (Quando) e tipo funcional (O que).
+
+### 8.9 Fatores McCall e Atributos ISO 9126 vs. Tipos de Teste
+
+- Leia!
+
+### 8.10 Conclusão
+
+- Pula!
 
 ## 9 Como realizar testes
 
