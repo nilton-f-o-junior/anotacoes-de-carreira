@@ -124,17 +124,20 @@ query_selector.addEventListener("click", () => {
 ## querySelectorAll
 
 ```html
-<div id="a1" class="b1">HTML</div>
-<div id="a2" class="b1">CSS</div>
-<div id="a3" class="b2">JAVASCRIPT</div>
+<div id="caixa_a" class="caixa">
+    <div id="a1" class="b1">HTML</div>
+    <div id="a2" class="b1">CSS</div>
+    <div id="a3" class="b1">JAVASCRIPT</div>
+</div>
 ```
 
 ```javascript
-const query_selector_all = [...document.querySelectorAll("div")];
+const query_selector_all = [...document.querySelectorAll(".b1")];
 
 query_selector_all.forEach((element) => {
   element.addEventListener("click", () => {
-    element.style.backgroundColor = "red";
+    element.style.backgroundColor = "red
+    ";
   });
 });
 ```
