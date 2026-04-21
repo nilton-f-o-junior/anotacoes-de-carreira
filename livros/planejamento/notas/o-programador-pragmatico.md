@@ -1,6 +1,6 @@
 # Sumário
 
-## ] 1 Uma Filosofia Pragmática
+## 1 Uma Filosofia Pragmática
 
 - [x] 1. O gato comeu meu código-fonte
 - [x] 2. Entropia de software
@@ -13,11 +13,11 @@
 
 - [x] 7. Os males da duplicação
 - [x] 8. Ortogonalidade
-- [x] 9. Reversibilidade
-- [] 10. Projéteis luminosos
-- [] 11. Protótipos e notas post-it
-- [] 12. Linguagens de domínio
-- [] 13. Estimando
+- [] 9. Reversibilidade
+- [x] 10. Projéteis luminosos
+- [x] 11. Protótipos e notas post-it
+- [x] 12. Linguagens de domínio
+- [x] 13. Estimando
 
 ## 3 As Ferramentas Básicas
 
@@ -37,7 +37,7 @@
 - [] 24. Quando usar exceções
 - [] 25. Como balancear recursos
 
-## 5 Seja Flexível 159
+## 5 Seja Flexível
 
 - [] 26. A desvinculação e a Lei de Deméter
 - [] 27. Metaprogramação
@@ -45,7 +45,7 @@
 - [] 29. Apenas um modo de ver
 - [] 30. Quadros-negros
 
-## 6 Enquanto Você Está Codificando 193
+## 6 Enquanto Você Está Codificando
 
 - [] 31. Programação baseada no acaso
 - [] 32. Velocidade do algoritmo
@@ -53,7 +53,7 @@
 - [] 34. Código que seja fácil de testar
 - [] 35. Assistentes do mal
 
-## 7 Antes do Projeto 223
+## 7 Antes do Projeto
 
 - [] 36. O abismo dos requisitos
 - [] 37. Resolvendo problemas impossíveis
@@ -66,18 +66,11 @@
 - [] 41. Equipes pragmáticas
 - [] 42. Automação onipresente
 - [] 43. Testando incansavelmente
-- [] 44. Tudo se resume a escrever
-- [] 45. Grandes expectativas
-- [] 46. Orgulho e preconceito
+- [x] 44. Tudo se resume a escrever
+- [x] 45. Grandes expectativas
+- [x] 46. Orgulho e preconceito
 
-## A Recursos 283
-
-- [] Sociedades profissionais
-- [] Construindo uma biblioteca
-- [] Recursos da Internet
-- [] Bibliografia
-
-## 1 Uma Filosofia Pragmática 23
+## 1 Uma Filosofia Pragmática
 
 ### 1 O gato comeu meu código-fonte
 
@@ -146,7 +139,7 @@
 
   - Escute as pessoas, transformar reuniões em diálogos eficientes, encorajando as pessoas a falarem para que você também possa falar.
 
-## 2 Uma Abordagem Pragmática 47
+## 2 Uma Abordagem Pragmática
 
 ### 7 Os males da duplicação
 
@@ -185,13 +178,29 @@ Vantagens:
 
 ### 10 Projéteis luminosos
 
+- Pula! Leia ...
+
 ### 11 Protótipos e notas post-it
+
+- Objetivo: protótipos servem para analisar riscos e testar ideias críticas de forma barata e rápida antes do desenvolvimento real;
+
+- Valor do Protótipo: o valor real reside nas lições aprendidas durante o processo e não no código produzido, que deve ser considerado descartável;
+
+- Diversidade de Materiais: protótipos não precisam ser apenas código, notas post-it são ideais para fluxos de trabalho, e quadros brancos servem para interfaces; se for código, prefira linguagens de alto nível para ignorar detalhes triviais e focar apenas no que está sendo investigado;
+
+- Detalhes a Ignorar: ignore precisão (use dados fictícios), completude (funcionalidade limitada) e robustez (verificação mínima de erros). Sacrifique também o estilo de codificação e a documentação profunda para acelerar a resposta a perguntas específicas do projeto;
+
+- Gerenciamento de Expectativas: deve-se deixar claro para todos que o protótipo é código descartável e incompleto para evitar que a gerência tente implantá-lo prematuramente.
 
 ### 12 Linguagens de domínio
 
+- Pula! Leia ...
+
 ### 13 Estimando
 
-## 3 As Ferramentas Básicas 93
+- Estime o tempo em dias ou semanas, isso ajuda a dar uma perspectiva melhor para o problema. Um bom cronograma pode evitar certas dores de cabeça, mas ajuda a mensurar.
+
+## 3 As Ferramentas Básicas
 
 Essa parte foi difícil, de verdade nada contra o livro, mas tem momento em que ele escreve texto demais para falar o óbvio, em diversos momentos isso é ótimo, pois fica didático, porém quando isso se repeti diversas versos em diversos momentos em que não é necessário o texto apenas fica cansativo e te faz pegar um longo caminho para chegar num ponto que você chegaria com 3x menos texto.
 
@@ -228,7 +237,7 @@ Comece a usar:
 
 Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre buscavam forma de fazer o trabalho repetitivo de formas a resolver o problema acertivamente, não se limite a IA ou a usar ela de uma forma repetitiva sempre.
 
-## 4 Paranoia Pragmática 129
+## 4 Paranoia Pragmática
 
 ### 21 Projeto por contrato
 
@@ -240,7 +249,7 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 25 Como balancear recursos
 
-## 5 Seja Flexível 159
+## 5 Seja Flexível
 
 ### 26 A desvinculação e a Lei de Deméter
 
@@ -252,7 +261,7 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 30 Quadros-negros
 
-## 6 Enquanto Você Está Codificando 193
+## 6 Enquanto Você Está Codificando
 
 ### 31 Programação baseada no acaso
 
@@ -264,7 +273,7 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 35 Assistentes do mal
 
-## 7 Antes do Projeto 223
+## 7 Antes do Projeto
 
 ### 36 O abismo dos requisitos
 
@@ -276,7 +285,7 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 40 Círculos e setas
 
-## 8 Projetos Pragmáticos 245
+## 8 Projetos Pragmáticos
 
 ### 41 Equipes pragmáticas
 
@@ -286,6 +295,21 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 44 Tudo se resume a escrever
 
+- Documentação é importante e deve ser feita de forma a ajudar você e outros desenvolvedores a entender o que foi feito;
+- Trate o idioma natural como se fosse outra linguagem de programação, aplicando conceitos como NSR, metadados e automação;
+- Construa a documentação diretamente no código em vez de deixá-la como um complemento externo propenso a desatualizações;
+- Os comentários devem focar no "porquê" de algo ser feito e em sua finalidade, já que o código já demonstra "como" é feito.
+- Utilize nomes de variáveis significativos e evite ambiguidades, lembrando que o código será lido muito mais vezes do que escrito;
+- Mantenha uma única fonte de informações autorizada para gerar automaticamente esquemas de banco de dados, códigos e especificações;
+- Prefira a publicação na Web e o uso de hiperlinks para garantir que a documentação permaneça atualizada e acessível a todos.
+
 ### 45 Grandes expectativas
 
+- Tenha controle sobre seu projeto e entregue aquilo que foi definido;
+- Não crie um projeto que não pode entregar (seja realista).
+
 ### 46 Orgulho e preconceito
+
+- Faça um código bem escrito;
+- Assuma a responábilidade sobre o que escreveu;
+- Respeite o código dos outros, se vai dar opnião, saiba como o fazer;
