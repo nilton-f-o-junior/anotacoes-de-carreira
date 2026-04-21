@@ -2,7 +2,9 @@
 
 - Cápitulo 1. Introdução
 - Capítulo 2. Explicações Básicas
-
+- Capítulo 3. Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o Linux
+- Capítulo 4. Discos e Partições
+- Capítulo 5. Execução de programas
 
 ## Cápitulo 1. Introdução
 
@@ -205,3 +207,102 @@ Coringas (ou referência global) são recursos para especificar diversos arquivo
 - {padrões}: expande e gera strings para pesquisa, sendo que a existência do arquivo é opcional (muito útil para criar diretórios).
 
 Esses coringas podem ser utilizados em conjunto para criar filtragens muito exatas.
+
+
+## Capítulo 3. Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o Linux
+
+- Ler!
+
+## Capítulo 4. Discos e Partições
+
+- Leia!
+
+## Capítulo 5. Execução de programas
+
+### path
+
+Path é o caminho de procura dos arquivos/comandos executáveis. O path (caminho) é armazenado na variável de ambiente PATH. Você pode ver o conteúdo desta variável com o comando echo $PATH.
+
+Caso o interpretador de comandos chegue até o último diretório do path e não encontre o arquivo/comando digitado, é mostrada a seguinte mensagem:
+
+```bash
+pd # command not found (comando não encontrado).
+```
+Se deseja alterar o path para um único usuário, modifique o arquivo .bash_profile em seu diretório de usuário (home).
+
+### Tipos de Execução de Comandos/Programas
+
+- Primeiro Plano (Foreground): é o modo padrão, onde o usuário deve esperar o término da execução do programa para poder digitar um novo comando no prompt;
+  - Para iniciar um programa em primeiro plano, basta digitar seu nome normalmente.
+
+- Segundo Plano (Background): permite que o sistema fique livre para outras tarefas enquanto o programa roda internamente.
+  - Para iniciar um programa em segundo plano, acrescente o caracter "&" após o final do comando.
+
+### Executando Programas em Seqüência
+
+Os comandos podem ser executados em seqüência (um após o término do outro) se os separarmos com ";". Por exemplo: echo primeiro;echo segundo;echo terceiro.
+
+#### ps
+
+Processos estão sendo executados no computador e também nos mostra qual usuário executou o programa, hora que o processo foi iniciado, etc.
+
+ps \[opções]
+
+- opções, a : mostra os processos criados por você e de outros usuários do sistema;
+- x : mostra processos que não são controlados pelo terminal;
+- u : mostra o nome de usuário que iniciou o processo e hora em que o processo foi iniciado;
+- m : mostra a memória ocupada por cada processo em execução;
+- f : mostra a árvore de execução de comandos (comandos que são chamados por outros comandos);
+- e : mostra variáveis de ambiente no momento da inicialização do processo;
+- w : mostra a continuação da linha atual na próxima linha ao invés de cortar o restante que não couber na tela;
+- --sort:\[coluna] : organiza a saída do comando ps de acordo com a coluna escolhida. Você pode usar as colunas pid, utime, ppid, rss, size, user, priority.
+
+#### top
+
+O comando top é uma ferramenta utilizada para monitorar em tempo real os processos que estão sendo executados no computador e os recursos que eles utilizam.
+
+top \[opções]
+
+- -d \[tempo]: atualiza a tela após o \[tempo] (em segundos);
+- -s: diz ao top para ser executado em modo seguro;
+- -i: inicia o top ignorando o tempo de processos zumbis;
+- -c: mostra a linha de comando ao invés do nome do programa.
+
+Manual do comando pode ser obtida dentro do programa pressionando a tecla h ou man top:
+
+- espaço: atualiza imediatamente a tela;
+- CTRL+L: Apaga e atualiza a tela;
+- h: mostra a tela de ajuda do programa. É mostrado todas as teclas que podem ser usadas com o top;
+- i: ignora o tempo ocioso de processos zumbis;
+- q: sai do programa;
+- k: finaliza um processo - semelhante ao comando kill. Você será perguntado pelo número de identificação do processo (PID). Este comando não estará disponível caso esteja usando o top com a opção -s;
+- n: muda o número de linhas mostradas na tela. Se 0 for especificado, será usada toda a tela para listagem de processos.
+
+### Controle de execução de processos
+
+- Interrompendo a execução de um processo: CTRL + C;
+- Parando momentaneamente a execução de um processo: CTRL + Z | Retorna usando "fg" ou "bg";
+- jobs: processos que estão parados ou rodando em segundo plano;
+- fg: faz um programa rodando em segundo plano ou parado, rodar em primeiro plano. Use o comando jobs para pegar o número do processo: fg \[número];
+- bg: faz um programa rodando em primeiro plano ou parado, rodar em segundo plano. Execução do comando com CTRL+ Z, será mostrado o número da tarefa interrompida: bg \[número]
+
+#### kill
+
+Enviará um sinal de término ao processo sendo executado.
+
+kill \[opções] \[sinal] \[número]
+
+- número: o número de identificação obtido com o comando “ps”. Pode ser o número após o sinal de % obtido pelo comando jobs;
+- sinal: sinal que será enviado ao processo. Se omitido usa -15 como padrão;
+- opções, -9: envia um sinal de destruição ao processo ou programa. Ele é terminado imediatamente sem chances de salvar os dados ou apagar os arquivos temporários criados por ele;
+
+Você precisa ser o dono do processo ou o usuário root para termina-lo ou destruí-lo. Você pode verificar se o processo foi finalizado através do comando ps. Os tipos de sinais aceitos:
+
+- Exemplo: kill 500, kill -9 500, kill %1.
+
+> Nota: Killall e killall5 - Leia!
+
+### Eliminando caracteres estranhos
+
+- reset: comando pode ser usado para lidar com programas que não estão funcionando direito, muito comum em scripts mal configurados;
+
