@@ -1,12 +1,13 @@
 # Introdução
 
-- Cápitulo 1. Introdução
+- Capítulo 1. Introdução
 - Capítulo 2. Explicações Básicas
 - Capítulo 3. Para quem esta migrando (ou pensando em migrar) do DOS/Windows para o Linux
 - Capítulo 4. Discos e Partições
 - Capítulo 5. Execução de programas
+- Capítulo 6. Comandos para manipulação de diretório
 
-## Cápitulo 1. Introdução
+## Capítulo 1. Introdução
 
 ### Sistema Operacional
 
@@ -38,9 +39,7 @@
 
 - Sistemas de Arquivos Inteligentes: utiliza formatos (como Ext2, Ext3, etc.) que organizam os arquivos de forma a evitar a fragmentação;
 
-- O Linux permite a montagem de servidores de publicação Web (Apache) e de E-mail (Sendmail) com baixo custo e alta performance.
-
-  - Esses aplicativos são distribuídos gratuitamente com a maioria das distribuições, sendo o Apache o servidor Web mais usado no mundo e o Sendmail parte da base de 72% dos servidores de e-mail atuais,.
+- Servidores Web e E-mail: o Linux permite a montagem de servidores como Apache (publicação Web) e Sendmail (e-mail) com baixo custo e alta performance. Esses aplicativos são distribuídos gratuitamente com a maioria das distribuições, sendo o Apache o servidor Web mais usado no mundo e o Sendmail parte da base de 72% dos servidores de e-mail atuais.
 
 
 ### Distribuições Linux
@@ -110,18 +109,23 @@ No Linux, os arquivos são Case Sensitive, o que significa que o sistema diferen
 
 A extensão serve para identificar o tipo do arquivo. A extensão são as letras após um "." no nome de um arquivo, explicando melhor:
 
-- relatório.txt - O .txt indica que o conteúdo é um arquivo texto;
-- script.sh - Arquivo de Script (interpretado por /bin/sh);
-- system.log - Registro de algum programa no sistema;
-- arquivo.gz - Arquivo compactado pelo utilitário gzip;
-- index.html - Página de Internet (formato Hypertexto).
+- `relatório.txt` — indica que o conteúdo é um arquivo de texto;
+- `script.sh` — arquivo de script (interpretado por `/bin/sh`);
+- `system.log` — registro de algum programa no sistema;
+- `arquivo.gz` — arquivo compactado pelo utilitário gzip;
+- `index.html` — página de internet (formato Hipertexto).
 
 
 ### Tamanho de arquivos
 
 A unidade de medida padrão nos computadores é o bit. A um conjunto de 8 bits nós chamamos de byte.
 
-O Tamanho de arquivos é medido em bytes, onde cada byte equivale a um caractere. Para facilitar a leitura de grandes volumes, utilizam-se múltiplos como Kbytes (1024 bytes).
+O tamanho de arquivos é medido em bytes, onde cada byte equivale a um caractere. Para facilitar a leitura de grandes volumes, utilizam-se múltiplos progressivos:
+
+- **KB** (Kilobyte) = 1.024 bytes
+- **MB** (Megabyte) = 1.024 KB
+- **GB** (Gigabyte) = 1.024 MB
+- **TB** (Terabyte) = 1.024 GB
 
 ### Diretório
 
@@ -173,15 +177,15 @@ O Interpretador de comandos, ou shell, é o programa que faz a ligação princip
 
 O Aviso de comando, ou Prompt, é a linha onde os comandos são digitados para serem processados (traço piscante).  
 
-- \# (Tralha): identifica o aviso de comando do superusuário (root).
-- $ (Cifrão): identifica o aviso de comando de usuários comuns. 
+- `#` (Tralha): identifica o aviso de comando do superusuário (root).
+- `$` (Cifrão): identifica o aviso de comando de usuários comuns.
 
 ### Terminal Virtual (console)
 
-Linux permite o uso de múltiplos terminais virtuais, que são seções de trabalho independentes.
+O Linux permite o uso de múltiplos terminais virtuais, que são sessões de trabalho independentes.
 
-Modo texto: utiliza-se ALT + F1 a F6 para alternar entre os seis terminais iniciais;
-Modo gráfico: deve-se usar CTRL + ALT + F1 a F6 para ir ao modo texto e CTRL + ALT + F7 para retornar aos gráficos.
+- **Modo texto:** utiliza-se `ALT + F1` a `F6` para alternar entre os seis terminais iniciais;
+- **Modo gráfico:** deve-se usar `CTRL + ALT + F1` a `F6` para ir ao modo texto e `CTRL + ALT + F7` para retornar aos gráficos.
 
 ### Coringas
 
@@ -209,14 +213,14 @@ Esses coringas podem ser utilizados em conjunto para criar filtragens muito exat
 
 ### path
 
-Path é o caminho de procura dos arquivos/comandos executáveis. O path (caminho) é armazenado na variável de ambiente PATH. Você pode ver o conteúdo desta variável com o comando echo $PATH.
+Path é o caminho de procura dos arquivos/comandos executáveis. O path (caminho) é armazenado na variável de ambiente `PATH`. Você pode ver o conteúdo desta variável com o comando `echo $PATH`.
 
 Caso o interpretador de comandos chegue até o último diretório do path e não encontre o arquivo/comando digitado, é mostrada a seguinte mensagem:
 
 ```bash
-pd # command not found (comando não encontrado).
+pwd # command not found (comando não encontrado).
 ```
-Se deseja alterar o path para um único usuário, modifique o arquivo .bash_profile em seu diretório de usuário (home).
+Se deseja alterar o path para um único usuário, modifique o arquivo `.bash_profile` em seu diretório de usuário (home).
 
 ### Tipos de Execução de Comandos/Programas
 
@@ -224,17 +228,19 @@ Se deseja alterar o path para um único usuário, modifique o arquivo .bash_prof
   - Para iniciar um programa em primeiro plano, basta digitar seu nome normalmente.
 
 - Segundo Plano (Background): permite que o sistema fique livre para outras tarefas enquanto o programa roda internamente.
-  - Para iniciar um programa em segundo plano, acrescente o caracter "&" após o final do comando.
+  - Para iniciar um programa em segundo plano, acrescente o caractere `&` após o final do comando.
 
-### Executando Programas em Seqüência
+### Executando Programas em Sequência
 
-Os comandos podem ser executados em seqüência (um após o término do outro) se os separarmos com ";". Por exemplo: echo primeiro;echo segundo;echo terceiro.
+Os comandos podem ser executados em sequência (um após o término do outro) se os separarmos com `";"`. Por exemplo: `echo primeiro;echo segundo;echo terceiro`.
 
 #### ps
 
-Processos estão sendo executados no computador e também nos mostra qual usuário executou o programa, hora que o processo foi iniciado, etc.
+O comando `ps` lista os processos em execução no sistema, mostrando o usuário que os iniciou, o horário de início e outras informações.
 
-ps \[opções]
+```bash
+ps [opções]
+```
 
 | Opção | Descrição |
 |-------|-----------|
@@ -251,7 +257,9 @@ ps \[opções]
 
 O comando top é uma ferramenta utilizada para monitorar em tempo real os processos que estão sendo executados no computador e os recursos que eles utilizam.
 
-top \[opções]
+```bash
+top [opções]
+```
 
 | Opção | Descrição |
 |-------|-----------|
@@ -260,7 +268,7 @@ top \[opções]
 | `-i` | Inicia o top ignorando o tempo de processos zumbis |
 | `-c` | Mostra a linha de comando completa ao invés do nome do programa |
 
-Manual do comando pode ser obtida dentro do programa pressionando a tecla h ou man top:
+O manual do comando pode ser obtido dentro do programa pressionando `h` ou via `man top`:
 
 | Tecla | Ação |
 |-------|------|
@@ -274,31 +282,50 @@ Manual do comando pode ser obtida dentro do programa pressionando a tecla h ou m
 
 ### Controle de execução de processos
 
-- Interrompendo a execução de um processo: CTRL + C;
-- Parando momentaneamente a execução de um processo: CTRL + Z | Retorna usando "fg" ou "bg";
-- jobs: processos que estão parados ou rodando em segundo plano;
-- fg: faz um programa rodando em segundo plano ou parado, rodar em primeiro plano. Use o comando jobs para pegar o número do processo: fg \[número];
-- bg: faz um programa rodando em primeiro plano ou parado, rodar em segundo plano. Execução do comando com CTRL+ Z, será mostrado o número da tarefa interrompida: bg \[número]
+**Atalhos de teclado:**
+
+- `CTRL + C` — interrompe definitivamente a execução do processo;
+- `CTRL + Z` — pausa momentaneamente o processo; retome com `fg` (primeiro plano) ou `bg` (segundo plano).
+
+**Comandos:**
+
+- `jobs` — lista os processos parados ou rodando em segundo plano;
+- `fg [número]` — faz um processo parado ou em segundo plano voltar a rodar em primeiro plano;
+- `bg [número]` — faz um processo parado ou em primeiro plano passar a rodar em segundo plano.
 
 #### kill
 
-Enviará um sinal de término ao processo sendo executado.
+O comando `kill` envia um sinal de término ao processo sendo executado.
 
-kill \[opções] \[sinal] \[número]
+```bash
+kill [opções] [sinal] [número]
+```
 
-- número: o número de identificação obtido com o comando “ps”. Pode ser o número após o sinal de % obtido pelo comando jobs;
-- sinal: sinal que será enviado ao processo. Se omitido usa -15 como padrão;
-- opções, -9: envia um sinal de destruição ao processo ou programa. Ele é terminado imediatamente sem chances de salvar os dados ou apagar os arquivos temporários criados por ele;
+- `[opções] -9` — envia um sinal de destruição (`SIGKILL`) ao processo, encerrando-o imediatamente sem chance de salvar dados ou limpar arquivos temporários;
+- `[sinal]` — sinal a ser enviado ao processo. Se omitido, usa `-15` (`SIGTERM`) como padrão;
+- `[número]` — PID do processo, obtido com `ps`, ou o número após `%` retornado pelo comando `jobs`.
 
-Você precisa ser o dono do processo ou o usuário root para termina-lo ou destruí-lo. Você pode verificar se o processo foi finalizado através do comando ps. Os tipos de sinais aceitos:
+Você precisa ser o dono do processo ou o usuário root para encerrá-lo. Verifique se o processo foi finalizado com o comando `ps`.
 
-- Exemplo: kill 500, kill -9 500, kill %1.
+**Principais sinais aceitos:**
+
+| Sinal | Número | Descrição |
+|-------|--------|-----------|
+| `SIGHUP` | `-1` | Reinicia o processo (relê as configurações) |
+| `SIGTERM` | `-15` | Solicita o encerramento gracioso (padrão) |
+| `SIGKILL` | `-9` | Força o encerramento imediato, sem salvar dados |
+
+```bash
+kill 500       # encerra o processo 500 com SIGTERM
+kill -9 500    # força o encerramento do processo 500
+kill %1        # encerra o job de número 1
+```
 
 > Nota: Killall e killall5 - Leia!
 
 ### Eliminando caracteres estranhos
 
-- reset: comando pode ser usado para lidar com programas que não estão funcionando direito, muito comum em scripts mal configurados;
+- `reset`: pode ser usado para lidar com programas que não estão funcionando corretamente, muito comum em scripts mal configurados.
 
 ## Capítulo 6. Comandos para manipulação de diretório
 
@@ -306,200 +333,225 @@ Você precisa ser o dono do processo ou o usuário root para termina-lo ou destr
 
 Lista os arquivos de um diretório.
 
-ls \[opções] \[caminho/arquivo] \[caminho1/arquivo1]
+```bash
+ls [opções] [caminho/arquivo] [caminho1/arquivo1]
+```
 
-- caminho/arquivo: diretório/arquivo que será listado;
-- caminho1/arquivo1: Outro Diretório/arquivo que será listado. Podem ser feitas várias listagens de uma só vez.
-- -a, --all: Lista todos os arquivos (inclusive os ocultos).
-- -A, --almost-all: Lista todos os arquivos (inclusive os ocultos) de um diretório, exceto o diretório atual e o de nível anterior.
-- -B, --ignore-backups: Não lista arquivos que terminam com ~ (Backup).
-- --color=PARAM: Mostra os arquivos em cores diferentes, conforme o tipo de arquivo. PARAM pode ser:
-  - never: Nunca lista em cores (padrão).
-  - always: Sempre lista em cores conforme o tipo de arquivo.
-  - auto: Somente colore a listagem se estiver em um terminal.
-- -d, --directory: Lista os nomes dos diretórios ao invés do conteúdo.
-- -f: Não classifica a listagem.
-- -F: Insere um caracter após arquivos executáveis ('*'), diretórios ('/'), soquete ('='), link simbólico ('@') e pipe ('|'). Seu uso é útil para identificar de forma fácil tipos de arquivos nas listagens de diretórios.
-- -G, --no-group: Oculta a coluna de grupo do arquivo.
-- -h, --human-readable: Mostra o tamanho dos arquivos em Kbytes, Mbytes, Gbytes.
-- -H: Faz o mesmo que -h, mas usa unidades de 1000 ao invés de 1024 para especificar Kbytes, Mbytes, Gbytes.
-- -l: Usa o formato longo para listagem de arquivos. Lista as permissões, data de modificação, donos, grupos, etc.
-- -n: Usa a identificação de usuário e grupo numérica ao invés dos nomes.
-- -L, --dereference: Lista o arquivo original e não o link referente ao arquivo.
-- -o: Usa a listagem longa sem os donos dos arquivos (mesma coisa que -lG).
-- -p: Mesma coisa que -F, mas não inclui o símbolo '*' em arquivos executáveis. Esta opção é típica de sistemas Linux.
-- -R: Lista diretórios e sub-diretórios recursivamente.
-- --full-time: Lista data e hora completa.
+- `caminho/arquivo` — diretório/arquivo que será listado;
+- `caminho1/arquivo1` — outro diretório/arquivo que será listado. Podem ser feitas várias listagens de uma só vez.
 
-Classificação da listagem A listagem pode ser classificada usando-se as seguintes opções:
+**Opções:**
 
-- -f: Não classifica, e usa -au para listar os arquivos.
-- -r: Inverte a ordem de classificação.
-- -c: Classifica pela data de alteração.
-- -X: Classifica pela extensão.
-- -U: Não classifica, lista os arquivos na ordem do diretório.
-- -Z: Exibe o contexto SELinux de cada arquivo.
+| Opção | Descrição |
+|-------|-----------|
+| `-a`, `--all` | Lista todos os arquivos, inclusive os ocultos |
+| `-A`, `--almost-all` | Lista todos os arquivos ocultos, exceto `.` e `..` |
+| `-B`, `--ignore-backups` | Não lista arquivos que terminam com `~` (backup) |
+| `--color=PARAM` | Coloriza a saída: `never` (nunca), `always` (sempre), `auto` (somente em terminal) |
+| `-d`, `--directory` | Lista os nomes dos diretórios ao invés do conteúdo |
+| `-f` | Não classifica a listagem |
+| `-F` | Insere um caractere identificador após o nome: `*` executável, `/` diretório, `=` socket, `@` link simbólico, `\|` pipe |
+| `-G`, `--no-group` | Oculta a coluna de grupo do arquivo |
+| `-h`, `--human-readable` | Mostra o tamanho dos arquivos em KB, MB ou GB (base 1024) |
+| `-H` | Igual a `-h`, mas usa base 1000 |
+| `-l` | Formato longo: lista permissões, data de modificação, dono, grupo, etc. |
+| `-L`, `--dereference` | Lista o arquivo original e não o link simbólico |
+| `-n` | Usa identificação numérica de usuário e grupo ao invés dos nomes |
+| `-o` | Listagem longa sem a coluna de dono (equivale a `-lG`) |
+| `-p` | Igual a `-F`, mas não inclui `*` em executáveis |
+| `-R` | Lista diretórios e subdiretórios recursivamente |
+| `--full-time` | Lista data e hora completas |
 
-Uma listagem feita com o comando ls -la normalmente é mostrada da seguinte maneira
+**Classificação da listagem:**
+
+| Opção | Descrição |
+|-------|-----------|
+| `-f` | Não classifica; usa `-au` para listar os arquivos |
+| `-r` | Inverte a ordem de classificação |
+| `-c` | Classifica pela data de alteração |
+| `-X` | Classifica pela extensão |
+| `-U` | Não classifica; lista os arquivos na ordem do diretório |
+| `-Z` | Exibe o contexto SELinux de cada arquivo |
+
+**Interpretando a saída de `ls -la`:**
 
 ```
 -rwxr-xr-- 1 gleydson user 8192 nov 4 16:00 teste
 ```
 
-Abaixo as explicações de cada parte:
+| Campo | Valor no exemplo | Significado |
+|-------|-----------------|-------------|
+| Permissões | `-rwxr-xr--` | Tipo e permissões do arquivo (`-` = arquivo, `d` = diretório) |
+| Links | `1` | Quantidade de links; em diretórios, indica o número de subdiretórios |
+| Dono | `gleydson` | Nome do usuário dono do arquivo |
+| Grupo | `user` | Grupo ao qual o arquivo pertence |
+| Tamanho | `8192` | Tamanho em bytes |
+| Mês | `nov` | Mês de criação/última modificação |
+| Dia | `4` | Dia de criação/última modificação |
+| Hora/Ano | `16:00` | Hora de criação/modificação (se tiver mais de um ano, exibe o ano) |
+| Nome | `teste` | Nome do arquivo |
 
-- -rwxr-xr-- São as permissões de acesso ao arquivo teste. A primeira letra (da esquerda) identifica o tipo do arquivo, se tiver um d é um diretório, se tiver um "-" é um arquivo normal.
-
-As permissões de acesso é explicada em detalhes em Capítulo 11, Permissões de acesso
-a arquivos e diretórios.
-
-- 1: Se for um diretório, mostra a quantidade de sub-diretórios existentes dentro dele. Caso for um arquivo, será 1.
-- gleydson: Nome do dono do arquivo teste.
-- user: Nome do grupo que o arquivo teste pertence.
-- 8192: Tamanho do arquivo (em bytes).
-- nov: Mês da criação/ última modificação do arquivo.
-- 4: Dia que o arquivo foi criado.
-- 16:00: Hora em que o arquivo foi criado/modificado. Se o arquivo foi criado há mais de um ano, em seu lugar é mostrado o ano da criação do arquivo.
-- teste: Nome do arquivo.
+> As permissões de acesso são explicadas em detalhes no Capítulo 11.
 
 #### cd
 
-Entra em um diretório. Você precisa ter a permissão de execução para entrar no diretório.
+Entra em um diretório. É necessário ter permissão de execução no diretório de destino.
 
-cd \[diretório]
+```bash
+cd [diretório]
+```
 
-- cd / : retornará ao diretório raíz.
-- cd - : retornará ao diretório anteriormente acessado.
-- cd .. : sobe um diretório
+- `cd /` — retorna ao diretório raiz;
+- `cd -` — retorna ao diretório anteriormente acessado;
+- `cd ..` — sobe um nível na árvore de diretórios.
 
 #### pwd
 
-Mostra o nome e caminho do diretório atual.
+Mostra o nome e o caminho absoluto do diretório atual.
 
 #### mkdir
 
-Cria um diretório (pasta) no sistema.
+Cria um diretório no sistema.
 
-mkdir \[opções] \[caminho/diretório] \[caminho1/diretório1]
+```bash
+mkdir [opções] [caminho/diretório] [caminho1/diretório1]
+```
 
-- caminho: Caminho onde o diretório será criado.
-- diretório: Nome do diretório que será criado.
-- opções:, -p: Caso os diretórios dos níveis acima não existam, eles também serão criados.
-- --verbose: Mostra uma mensagem para cada diretório criado. As mensagens de erro serão mostradas mesmo que esta opção não seja usada.
+- `caminho` — caminho onde o diretório será criado;
+- `diretório` — nome do diretório que será criado;
+- `-p` — cria os diretórios intermediários que ainda não existem;
+- `--verbose` — exibe uma mensagem para cada diretório criado.
 
 #### rmdir
 
-Remove um diretório do sistema. Este comando faz exatamente o contrário do mkdir.
+Remove um diretório vazio do sistema (operação inversa ao `mkdir`).
 
-rmdir \[opções] \[caminho/diretório] \[caminho1/diretório1]
+```bash
+rmdir [opções] [caminho/diretório] [caminho1/diretório1]
+```
 
-- caminho: Caminho do diretório que será removido.
-- diretório: Nome do diretório que será removido.
+- `caminho` — caminho do diretório que será removido;
+- `diretório` — nome do diretório que será removido.
 
-Para remover diretórios que contenham arquivos, use o comando rm com a opção -r
+> Para remover diretórios que contenham arquivos, use `rm -r`.
 
 ## Capítulo 7. Comandos para manipulação de Arquivos
 
 #### cat
 
-Mostra o conteúdo de um arquivo binário ou texto.
+Mostra o conteúdo de um arquivo de texto ou binário.
 
-cat \[opções] \[diretório/arquivo] \[diretório1/arquivo1]
+```bash
+cat [opções] [diretório/arquivo] [diretório1/arquivo1]
+```
 
-- diretório/arquivo: Localização do arquivo que deseja visualizar o conteúdo.
-- opções, -n, --number: Mostra o número das linhas enquanto o conteúdo do arquivo é mostrado.
-- -s, --squeeze-blank: Não mostra mais que uma linha em branco entre um parágrafo e outro.
-- - Lê a entrada padrão.
+- `diretório/arquivo` — localização do arquivo a ser visualizado;
+- `-n`, `--number` — exibe o número de cada linha;
+- `-s`, `--squeeze-blank` — suprime linhas em branco consecutivas, exibindo no máximo uma;
+- `-` — lê a entrada padrão (`stdin`).
 
-O comando cat trabalha com arquivos texto. Use o comando zcat para ver diretamente arquivos compactados com gzip.
+> Use `zcat` para visualizar diretamente arquivos compactados com gzip.
 
-Exemplo: cat /usr/doc/copyright/GPL
+```bash
+cat /usr/doc/copyright/GPL
+```
 
 #### tac
 
-Mostra o conteúdo de um arquivo binário ou texto (como o cat) só que em ordem inversa.
+Mostra o conteúdo de um arquivo assim como o `cat`, mas em ordem inversa (da última linha para a primeira).
 
-tac \[opções] \[diretório/arquivo] \[diretório1/arquivo1]
+```bash
+tac [opções] [diretório/arquivo] [diretório1/arquivo1]
+```
 
-- diretório/arquivo: Localização do arquivo que deseja visualizar o conteúdo
-- opções, -s [string]: Usa o [string] como separador de registros.
-- - Lê a entrada padrão.
+- `diretório/arquivo` — localização do arquivo a ser visualizado;
+- `-s [string]` — usa `[string]` como separador de registros;
+- `-` — lê a entrada padrão (`stdin`).
 
-Exemplo: tac /usr/doc/copyright/GPL.
+```bash
+tac /usr/doc/copyright/GPL
+```
 
 #### rm
 
-Apaga arquivos. Também pode ser usado para apagar diretórios e sub-diretórios vazios ou que contenham arquivos.
+Apaga arquivos, diretórios e subdiretórios.
 
-rm \[opções]\[caminho]\[arquivo/diretório] \[caminho1]\[arquivo1/diretório1]
+```bash
+rm [opções] [caminho] [arquivo/diretório] [caminho1] [arquivo1/diretório1]
+```
 
-- caminho: Localização do arquivo que deseja apagar. Se omitido, assume que o arquivo esteja no diretório atual.
-- arquivo/diretório: Arquivo que será apagado.
-- opções, -i, --interactive: Pergunta antes de remover, esta é ativada por padrão.
-- -v, --verbose: Mostra os arquivos na medida que são removidos.
-- -r, --recursive: Usado para remover arquivos em sub-diretórios. Esta opção também pode ser usada para remover sub-diretórios.
--f, --force: Remove os arquivos sem perguntar.
--- arquivo: Remove arquivos/diretórios que contém caracteres especiais. O separador "--" funciona com todos os comandos do shell e permite que os caracteres especiais como "*", "?", "-", etc. sejam interpretados como caracteres comuns.
+- `caminho` — localização do arquivo a ser apagado (se omitido, assume o diretório atual);
+- `arquivo/diretório` — arquivo ou diretório que será apagado;
+- `-i`, `--interactive` — solicita confirmação antes de remover (padrão);
+- `-v`, `--verbose` — exibe os arquivos conforme são removidos;
+- `-r`, `--recursive` — remove arquivos em subdiretórios recursivamente;
+- `-f`, `--force` — remove sem solicitar confirmação;
+- `-- arquivo` — remove arquivos cujo nome contém caracteres especiais (`*`, `?`, `-`, etc.).
 
-Use com atenção o comando rm, uma vez que os arquivos e diretórios forem apagados, eles não poderão ser mais recuperados.
+> **Atenção:** arquivos removidos com `rm` não podem ser recuperados.
 
-Exemplos:
+**Exemplos:**
 
-- rm teste.txt - Apaga o arquivo teste.txt no diretório atual.
-- rm *.txt - Apaga todos os arquivos do diretório atual que terminam com .txt.
-- rm *.txt teste.novo - Apaga todos os arquivos do diretório atual que terminam com .txt e também o arquivo teste.novo.
-- rm -rf /tmp/teste/* - Apaga todos os arquivos e sub-diretórios do diretório /tmp/teste mas mantém o sub-diretório /tmp/teste.
-- rm -rf /tmp/teste - Apaga todos os arquivos e sub-diretórios do diretório /tmp/teste, inclusive /tmp/teste.
-- rm -f -- --arquivo-- - Remove o arquivo de nome --arquivo--.
+```bash
+rm teste.txt               # remove o arquivo teste.txt no diretório atual
+rm *.txt                   # remove todos os arquivos .txt do diretório atual
+rm *.txt teste.novo        # remove todos os .txt e também o arquivo teste.novo
+rm -rf /tmp/teste/*        # remove o conteúdo de /tmp/teste, mantendo o diretório
+rm -rf /tmp/teste          # remove o diretório /tmp/teste e todo o seu conteúdo
+rm -f -- --arquivo--       # remove o arquivo de nome --arquivo--
+```
 
 #### cp
 
-Copia arquivos.
+Copia arquivos e diretórios.
 
-cp \[opções] \[origem] \[destino]
+```bash
+cp [opções] [origem] [destino]
+```
 
-- origem: Arquivo que será copiado. Podem ser especificados mais de um arquivo para ser copiado usando "coringas" (veja “coringas”).
-- destino: O caminho ou nome de arquivo onde será copiado. Se o destino for um diretório, os arquivos de origem serão copiados para dentro do diretório.
-- opções, i, --interactive: Pergunta antes de substituir um arquivo existente.
-- -f, --force: Não pergunta, substitui todos os arquivos caso já exista.
-- -r: Copia arquivos dos diretórios e subdiretórios da origem para o destino. É recomendável usar -R ao invés de -r.
-- -R, --recursive: Copia arquivos e sub-diretórios (como a opção -r) e também os arquivos especiais FIFO e dispositivos.
-- -v, --verbose: Mostra os arquivos enquanto estão sendo copiados.
-- -s, --simbolic-link: Cria link simbólico ao invés de copiar.
-- -l, --link: Faz o link no destino ao invés de copiar os arquivos.
-- -p, --preserve: Preserva atributos do arquivo, se for possível.
-- -u, --update: Copia somente se o arquivo de origem é mais novo que o arquivo de destino ou quando o arquivo de destino não existe.
-- -x: Não copia arquivos que estão localizados em um sistema de arquivos diferente de onde a cópia iniciou.
+- `origem` — arquivo(s) a ser(em) copiado(s); aceita coringas;
+- `destino` — caminho ou nome de destino; se for um diretório, os arquivos são copiados para dentro dele;
+- `-i`, `--interactive` — solicita confirmação antes de substituir;
+- `-f`, `--force` — substitui sem solicitar confirmação;
+- `-r` — copia arquivos e subdiretórios (use `-R` de preferência);
+- `-R`, `--recursive` — copia arquivos, subdiretórios e arquivos especiais (FIFO e dispositivos);
+- `-v`, `--verbose` — exibe os arquivos enquanto são copiados;
+- `-s`, `--symbolic-link` — cria link simbólico ao invés de copiar;
+- `-l`, `--link` — cria hard link no destino ao invés de copiar;
+- `-p`, `--preserve` — preserva atributos do arquivo (permissões, datas);
+- `-u`, `--update` — copia somente se a origem for mais recente que o destino, ou se o destino não existir;
+- `-x` — não copia arquivos que estejam em um sistema de arquivos diferente do de origem.
 
-O comando cp copia arquivos da ORIGEM para o DESTINO. Ambos origem e destino terão o mesmo conteúdo após a cópia.
+**Exemplos:**
 
-Exemplos:
+```bash
+cp teste.txt teste1.txt        # copia teste.txt para teste1.txt
+cp teste.txt /tmp              # copia teste.txt para dentro de /tmp
+cp * /tmp                      # copia todos os arquivos do diretório atual para /tmp
+cp /bin/* .                    # copia todos os arquivos de /bin para o diretório atual
+cp -R /bin /tmp                # copia o diretório /bin e todo o seu conteúdo para /tmp
+cp -R /bin/* /tmp              # copia o conteúdo de /bin (sem o diretório em si) para /tmp
+```
 
-- cp teste.txt teste1.txt Copia o arquivo teste.txt para teste1.txt.
-- cp teste.txt /tmp Copia o arquivo teste.txt para dentro do diretório /tmp.
-- cp * /tmp Copia todos os arquivos do diretório atual para /tmp.
-- cp /bin/* . Copia todos os arquivos do diretório /bin para o diretório em que nos encontramos no momento.
-- cp -R /bin /tmp Copia o diretório /bin e todos os arquivos/sub-diretórios existentes para o diretório /tmp.
-- cp -R /bin/* /tmp Copia todos os arquivos do diretório /bin (exceto o diretório /bin) e todos os arquivos/sub-diretórios existentes dentro dele para /tmp.
-- cp -R /bin /tmp Copia todos os arquivos e o diretório /bin para /tmp.
- 
 #### mv
 
-Move ou renomeia arquivos e diretórios. O processo é semelhante ao do comando cp mas o arquivo de origem é apagado após o término da cópia.
+Move ou renomeia arquivos e diretórios. Funciona como o `cp`, mas o arquivo de origem é removido após a cópia.
 
+```bash
 mv [opções] [origem] [destino]
+```
 
-origem: Arquivo/diretório de origem.
-destino:  Local onde será movido ou novo nome do arquivo/diretório.
-opções, -f, --force: Substitui o arquivo de destino sem perguntar.
--i, --interactive: Pergunta antes de substituir. É o padrão.
--v, --verbose: Mostra os arquivos que estão sendo movidos.
--u, --update: Move somente arquivos antigos, ou novos arquivos
+- `origem` — arquivo ou diretório de origem;
+- `destino` — local de destino ou novo nome;
+- `-f`, `--force` — substitui o destino sem solicitar confirmação;
+- `-i`, `--interactive` — solicita confirmação antes de substituir (padrão);
+- `-v`, `--verbose` — exibe os arquivos conforme são movidos;
+- `-u`, `--update` — move somente se a origem for mais recente que o destino.
 
-O comando mv copia um arquivo da ORIGEM para o DESTINO (semelhante ao cp), mas após a cópia, o arquivo de ORIGEM é apagado.
+**Exemplos:**
 
-Exemplos:
-
-- mv teste.txt teste1.txt Muda o nome do arquivo teste.txt para teste1.txt.
-- mv teste.txt /tmp Move o arquivo teste.txt para /tmp. Lembre-se que o arquivo de origem é apagado após ser movido.
-- mv teste.txt teste.new (supondo que teste.new já exista): Copia o arquivo teste.txt por cima de teste.new e apaga teste.txt após terminar a cópia.
+```bash
+mv teste.txt teste1.txt    # renomeia teste.txt para teste1.txt
+mv teste.txt /tmp          # move teste.txt para /tmp (o original é removido)
+mv teste.txt teste.new     # se teste.new já existir, sobrescreve e remove teste.txt
+```
