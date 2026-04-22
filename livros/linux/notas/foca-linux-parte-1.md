@@ -133,41 +133,27 @@ A estrutura de diretórios também é chamada de Árvore de Diretórios porque �
 
 O sistema GNU/Linux possui a seguinte estrutura básica de diretórios organizados segundo o FHS (Filesystem Hierarchy Standard):
 
-- /bin: contém arquivos programas do sistema que são usados com freqüência pelos usuários;
-
-- /boot: contém arquivos necessários para a inicialização do sistema;
-
-- /cdrom: ponto de montagem da unidade de CD-ROM;
-
-- /media: ponto de montagem de dispositivos diversos do sistema (rede, pen-drives, CD-ROM em distribuições mais novas);
-
-- /dev: contém arquivos usados para acessar dispositivos (periféricos) existentes no computador;
-
-- /etc: arquivos de configuração de seu computador local;
-
-- /floppy: ponto de montagem de unidade de disquetes;
-
-- /home: diretórios contendo os arquivos dos usuários;
-
-- /lib: bibliotecas compartilhadas pelos programas do sistema e módulos do kernel;
-
-- /lost+found: local para a gravação de arquivos/diretórios recuperados pelo utilitário fsck.ext2. Cada partição possui seu próprio diretório lost+found;
-
-- /mnt: ponto de montagem temporário;
-
-- /proc: sistema de arquivos do kernel. Este diretório não existe em seu disco rígido, ele é colocado lá pelo kernel e usado por diversos programas que fazem sua leitura, verificam configurações do sistema ou modificar o funcionamento de dispositivos do sistema através da alteração em seus arquivos;
-
-- /sys: sistema de arquivos do kernel. Este diretório não existe em seu disco rígido, ele é colocado lá pelo kernel e usado por diversos programas que fazem sua leitura, verificam configurações do sistema ou modificar o funcionamento de dispositivos do sistema através da alteração em seus arquivos;
-
-- /root: diretório do usuário root;
-
-- /sbin: diretório de programas usados pelo superusuário (root) para administração e controle do funcionamento do sistema;
-
-- /tmp: diretório para armazenamento de arquivos temporários criados por programas;
-
-- /usr: contém maior parte de seus programas. Normalmente acessível somente como leitura;
-
-- /var: contém maior parte dos arquivos que são gravados com freqüência pelos programas do sistema, e-mails, spool de impressora, cache, etc.
+```
+/                          # Raiz do sistema de arquivos — tudo parte daqui
+├── bin/                   # Binários essenciais de uso geral (ls, cp, bash…)
+├── boot/                  # Arquivos de inicialização do sistema (kernel, grub…)
+├── cdrom/                 # Ponto de montagem da unidade de CD-ROM (legado)
+├── dev/                   # Arquivos de dispositivos/periféricos (hd, usb, tty…)
+├── etc/                   # Arquivos de configuração locais do sistema
+├── floppy/                # Ponto de montagem de disquetes (legado)
+├── home/                  # Diretórios pessoais dos usuários (/home/usuario)
+├── lib/                   # Bibliotecas compartilhadas e módulos do kernel
+├── lost+found/            # Arquivos recuperados pelo fsck após falhas de disco
+├── media/                 # Montagem automática de mídias removíveis (pen-drive, CD…)
+├── mnt/                   # Ponto de montagem temporário para uso manual
+├── proc/                  # Sistema de arquivos virtual do kernel (não existe no disco)
+├── root/                  # Diretório pessoal do superusuário (root)
+├── sbin/                  # Binários de administração do sistema (somente root)
+├── sys/                   # Sistema de arquivos virtual do kernel (dispositivos e drivers)
+├── tmp/                   # Arquivos temporários criados por programas (limpo no boot)
+├── usr/                   # Programas e dados de uso geral (geralmente somente leitura)
+└── var/                   # Dados variáveis: logs, e-mails, spool, cache…
+```
 
 ### Comandos
 
@@ -201,10 +187,12 @@ Modo gráfico: deve-se usar CTRL + ALT + F1 a F6 para ir ao modo texto e CTRL + 
 
 Coringas (ou referência global) são recursos para especificar diversos arquivos ou diretórios de uma só vez, facilitando filtragens, cópias e exclusões. Existem 4 tipos principais:
 
-- * (Asterisco): faz referência ao nome completo ou ao restante de um nome;
-- ? (Interrogação): substitui um único caractere naquela posição específica;
-- [padrão]: referencia uma faixa ou intervalo de caracteres (ex: [a-z], ). Se precedido por ^, exclui aqueles caracteres;
-- {padrões}: expande e gera strings para pesquisa, sendo que a existência do arquivo é opcional (muito útil para criar diretórios).
+| Coringa | Nome | Descrição | Exemplo |
+|---------|------|-----------|---------|
+| `*` | Asterisco | Faz referência ao nome completo ou ao restante de um nome | `*.txt` → todos os arquivos `.txt` |
+| `?` | Interrogação | Substitui exatamente um único caractere na posição indicada | `foto?.jpg` → `foto1.jpg`, `fotoA.jpg` |
+| `[padrão]` | Colchetes | Referencia uma faixa ou conjunto de caracteres; prefixado com `^` exclui os caracteres listados | `[a-z]*` → arquivos que começam com letra minúscula |
+| `{padrões}` | Chaves | Expande e gera múltiplas strings para pesquisa ou criação (a existência do arquivo é opcional) | `{src,bin,lib}/` → cria/referencia três diretórios de uma vez |
 
 Esses coringas podem ser utilizados em conjunto para criar filtragens muito exatas.
 
@@ -248,14 +236,16 @@ Processos estão sendo executados no computador e também nos mostra qual usuár
 
 ps \[opções]
 
-- opções, a : mostra os processos criados por você e de outros usuários do sistema;
-- x : mostra processos que não são controlados pelo terminal;
-- u : mostra o nome de usuário que iniciou o processo e hora em que o processo foi iniciado;
-- m : mostra a memória ocupada por cada processo em execução;
-- f : mostra a árvore de execução de comandos (comandos que são chamados por outros comandos);
-- e : mostra variáveis de ambiente no momento da inicialização do processo;
-- w : mostra a continuação da linha atual na próxima linha ao invés de cortar o restante que não couber na tela;
-- --sort:\[coluna] : organiza a saída do comando ps de acordo com a coluna escolhida. Você pode usar as colunas pid, utime, ppid, rss, size, user, priority.
+| Opção | Descrição |
+|-------|-----------|
+| `a` | Mostra os processos criados por você e por outros usuários do sistema |
+| `x` | Mostra processos que não são controlados pelo terminal |
+| `u` | Exibe o nome do usuário que iniciou o processo e a hora de início |
+| `m` | Mostra a memória ocupada por cada processo em execução |
+| `f` | Exibe a árvore de execução de comandos (comandos chamados por outros comandos) |
+| `e` | Mostra variáveis de ambiente no momento da inicialização do processo |
+| `w` | Continua a linha atual na próxima linha ao invés de cortar o que não couber na tela |
+| `--sort:[coluna]` | Organiza a saída por coluna. Colunas disponíveis: `pid`, `utime`, `ppid`, `rss`, `size`, `user`, `priority` |
 
 #### top
 
@@ -263,20 +253,24 @@ O comando top é uma ferramenta utilizada para monitorar em tempo real os proces
 
 top \[opções]
 
-- -d \[tempo]: atualiza a tela após o \[tempo] (em segundos);
-- -s: diz ao top para ser executado em modo seguro;
-- -i: inicia o top ignorando o tempo de processos zumbis;
-- -c: mostra a linha de comando ao invés do nome do programa.
+| Opção | Descrição |
+|-------|-----------|
+| `-d [tempo]` | Atualiza a tela após o intervalo de `[tempo]` segundos |
+| `-s` | Executa o top em modo seguro |
+| `-i` | Inicia o top ignorando o tempo de processos zumbis |
+| `-c` | Mostra a linha de comando completa ao invés do nome do programa |
 
 Manual do comando pode ser obtida dentro do programa pressionando a tecla h ou man top:
 
-- espaço: atualiza imediatamente a tela;
-- CTRL+L: Apaga e atualiza a tela;
-- h: mostra a tela de ajuda do programa. É mostrado todas as teclas que podem ser usadas com o top;
-- i: ignora o tempo ocioso de processos zumbis;
-- q: sai do programa;
-- k: finaliza um processo - semelhante ao comando kill. Você será perguntado pelo número de identificação do processo (PID). Este comando não estará disponível caso esteja usando o top com a opção -s;
-- n: muda o número de linhas mostradas na tela. Se 0 for especificado, será usada toda a tela para listagem de processos.
+| Tecla | Ação |
+|-------|------|
+| `Espaço` | Atualiza imediatamente a tela |
+| `CTRL+L` | Apaga e atualiza a tela |
+| `h` | Exibe a tela de ajuda com todas as teclas disponíveis |
+| `i` | Ignora o tempo ocioso de processos zumbis |
+| `q` | Sai do programa |
+| `k` | Finaliza um processo (similar ao `kill`); solicita o PID — indisponível com a opção `-s` |
+| `n` | Muda o número de linhas mostradas na tela (0 = usa toda a tela) |
 
 ### Controle de execução de processos
 
@@ -306,3 +300,206 @@ Você precisa ser o dono do processo ou o usuário root para termina-lo ou destr
 
 - reset: comando pode ser usado para lidar com programas que não estão funcionando direito, muito comum em scripts mal configurados;
 
+## Capítulo 6. Comandos para manipulação de diretório
+
+#### ls
+
+Lista os arquivos de um diretório.
+
+ls \[opções] \[caminho/arquivo] \[caminho1/arquivo1]
+
+- caminho/arquivo: diretório/arquivo que será listado;
+- caminho1/arquivo1: Outro Diretório/arquivo que será listado. Podem ser feitas várias listagens de uma só vez.
+- -a, --all: Lista todos os arquivos (inclusive os ocultos).
+- -A, --almost-all: Lista todos os arquivos (inclusive os ocultos) de um diretório, exceto o diretório atual e o de nível anterior.
+- -B, --ignore-backups: Não lista arquivos que terminam com ~ (Backup).
+- --color=PARAM: Mostra os arquivos em cores diferentes, conforme o tipo de arquivo. PARAM pode ser:
+  - never: Nunca lista em cores (padrão).
+  - always: Sempre lista em cores conforme o tipo de arquivo.
+  - auto: Somente colore a listagem se estiver em um terminal.
+- -d, --directory: Lista os nomes dos diretórios ao invés do conteúdo.
+- -f: Não classifica a listagem.
+- -F: Insere um caracter após arquivos executáveis ('*'), diretórios ('/'), soquete ('='), link simbólico ('@') e pipe ('|'). Seu uso é útil para identificar de forma fácil tipos de arquivos nas listagens de diretórios.
+- -G, --no-group: Oculta a coluna de grupo do arquivo.
+- -h, --human-readable: Mostra o tamanho dos arquivos em Kbytes, Mbytes, Gbytes.
+- -H: Faz o mesmo que -h, mas usa unidades de 1000 ao invés de 1024 para especificar Kbytes, Mbytes, Gbytes.
+- -l: Usa o formato longo para listagem de arquivos. Lista as permissões, data de modificação, donos, grupos, etc.
+- -n: Usa a identificação de usuário e grupo numérica ao invés dos nomes.
+- -L, --dereference: Lista o arquivo original e não o link referente ao arquivo.
+- -o: Usa a listagem longa sem os donos dos arquivos (mesma coisa que -lG).
+- -p: Mesma coisa que -F, mas não inclui o símbolo '*' em arquivos executáveis. Esta opção é típica de sistemas Linux.
+- -R: Lista diretórios e sub-diretórios recursivamente.
+- --full-time: Lista data e hora completa.
+
+Classificação da listagem A listagem pode ser classificada usando-se as seguintes opções:
+
+- -f: Não classifica, e usa -au para listar os arquivos.
+- -r: Inverte a ordem de classificação.
+- -c: Classifica pela data de alteração.
+- -X: Classifica pela extensão.
+- -U: Não classifica, lista os arquivos na ordem do diretório.
+- -Z: Exibe o contexto SELinux de cada arquivo.
+
+Uma listagem feita com o comando ls -la normalmente é mostrada da seguinte maneira
+
+```
+-rwxr-xr-- 1 gleydson user 8192 nov 4 16:00 teste
+```
+
+Abaixo as explicações de cada parte:
+
+- -rwxr-xr-- São as permissões de acesso ao arquivo teste. A primeira letra (da esquerda) identifica o tipo do arquivo, se tiver um d é um diretório, se tiver um "-" é um arquivo normal.
+
+As permissões de acesso é explicada em detalhes em Capítulo 11, Permissões de acesso
+a arquivos e diretórios.
+
+- 1: Se for um diretório, mostra a quantidade de sub-diretórios existentes dentro dele. Caso for um arquivo, será 1.
+- gleydson: Nome do dono do arquivo teste.
+- user: Nome do grupo que o arquivo teste pertence.
+- 8192: Tamanho do arquivo (em bytes).
+- nov: Mês da criação/ última modificação do arquivo.
+- 4: Dia que o arquivo foi criado.
+- 16:00: Hora em que o arquivo foi criado/modificado. Se o arquivo foi criado há mais de um ano, em seu lugar é mostrado o ano da criação do arquivo.
+- teste: Nome do arquivo.
+
+#### cd
+
+Entra em um diretório. Você precisa ter a permissão de execução para entrar no diretório.
+
+cd \[diretório]
+
+- cd / : retornará ao diretório raíz.
+- cd - : retornará ao diretório anteriormente acessado.
+- cd .. : sobe um diretório
+
+#### pwd
+
+Mostra o nome e caminho do diretório atual.
+
+#### mkdir
+
+Cria um diretório (pasta) no sistema.
+
+mkdir \[opções] \[caminho/diretório] \[caminho1/diretório1]
+
+- caminho: Caminho onde o diretório será criado.
+- diretório: Nome do diretório que será criado.
+- opções:, -p: Caso os diretórios dos níveis acima não existam, eles também serão criados.
+- --verbose: Mostra uma mensagem para cada diretório criado. As mensagens de erro serão mostradas mesmo que esta opção não seja usada.
+
+#### rmdir
+
+Remove um diretório do sistema. Este comando faz exatamente o contrário do mkdir.
+
+rmdir \[opções] \[caminho/diretório] \[caminho1/diretório1]
+
+- caminho: Caminho do diretório que será removido.
+- diretório: Nome do diretório que será removido.
+
+Para remover diretórios que contenham arquivos, use o comando rm com a opção -r
+
+## Capítulo 7. Comandos para manipulação de Arquivos
+
+#### cat
+
+Mostra o conteúdo de um arquivo binário ou texto.
+
+cat \[opções] \[diretório/arquivo] \[diretório1/arquivo1]
+
+- diretório/arquivo: Localização do arquivo que deseja visualizar o conteúdo.
+- opções, -n, --number: Mostra o número das linhas enquanto o conteúdo do arquivo é mostrado.
+- -s, --squeeze-blank: Não mostra mais que uma linha em branco entre um parágrafo e outro.
+- - Lê a entrada padrão.
+
+O comando cat trabalha com arquivos texto. Use o comando zcat para ver diretamente arquivos compactados com gzip.
+
+Exemplo: cat /usr/doc/copyright/GPL
+
+#### tac
+
+Mostra o conteúdo de um arquivo binário ou texto (como o cat) só que em ordem inversa.
+
+tac \[opções] \[diretório/arquivo] \[diretório1/arquivo1]
+
+- diretório/arquivo: Localização do arquivo que deseja visualizar o conteúdo
+- opções, -s [string]: Usa o [string] como separador de registros.
+- - Lê a entrada padrão.
+
+Exemplo: tac /usr/doc/copyright/GPL.
+
+#### rm
+
+Apaga arquivos. Também pode ser usado para apagar diretórios e sub-diretórios vazios ou que contenham arquivos.
+
+rm \[opções]\[caminho]\[arquivo/diretório] \[caminho1]\[arquivo1/diretório1]
+
+- caminho: Localização do arquivo que deseja apagar. Se omitido, assume que o arquivo esteja no diretório atual.
+- arquivo/diretório: Arquivo que será apagado.
+- opções, -i, --interactive: Pergunta antes de remover, esta é ativada por padrão.
+- -v, --verbose: Mostra os arquivos na medida que são removidos.
+- -r, --recursive: Usado para remover arquivos em sub-diretórios. Esta opção também pode ser usada para remover sub-diretórios.
+-f, --force: Remove os arquivos sem perguntar.
+-- arquivo: Remove arquivos/diretórios que contém caracteres especiais. O separador "--" funciona com todos os comandos do shell e permite que os caracteres especiais como "*", "?", "-", etc. sejam interpretados como caracteres comuns.
+
+Use com atenção o comando rm, uma vez que os arquivos e diretórios forem apagados, eles não poderão ser mais recuperados.
+
+Exemplos:
+
+- rm teste.txt - Apaga o arquivo teste.txt no diretório atual.
+- rm *.txt - Apaga todos os arquivos do diretório atual que terminam com .txt.
+- rm *.txt teste.novo - Apaga todos os arquivos do diretório atual que terminam com .txt e também o arquivo teste.novo.
+- rm -rf /tmp/teste/* - Apaga todos os arquivos e sub-diretórios do diretório /tmp/teste mas mantém o sub-diretório /tmp/teste.
+- rm -rf /tmp/teste - Apaga todos os arquivos e sub-diretórios do diretório /tmp/teste, inclusive /tmp/teste.
+- rm -f -- --arquivo-- - Remove o arquivo de nome --arquivo--.
+
+#### cp
+
+Copia arquivos.
+
+cp \[opções] \[origem] \[destino]
+
+- origem: Arquivo que será copiado. Podem ser especificados mais de um arquivo para ser copiado usando "coringas" (veja “coringas”).
+- destino: O caminho ou nome de arquivo onde será copiado. Se o destino for um diretório, os arquivos de origem serão copiados para dentro do diretório.
+- opções, i, --interactive: Pergunta antes de substituir um arquivo existente.
+- -f, --force: Não pergunta, substitui todos os arquivos caso já exista.
+- -r: Copia arquivos dos diretórios e subdiretórios da origem para o destino. É recomendável usar -R ao invés de -r.
+- -R, --recursive: Copia arquivos e sub-diretórios (como a opção -r) e também os arquivos especiais FIFO e dispositivos.
+- -v, --verbose: Mostra os arquivos enquanto estão sendo copiados.
+- -s, --simbolic-link: Cria link simbólico ao invés de copiar.
+- -l, --link: Faz o link no destino ao invés de copiar os arquivos.
+- -p, --preserve: Preserva atributos do arquivo, se for possível.
+- -u, --update: Copia somente se o arquivo de origem é mais novo que o arquivo de destino ou quando o arquivo de destino não existe.
+- -x: Não copia arquivos que estão localizados em um sistema de arquivos diferente de onde a cópia iniciou.
+
+O comando cp copia arquivos da ORIGEM para o DESTINO. Ambos origem e destino terão o mesmo conteúdo após a cópia.
+
+Exemplos:
+
+- cp teste.txt teste1.txt Copia o arquivo teste.txt para teste1.txt.
+- cp teste.txt /tmp Copia o arquivo teste.txt para dentro do diretório /tmp.
+- cp * /tmp Copia todos os arquivos do diretório atual para /tmp.
+- cp /bin/* . Copia todos os arquivos do diretório /bin para o diretório em que nos encontramos no momento.
+- cp -R /bin /tmp Copia o diretório /bin e todos os arquivos/sub-diretórios existentes para o diretório /tmp.
+- cp -R /bin/* /tmp Copia todos os arquivos do diretório /bin (exceto o diretório /bin) e todos os arquivos/sub-diretórios existentes dentro dele para /tmp.
+- cp -R /bin /tmp Copia todos os arquivos e o diretório /bin para /tmp.
+ 
+#### mv
+
+Move ou renomeia arquivos e diretórios. O processo é semelhante ao do comando cp mas o arquivo de origem é apagado após o término da cópia.
+
+mv [opções] [origem] [destino]
+
+origem: Arquivo/diretório de origem.
+destino:  Local onde será movido ou novo nome do arquivo/diretório.
+opções, -f, --force: Substitui o arquivo de destino sem perguntar.
+-i, --interactive: Pergunta antes de substituir. É o padrão.
+-v, --verbose: Mostra os arquivos que estão sendo movidos.
+-u, --update: Move somente arquivos antigos, ou novos arquivos
+
+O comando mv copia um arquivo da ORIGEM para o DESTINO (semelhante ao cp), mas após a cópia, o arquivo de ORIGEM é apagado.
+
+Exemplos:
+
+- mv teste.txt teste1.txt Muda o nome do arquivo teste.txt para teste1.txt.
+- mv teste.txt /tmp Move o arquivo teste.txt para /tmp. Lembre-se que o arquivo de origem é apagado após ser movido.
+- mv teste.txt teste.new (supondo que teste.new já exista): Copia o arquivo teste.txt por cima de teste.new e apaga teste.txt após terminar a cópia.
