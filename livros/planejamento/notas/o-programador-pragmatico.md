@@ -55,7 +55,7 @@
 
 ## 7 Antes do Projeto
 
-- [] 36. O abismo dos requisitos
+- [x] 36. O abismo dos requisitos
 - [] 37. Resolvendo problemas impossíveis
 - [] 38. Não antes de você estar pronto
 - [] 39. A armadilha das especificações
@@ -63,9 +63,9 @@
 
 ## 8 Projetos Pragmáticos
 
-- [] 41. Equipes pragmáticas
-- [] 42. Automação onipresente
-- [] 43. Testando incansavelmente
+- [x] 41. Equipes pragmáticas
+- [x] 42. Automação onipresente
+- [x] 43. Testando incansavelmente
 - [x] 44. Tudo se resume a escrever
 - [x] 45. Grandes expectativas
 - [x] 46. Orgulho e preconceito
@@ -277,6 +277,15 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 36 O abismo dos requisitos
 
+- O objetivo é descobrir a necessidade real do negócio, focando no que precisa ser feito e não apenas em como as tarefas são executadas atualmente;
+- Requisitos são declarações gerais e estáveis, enquanto políticas são regras de negócio específicas e voláteis que mudam com frequência. Documentar políticas separadamente ou tratá-las como metadados permite que o sistema seja muito mais flexível e adaptável a mudanças futuras;
+- Utilize casos de uso para descrever objetivos específicos em formato textual, facilitando a comunicação entre patrocinadores, usuários e desenvolvedores;
+- Mantenha os requisitos abstratos para evitar a armadilha da especificação excessiva, focando nas necessidades e não na arquitetura ou implementação.
+
+Exemplo:
+
+“só o departamento de pessoal pode ver um registro de funcionário”, o desenvolvedor pode acabar codificando um teste explícito sempre que o aplicativo acessar esses arquivos. No entanto, se a declaração for “só usuários autorizados podem acessar um registro de funcionário”, provavelmente o desenvolvedor projetará e implementará algum tipo de sistema de controle de acesso.
+
 ### 37 Resolvendo problemas impossíveis
 
 ### 38 Não antes de você estar pronto
@@ -289,9 +298,19 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 41 Equipes pragmáticas
 
+- Tenha uma boa liderança;
+- Divida bem a equipe de forma que uma não atrapalhe o trabalho da outra;
+- Deixe pessoas responsáveis por partes importantes como documentação e testes (fale com ...).
+
 ### 42 Automação onipresente
 
+- Automatize as tarefas repetidas, seja um agendamento de reunião ou o backup de um projeto.
+
 ### 43 Testando incansavelmente
+
+- O texto se extende bastante para falar que você deve testar seu software durante o processo de desenvolvimento. Não espere finalizar o projeto inteiro para poder testar, a medida que vai escrevendo código, vá também criando testes unitários e de integração, assim você tem a garantia que ele foi testado o máximo possível.
+
+> Eu recomendo que você leia um livro sobre testes.
 
 ### 44 Tudo se resume a escrever
 
