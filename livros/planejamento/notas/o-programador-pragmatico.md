@@ -13,7 +13,7 @@
 
 - [x] 7. Os males da duplicação
 - [x] 8. Ortogonalidade
-- [] 9. Reversibilidade
+- [x] 9. Reversibilidade
 - [x] 10. Projéteis luminosos
 - [x] 11. Protótipos e notas post-it
 - [x] 12. Linguagens de domínio
@@ -31,19 +31,19 @@
 
 ## 4 Paranoia Pragmática
 
-- [] 21. Projeto por contrato
-- [] 22. Programas mortos não contam mentiras
-- [] 23. Programação assertiva
-- [] 24. Quando usar exceções
-- [] 25. Como balancear recursos
+- [x] 21. Projeto por contrato
+- [x] 22. Programas mortos não contam mentiras
+- [x] 23. Programação assertiva
+- [x] 24. Quando usar exceções
+- [x] 25. Como balancear recursos
 
 ## 5 Seja Flexível
 
-- [] 26. A desvinculação e a Lei de Deméter
-- [] 27. Metaprogramação
-- [] 28. Vinculação temporal
-- [] 29. Apenas um modo de ver
-- [] 30. Quadros-negros
+- [x] 26. A desvinculação e a Lei de Deméter
+- [x] 27. Metaprogramação
+- [x] 28. Vinculação temporal
+- [x] 29. Apenas um modo de ver
+- [x] 30. Quadros-negros
 
 ## 6 Enquanto Você Está Codificando
 
@@ -176,6 +176,11 @@ Vantagens:
 
 ### 9 Reversibilidade
 
+- Incerteza e Mudança: o mundo real é imprevisível e fatos que parecem certos hoje, como a escolha de um banco de dados, podem mudar amanhã.
+
+- Arquitetura Flexível e Desvinculada: mantenha a flexibilidade isolando partes do projeto de mudanças de plataforma ou fornecedor através de interfaces abstratas.
+  - Seguir princípios como o NSR (Não Se Repita) e a desvinculação permite trocar componentes críticos sem que o custo seja proibitivo.
+
 ### 10 Projéteis luminosos
 
 - Pula! Leia ...
@@ -241,25 +246,61 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 
 ### 21 Projeto por contrato
 
+- Defina direitos e responsabilidades entre módulos através de pré-condições, pós-condições e invariantes de classe. Essa técnica garante que o programa seja preciso, facilitando a documentação e a verificação automática de que o código cumpre o que promete.
+
 ### 22 Programas mortos não contam mentiras
+
+- É preferível encerrar um programa imediatamente ao detectar um erro "impossível" do que permitir que ele continue operando com dados corrompidos;
+- Encerrar precocemente evita danos maiores, como a gravação de informações inválidas em sistemas ou bancos de dados.
 
 ### 23 Programação assertiva
 
+- Use asserções para verificar ativamente suposições do tipo "isso nunca vai acontecer", protegendo o código de estados e dados inválidos;
+- Mantenha as asserções ativadas mesmo em ambiente de produção para detectar erros reais que os testes podem não ter capturado.
+
 ### 24 Quando usar exceções
 
+- Reserve o uso de exceções apenas para eventos verdadeiramente inesperados e excepcionais, evitando usá-las como parte do fluxo normal do programa;
+- O uso excessivo de exceções pode comprometer a legibilidade e o encapsulamento.
+
 ### 25 Como balancear recursos
+
+- Siga a regra de "acabar o que começou": a rotina ou objeto que aloca um recurso (memória, arquivos, transações) deve ser o responsável por desalocá-lo;
+- Desaloque recursos na ordem inversa da alocação e utilize mecanismos da linguagem, como blocos finally ou classes encapsuladoras.
 
 ## 5 Seja Flexível
 
 ### 26 A desvinculação e a Lei de Deméter
 
+- Redução da Vinculação: organize o código em módulos independentes (como células) para que a substituição de uma parte não comprometa o sistema todo. Evite percorrer longas hierarquias de objetos para obter serviços, reduzindo o risco de mudanças em terceiros afetarem seu código;
+
+- A Lei de Deméter: restrinja as chamadas de métodos apenas ao próprio objeto, seus parâmetros, objetos criados por ele ou seus componentes diretos. Embora possa exigir métodos encapsuladores extras, essa prática torna o sistema muito mais adaptável, robusto e fácil de manter.
+
 ### 27 Metaprogramação
+
+- Configuração Dinâmica: mova detalhes como algoritmos, bancos de dados e preferências para metadados, configurando o sistema em vez de integrá-lo rigidamente. O uso de metadados permite alterar o comportamento do aplicativo em tempo de execução sem a necessidade de recompilar o código.
+
+- Abstração e Detalhes: mantenha a lógica abstrata no código e os detalhes voláteis (como regras de negócio) em arquivos externos ou bancos de dados de configuração. Essa separação força a desvinculação do projeto e cria programas "leves" que se adaptam rapidamente a mudanças de requisitos ou ambiente.
 
 ### 28 Vinculação temporal
 
+- Concorrência e Ordem: o tempo é um elemento de projeto que envolve concorrência e a ordem relativa das ações no sistema. Desvincular a dependência de tempo permite que as operações ocorram em paralelo, aumentando a flexibilidade e a escalabilidade;
+
+Análise de Fluxo de Trabalho: use diagramas de atividades para identificar tarefas que podem ser executadas simultaneamente em vez de linearmente. Ao maximizar o paralelismo no fluxo de trabalho, você reduz gargalos e melhora o desempenho geral do sistema;
+
+- Projeto para Concorrência: projete interfaces e serviços pensando em ambientes com vários segmentos, garantindo estados válidos em qualquer momento. Evitar suposições de tempo linear resulta em códigos mais limpos, robustos e fáceis de adaptar para diferentes modelos de implantação.
+
 ### 29 Apenas um modo de ver
 
+- Publicação e Assinatura: se eventos para permitir que objetos se comuniquem sem conhecer detalhes internos uns dos outros, reduzindo a vinculação. O protocolo de publicação/assinatura garante que os ouvintes recebam apenas as notificações de interesse, mantendo o encapsulamento;
+
+- Model-View-Controller: separe o modelo de dados de sua representação visual para permitir múltiplas visualizações simultâneas e independentes. Essa desvinculação facilita a manutenção, permitindo alterar a interface ou o controle sem afetar a lógica de negócio subjacente.
+
 ### 30 Quadros-negros
+
+- Desvinculação e Anonimato: sistemas de quadro-negro funcionam como um ponto de encontro onde agentes trocam dados de forma anônima e assíncrona. Os participantes não precisam saber da existência uns dos outros, permitindo que colaborem em um problema comum;
+
+- Coordenação de Fluxo de Trabalho: use quadros-negros para gerenciar processos complexos onde a ordem de chegada dos dados é imprevisível ou distribuída. Essa abordagem substitui fluxos rígidos por um mecanismo de regras dinâmico que se adapta conforme novos fatos são publicados.
 
 ## 6 Enquanto Você Está Codificando
 
@@ -278,8 +319,11 @@ Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre busca
 ### 36 O abismo dos requisitos
 
 - O objetivo é descobrir a necessidade real do negócio, focando no que precisa ser feito e não apenas em como as tarefas são executadas atualmente;
+
 - Requisitos são declarações gerais e estáveis, enquanto políticas são regras de negócio específicas e voláteis que mudam com frequência. Documentar políticas separadamente ou tratá-las como metadados permite que o sistema seja muito mais flexível e adaptável a mudanças futuras;
+
 - Utilize casos de uso para descrever objetivos específicos em formato textual, facilitando a comunicação entre patrocinadores, usuários e desenvolvedores;
+
 - Mantenha os requisitos abstratos para evitar a armadilha da especificação excessiva, focando nas necessidades e não na arquitetura ou implementação.
 
 Exemplo:
