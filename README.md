@@ -39,12 +39,12 @@ Cada pasta de tema contém subpastas por livro com:
 
 | Tema                | Descrição                                     |
 | ------------------- | --------------------------------------------- |
+| 🛠️ **Ferramentas** | Git, Docker e demais ferramentas do ecossistema |
+| 🐧 **Linux**        | Administração de sistemas, shell, ferramentas |
+| 🗓️ **Planejamento** | Produtividade, gestão de tempo, carreira      |
+| 🐍 **Python**       | Linguagem, bibliotecas, boas práticas         |
 | 🧪 **Testes**       | Testes de software, TDD, automação            |
 | 🌐 **Web**          | Desenvolvimento web, protocolos, arquitetura  |
-| 🐧 **Linux**        | Administração de sistemas, shell, ferramentas |
-| 🐍 **Python**       | Linguagem, bibliotecas, boas práticas         |
-| 🗓️ **Planejamento** | Produtividade, gestão de tempo, carreira      |
-| ➕ **Outros**       | Demais temas conforme as leituras avançam     |
 
 ---
 
@@ -52,7 +52,12 @@ Cada pasta de tema contém subpastas por livro com:
 
 | Livro | Tema | Resumo |
 | ----- | ---- | ------ |
-|       |      |        |
+| [Controlando Versões com Git e GitHub]() | Ferramentas | [Nota]() |
+| [Foca Linux Parte 1]() | Linux | [Nota]() |
+| [JavaScript - O Guia Definitivo]() | Web | [Nota]() |
+| [O Programador Pragmático]() | Planejamento | [Nota]() |
+| [Test-Driven Development (TDD)]() | Testes | [Nota]() |
+| [Testes de Software]() | Testes | [Nota]() |
 
 ---
 
