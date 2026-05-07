@@ -47,19 +47,19 @@
 
 ## 6 Enquanto Você Está Codificando
 
-- [] 31. Programação baseada no acaso
-- [] 32. Velocidade do algoritmo
-- [] 33. Refatoração
-- [] 34. Código que seja fácil de testar
-- [] 35. Assistentes do mal
+- [x] 31. Programação baseada no acaso
+- [x] 32. Velocidade do algoritmo
+- [x] 33. Refatoração
+- [x] 34. Código que seja fácil de testar
+- [x] 35. Assistentes do mal
 
 ## 7 Antes do Projeto
 
 - [x] 36. O abismo dos requisitos
-- [] 37. Resolvendo problemas impossíveis
-- [] 38. Não antes de você estar pronto
-- [] 39. A armadilha das especificações
-- [] 40. Círculos e setas
+- [x] 37. Resolvendo problemas impossíveis
+- [x] 38. Não antes de você estar pronto
+- [x] 39. A armadilha das especificações
+- [x] 40. Círculos e setas
 
 ## 8 Projetos Pragmáticos
 
