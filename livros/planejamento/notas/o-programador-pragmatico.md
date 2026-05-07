@@ -128,15 +128,11 @@
 
 ### 6 Comunique-se!
 
-- Bom senso
+- Bom senso: 
   - Conheça as necessidades do seu público para garantir que sua ideia seja bem compreendida e aceita;
-
   - Escolha o momento ideal para falar, tornando o conteúdo relevante para as prioridades e o estado emocional de quem o ouve;
-
   - Adapte seu estilo de comunicação, seja formal ou casual, para atender cada destinatário ou grupo de pessoas;
-
   - Mantenha as pessoas informadas e dê retorno constante, respondendo prontamente a e-mails e mensagens para que ninguém se sinta ignorado;
-
   - Escute as pessoas, transformar reuniões em diálogos eficientes, encorajando as pessoas a falarem para que você também possa falar.
 
 ## 2 Uma Abordagem Pragmática
@@ -306,13 +302,29 @@ Análise de Fluxo de Trabalho: use diagramas de atividades para identificar tare
 
 ### 31 Programação baseada no acaso
 
+- Programação Deliberada: esteja sempre consciente do que está fazendo, agindo de acordo com um plano definido e confiando apenas em elementos comprovadamente confiáveis. Teste ativamente suas suposições e documente-as para garantir que o sucesso do seu código seja fruto de um projeto intencional e não do acaso.
+
 ### 32 Velocidade do algoritmo
+
+- Notação do Grande: utilize a notação O() para estimar como o tempo de execução e o consumo de memória aumentam conforme o tamanho dos dados de entrada cresce. Compreender a ordem de complexidade ajuda a identificar gargalos potenciais e a escolher o algoritmo mais adequado para as restrições do seu sistema;
+
+- Bases Teóricas e Práticas: combine a análise matemática com testes práticos no ambiente real, pois fatores físicos como memória disponível e cache impactam o desempenho final. Use geradores de perfil (profilers) para validar suas estimativas teóricas e evite desperdiçar tempo com otimizações prematuras em partes não críticas.
 
 ### 33 Refatoração
 
+- Metáfora da Jardinagem: software é mais parecido com um jardim do que com uma construção civil, exigindo ajustes orgânicos e constantes conforme o entendimento do problema evolui. Refatorar significa reorganizar o código existente para eliminar duplicações, melhorar a ortogonalidade ou adaptar-se a novos requisitos sem alterar o comportamento externo;
+
+- Refatoração Segura e Constante: adote a prática de "refatorar cedo e sempre", tratando o código degradado como um "tumor" que deve ser removido antes que se espalhe e comprometa o projeto. Para refatorar com segurança, realize mudanças em etapas curtas e deliberadas, mantendo uma suíte sólida de testes de regressão para validar cada passo.
+
 ### 34 Código que seja fácil de testar
 
+- Teste de Unidade e Contratos: o teste de unidade verifica se um módulo honra seu contrato, testando funcionalidades e condições limítrofes de forma isolada. Ao testar em relação ao contrato, garante-se que o código atenda aos requisitos e que o contrato seja bem compreendido;
+
+- Ferramentais e Janelas de Teste: utilize ferramentais de teste (test harnesses) padronizados e automáticos que permitam analisar saídas e compor testes de diversos níveis. Crie "janelas" para visualizar o estado interno do software em produção, como arquivos de log e servidores Web embutidos.
+
 ### 35 Assistentes do mal
+
+- O Risco da Programação Cega: usar assistentes sem entender o código gerado é uma forma de programação baseada no acaso, onde o sucesso é apenas acidental. Se o código gerado não estiver totalmente correto ou precisar de adaptação futura, o desenvolvedor perderá o controle sobre o próprio aplicativo;
 
 ## 7 Antes do Projeto
 
@@ -332,12 +344,22 @@ Exemplo:
 
 ### 37 Resolvendo problemas impossíveis
 
+- Esqueça tudo que o livro diz, guarde apenas essa dica: divida o código na metade e teste ambas as partes, achou a metade com erro? Divida outra vez na metade e teste outra vez! Dividir para consquistar. 
+
 ### 38 Não antes de você estar pronto
+
+- Crie protótipos.
 
 ### 39 A armadilha das especificações
 
+- Algumas coisas são fáceis de fazer, mas não de descrever. Evite o excesso de prescrição, pois a especificação deve guiar e não eliminar a arte da programação.
+
 ### 40 Círculos e setas
 
+- Não seja escravo dos métodos formais. Diagramas de "círculos e setas" representam apenas a interpretação dos projetistas e não devem ser adotados
+cegamente;
+
+- Ferramentas caras não produzem projetos melhores. O programador deve extrair o melhor de cada método e adaptá-lo às necessidades reais de sua equipe.
 ## 8 Projetos Pragmáticos
 
 ### 41 Equipes pragmáticas
