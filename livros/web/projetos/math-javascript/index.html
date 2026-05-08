@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração JavaScript Math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Possíveis usos de <code>Math</code> na prática</h1>
+
+    <section id="rounding">
+        <h2>Arredondamento</h2>
+        <div class="example"><code>Math.round(0.6)</code> <span class="result" id="round-res"></span></div>
+        <div class="example"><code>Math.ceil(0.6)</code> <span class="result" id="ceil-res"></span></div>
+        <div class="example"><code>Math.floor(0.6)</code> <span class="result" id="floor-res"></span></div>
+    </section>
+
+    <section id="values">
+        <h2>Valores e Comparações</h2>
+        <div class="example"><code>Math.abs(-5)</code> <span class="result" id="abs-res"></span></div>
+        <div class="example"><code>Math.max(10, 20, 30)</code> <span class="result" id="max-res"></span></div>
+        <div class="example"><code>Math.min(10, 20, 30)</code> <span class="result" id="min-res"></span></div>
+        <div class="example"><code>Math.random()</code> <span class="result" id="random-res"></span></div>
+    </section>
+
+    <section id="powers">
+        <h2>Potências e Raízes</h2>
+        <div class="example"><code>Math.pow(2, 53)</code> <span class="result" id="pow-res"></span></div>
+        <div class="example"><code>Math.sqrt(3)</code> <span class="result" id="sqrt-res"></span></div>
+        <div class="example"><code>Math.pow(3, 1/3)</code> <span class="result" id="cbrt-res"></span></div>
+    </section>
+
+    <section id="constants">
+        <h2>Constantes</h2>
+        <div class="example"><code>Math.PI</code> <span class="result" id="pi-res"></span></div>
+        <div class="example"><code>Math.E</code> <span class="result" id="e-res"></span></div>
+    </section>
+
+    <section id="trig">
+        <h2>Trigonometria</h2>
+        <div class="example"><code>Math.sin(0)</code> <span class="result" id="sin-res"></span></div>
+    </section>
+
+    <section id="logs">
+        <h2>Logaritmos</h2>
+        <div class="example"><code>Math.log(10)</code> <span class="result" id="log-res"></span></div>
+        <div class="example"><code>Math.log(100) / Math.LN10</code> <span class="result" id="log10-res"></span></div>
+        <div class="example"><code>Math.log(512) / Math.LN2</code> <span class="result" id="log2-res"></span></div>
+        <div class="example"><code>Math.exp(3)</code> <span class="result" id="exp-res"></span></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
