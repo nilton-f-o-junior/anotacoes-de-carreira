@@ -15,7 +15,7 @@
 
 ## 3 Tipos, valores e variáveis
 
-- [ ] 3.1 Números
+- [x] 3.1 Números
 - [ ] 3.2 Texto
 - [ ] 3.3 Valores booleanos
 - [ ] 3.4 null e undefined
