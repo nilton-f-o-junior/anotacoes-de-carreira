@@ -555,3 +555,39 @@ mv teste.txt teste1.txt    # renomeia teste.txt para teste1.txt
 mv teste.txt /tmp          # move teste.txt para /tmp (o original é removido)
 mv teste.txt teste.new     # se teste.new já existir, sobrescreve e remove teste.txt
 ```
+# Capítulo 8. Comandos Diversos
+
+#### clear
+
+Limpa a tela
+
+```bash
+clear
+```
+
+> ctrl + l  # atalho 
+
+#### date
+
+Permite ver/modificar a Data e Hora do Sistema, a mudança só pode ocorrer se estiver com usuário root.
+
+```bash
+date                      # vê a dada
+sudo date MMDDhhmmAAAA    # defini como: mês, dia, hora, minuto e ano
+sudo date 051514302026    # definir a data para 15 de Maio de 2026, às 14:30
+```
+
+- `%d` : Dia do Mês (00-31).
+- `%m` : Mês do Ano (00-12).
+- `%y` : Ano (dois dígitos).
+- `%Y` : Ano (quatro dígitos).
+- `%H` : Hora (00-24).
+- `%I` : Hora (00-12).
+- `%M` : Minuto (00-59).
+- `%j` : Dia do ano (1-366).
+- `%p` : AM/PM (útil se utilizado com %d).
+- `%r` : Formato de 12 horas completo (hh:mm:ss AM/PM).
+- `%T` : Formato de 24 horas completo (hh:mm:ss).
+- `%w` : Dia da semana (0-6)
+
+#### df
