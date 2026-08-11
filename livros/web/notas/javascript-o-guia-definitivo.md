@@ -652,7 +652,141 @@ later.toISOString()         // "2010-01-02T01:10:30.000Z" — somente ES5+
 
 ### 3.2 Texto
 
+#### 3.2.1 Strings literais
+
+```javascript
+// Normal
+""
+'Texto'
+"3.14"
+
+// O texto é quebrado visualmente - PMG
+"P\
+M\
+G"
+```
+
+#### 3.2.2 Sequências de escape em strings literais
+
+`Escape sem usar \`
+
+```javascript
+// Uso das aspas simples
+let a = 2;
+
+console.log(`Escape com:
+Caracteres especiais: {};
+Quebra de Linha;
+Símbolos: $ # "" ''
+Barra invertida: \ttexto
+Código: ${a}
+`);
+
+// Uso do string.raw
+const texto = String.raw`Escape com:
+Caracteres especiais: {};
+Quebra de Linha;
+Símbolos: $ # "" ''
+Barra invertida: \ttexto
+Código: ${a}`;
+
+console.log(texto);
+```
+
+>> O string.raw ele ignora até as barras invertidas, sendo recomendado o uso de '', na maioria dos casos;
+
+
+`Sequência de escape`
+
+```javascript
+\0                    // Caractere NUL (ex: "a\0b" → invisível entre "a" e "b")
+\b                    // Retrocesso (ex: "ab\bc" → apaga o "b" ao exibir)
+\t                    // Tabulação horizontal (ex: "a\tb" → "a    b")
+\n                    // Nova linha (ex: "a\nb" → "a" e "b" em linhas separadas)
+\v                    // Tabulação vertical (ex: "a\vb" → salto vertical entre "a" e "b")
+\f                    // Avanço de página (ex: "a\fb" → salto de página entre "a" e "b")
+\r                    // Retorno de carro (ex: "a\rb" → cursor volta ao início da linha)
+\"                    // Aspas duplas (ex: "ele disse \"oi\"")
+\'                    // Apóstrofo ou aspas simples (ex: 'você\'s aqui')
+\\                    // Barra invertida (ex: "C:\\pasta\\arquivo")
+\xXX                  // Caractere Latin-1 via dois dígitos hex (ex: \x41 = "A")
+\uXXXX                // Caractere Unicode via quatro dígitos hex (ex: \u00E9 = "é")
+```
+
+#### 3.2.3 Trabalhando com strings
+
+`Soma strings`
+
+```javascript
+let a =  "1";
+console.log(a);
+
+let b = "2";
+console.log(b);
+
+let soma = a + b;
+console.log(soma);
+```
+
+`s.`
+
+```javascript
+var s = "hello, world"  // Começa com um texto.
+s.charAt(0)             // => "h": o primeiro caractere.
+s.charAt(s.length-1)    // => "d": o último caractere.
+s.substring(1,4)        // => "ell": o 2º, 3º e 4º caracteres.
+s.slice(1,4)            // => "ell": a mesma coisa
+s.slice(-3)             // => "rld": os últimos 3 caracteres
+s.indexOf("l")          // => 2: posição da primeira letra l.
+s.lastIndexOf("l")      // => 10: posição da última letra l.
+s.indexOf("l", 3)       // => 3: posição do primeiro "l" em ou após 3
+s.split(", ")           // => ["hello", "world"] divide em substrings
+s.replace("h", "H")     // => "Hello, world": substitui todas as instâncias
+s.toUpperCase()         // => "HELLO, WORLD"
+```
+
+>> Métodos como replace() e toUpperCase() retornam novas strings
+
+
+#### 3.2.4 Comparação de padrões
+
+```javascript
+var text = "Ana tem 25 anos. Ela mora em SP e visita http://site.com ou https://site.com sempre. fim";
+
+// \d - Qualquer dígito
+text.match(/\d/g);        // => ["2", "5"]: cada dígito separado
+
+// \d+ - Um ou mais dígitos seguidos (números completos)
+text.match(/\d+/g);       // => ["25"]: o número inteiro, não dígito por dígito
+
+// \w - Qualquer letra, número ou underline
+text.match(/\w/g);        // => ["A","n","a","t","e","m", ...]: cada "caractere de palavra"
+
+// \s - Qualquer espaço em branco
+text.match(/\s/g);        // => [" ", " ", " ", ...]: cada espaço encontrado
+
+// ^ - Início do texto
+/^Ana/.test(text);        // => true: o texto começa com "Ana"
+/^Ela/.test(text);        // => false: o texto NÃO começa com "Ela"
+
+// $ - Fim do texto
+/fim$/.test(text);        // => true: o texto termina com "fim"
+
+// ? - Caractere anterior é opcional
+text.match(/https?/g);    // => ["http", "https"]: acha as duas variações
+
+// * - Caractere anterior repetido 0 ou mais vezes
+"cor".match(/co*r/);      // => ["cor"]: "o" pode aparecer 0+ vezes
+"cr".match(/co*r/);       // => ["cr"]: também funciona sem "o"
+
+// [ ] - Conjunto de caracteres permitidos
+text.match(/[SA]/g);      // => ["A", "S"]: acha só "S" ou "A"
+```
+
+
 ### 3.3 Valores booleanos
+
+
 
 ### 3.4 null e undefined
 
