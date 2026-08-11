@@ -70,3 +70,83 @@ A máxima aqui é o pomodoro: o pomodoro em vez de ser um cronomentro, virou blo
 - O Advogado do Diabo: dificil de lidar pois nunca está bom, esse você deixa falar e depois pergunta - como ficaria melhor?
 - Lidando com a negatividade: o positivista é dificil de lidar pois tudo está bom, o negativo tudo está ruim. Melhor colocar os dois juntos.
 
+
+## Capítulo 4 - Planejar
+
+Planejar é um processo que normalmente não temos material fácil que te diga: Faça isso! Siga esse caminho! Tudo é muito de fazer e aprender com o processo, durante o capítulo ele pontua algumas coisas interessantes.
+
+### Como sei qual é o plano adequado para mim?
+
+- Leia!
+
+### Criando uma definição de missão para a equipe
+
+Ter um projeto com pontos bem definidos evita dores de cabeça, então é bom deixar objetivos claros e voltar para vê se os seguiu:
+
+- Esse aplicativo é simples e fácil de ser usado?
+- Esse aplicativo é inovador?
+- Podemos implementar uma tecnologia mais nova para torná-lo melhor ainda?
+
+A perguntas aqui podem ajudar a você ter um direcionamento mais na frente, porém gosto de coisas mais realistas e que se enxaicam a todo projeto:
+
+- Esse aplicativo é simples e fácil de usar?
+- Esse aplicativo cumpri tudo que foi definido a cumprir?
+- Existe algo dificil ou que demanda muitos passos?
+
+Esse tipo de pergunta mais direta e simples, sempre leva a equipe ao mesmo caminho e não a possibilidades relativas.
+
+### Definindo seu projeto
+
+- Leia!
+
+### Coletando requisitos de usuário
+
+- Leia!
+
+### Criando requisitos funcionais 
+
+Esse trecho é muito bom, pois ele aborda o ponto do requisito que é um processo que envolve entender: o que usuário quer? o que o usuário precisa? o que o aplicativo necessita?
+
+- Requisito de usuário: refere-se ao que o usuário necessita;
+- Requisito funcional: refere-se ao que o aplicativo necessita.
+
+Ele não aborda o que o usuário quer, muitas vezes a gente ignora isso, pois o usuário nem sempre sabe o que quer, então gastar energia com isso por enquanto, não é uma boa ideia .
+
+### Documentando modelos de dados e de fluxo de trabalho
+
+- Leia!*
+
+### Documentando protótipos
+
+- Leia!
+
+### Revisando sua documentação
+
+- Leia!
+
+
+## Capítulo 5 - Criando um manifesto pessoal
+
+### Exercitando restrições 
+
+"Tudo é melhor para uma tarefa e pior para outras. O truque é saber o que é o que, para que, quando, para quem, onde e, acima de tudo, por quê.." Bill Buxton
+
+Toda solução que tenta resolver milhões de problemas, no final do dia, não resolve nenhum deles direito. Um bloco de notas é excelente para fazer anotações, mas péssimo para escrever código, pois ele não foi criado para isso. E se hoje fosse recriado com esse intuito, ou séria ótimo para fazer anotações ou seria péssimo para escrever código.
+
+"Não faça do seu aplicativo um pato!"
+
+### Construindo uma narrativa
+
+- Leia!
+
+### Criando personas
+
+- Leia!
+
+### Criando cenários
+
+- Leia!
+
+#### Nota!
+
+Não gosto dessa coisa de personas e cenários, na prática não consigo enxerga nessa prática algo que seja funcional de verdade e não apenas um momento de imaginação criativa. Para algumas pessoas e equipes pode funcionar, mas na minha opnião e vivência prática, gosto de delimitar, entender e resolver, quanto mais se floreia algo de forma a torna aquilo romântico, menos se gasta tempo entendendo o que deve realmente ser resolvido.
