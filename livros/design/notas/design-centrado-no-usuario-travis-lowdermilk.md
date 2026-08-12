@@ -1,12 +1,17 @@
 # Design Centrado no Usuario - Travis Lowdermilk
 
 
-[] Capítulo 1 - Nosso mundo mudou
-[] Capítulo 2 - O que é Design Centrado no Usuário?
-[] Capítulo 3 - Trabalhando com usuários
-[] Capítulo 4 - 
-[] Capítulo 5 -
-
+[x] Capítulo 1 - Nosso mundo mudou
+[x] Capítulo 2 - O que é Design Centrado no Usuário?
+[x] Capítulo 3 - Trabalhando com usuários
+[x] Capítulo 4 - Planejar 
+[x] Capítulo 5 -  Criando um manifesto pessoa
+[] Capítulo 6 - Criatividade e experiência de usuário
+[] Capítulo 7 - Princípios de design
+[] Capítulo 8 - Reunindo feedback
+[] Capítulo 9 - Estudos de usabilidade
+[] Capítulo 10 - Você nunca termina
+[] Capítulo 11 - Outros recurso
 
 ## Capítulo 1 - Nosso mundo mudou
 
@@ -150,3 +155,78 @@ Toda solução que tenta resolver milhões de problemas, no final do dia, não r
 #### Nota!
 
 Não gosto dessa coisa de personas e cenários, na prática não consigo enxerga nessa prática algo que seja funcional de verdade e não apenas um momento de imaginação criativa. Para algumas pessoas e equipes pode funcionar, mas na minha opnião e vivência prática, gosto de delimitar, entender e resolver, quanto mais se floreia algo de forma a torna aquilo romântico, menos se gasta tempo entendendo o que deve realmente ser resolvido.
+
+
+## Capítulo 6 - Criatividade e experiência de usuário
+
+Acho interessante como o autor aborda sobre projetos de forma a fazer você pensar um pouco além do código ou visual, por mais que o visual seja importante ele resolve um problema e quão bem ele faz isso defini se ele é um sucesso ou um fracasso.
+
+### Ter metas de experiência de usuário
+
+- Quanto tempo seu usuário está disposto a esperar carregar os elementos?
+- Como os usuários irão interagir com seu aplicativo?
+- O aplicativo é divetido de usar?
+- Qual tom escolhido para se comunicar com o usuário?
+
+Por mais simples que sejam essas perguntas elas devem ser respondidas para resolver os pontos iniciais que fazem do seu projeto algo realmente interessante.
+
+Hoje os usuários estão cada vez menos dispostos a esperar sua página ou sua aplicação funcionar, não só isso mais a intereção fala muito sobre isso, cada vez mais as pessoas usam o celular e menos o computador, criar algo para telas grandes pode te fazer alcançar um público menor.
+
+Diveritido de usar é algo que cada vez mais você vai se deparar com aplicativos mobile ou jogos, fora dessas categorias dificilmente você irá se deparar com projetos sérios que brincam com o usuário, pois uma ferramenta deve solucionar um problema e a forma com você se comunica pode fazer seu usuário não sentir seguro nem a tentar.
+
+### Criatividade exige coragem e trabalho árduo
+
+Leia!
+
+### Pegue um lápis
+
+Leia!
+
+### Liberdade de criação
+
+Leia!
+
+### Entendendo sua meta
+
+Os tópicos anteriores o autor aborda o tema criativade e eu gostaria de escrever um pouco sobre isso pois não concordo com alguns pontos escritos, mas entendo a ideia no geral.
+
+O processo criativo, não é muito diferente do processo de escrever um código ou aprender uma lingua nova, é um processo que envolve estudo e prática.
+
+- Estudo: você precisa procurar, vê, entender, estudar;
+- Prática: você precisa pegar o lápis, a caneta, o terminal e fazer;
+
+Ser criativo não é apenas acordar um belo dia, imaginar uma fada e pensar: uau como eu sou criativo. É acumular referências visuais, é olhar projetos e tentar entender como a pessoa fez aquilo, ler autores e pesquisar muito para estimular seu cérebro a criar caixinhas que vão ter mostrar caminhos possíveis para aquele problema que deseja resolver.
+
+Não pense que criatividade vem sem estimulo algum, pois se fosse fácil qualquer pessoa já teria escrito um bestseller.
+
+Agora que você está munido de diversos caminhos, hora de colocar no papel e começar a criar, sim a prática constante faz você mais fácilmente alcançar um determinado resultado, quanto mais você tenta criar algo, mais fácil será criar, seja um aplicativo ou um projeto de um site.
+
+Porém, prática demanda também organização, muitos já fizeram o caminho que você está fazendo, logo existem muitos projetos prontos que podem ter nortear no processo de prática, muitos projetos reais tem regras e nós devemos segui-lás pois isso impacta diretamente na experiência do usuário, mas você pode a parti delas pensar o diferente.
+
+Uma recomendação feita e que eu concordo é que toda vez que estiver com muito dificuldade para fazer ou desbloquear algo, pegue um lápis e desenhe, nós seres humanos somos extremamente visuais e por vezes um desenho pode desbloquear algo.
+
+### Roube (quero dizer, empreste) de outros
+
+O roube é algo que acho importante delimitar, tomar referências como base é importante para que você possa criar o seu, design, programadores, professores, artistas, se inspiram em tudo que véio antes deles, pois sempre criar do zero é muito desgastante, porém a parti doque existe seguir em frente, a parti do mesmo ponto, cada pessoa pode criar sua própria monalisa e quanto mais versões você testar, mais possibilidades vão se abrir.
+
+Se tem um site ou aplicativo que gosto, tomo como referência, veja sempre o que poderia ser feito diferente, troque cores, fontes, ícones, coisas do lugar, mude a forma como comunica, mas não deixe que aquele ponto de impeça de criar o novo pois está preso a ele.
+
+"Bons artistas copiam, grandes artistas roubam". Pablo Picasso
+
+### Criatividade exige questionamento
+
+Esse é aquele ponto que faz muita gente travar e que é normal, quantas vezes você voltou a um projeto e se perguntou coisas como:
+
+- Essa é a melhor abordagem?
+- O que há no design ou no layout desse aplicativo de que eu gosto ou de que não gosto?
+- O que eu faria para melhorá-lo?
+
+Poucas perguntas podem mudar completamente sua percepção do seu projeto e fazer você e ele evoluir, por mais que você crie coisas para jogar fora e assim você deve fazer, pois isso estimula sua criativade, você também deve manter projetos por um período maior de tempo, para que possa visualizar e entender de que forma você está evoluindo.
+
+Se uma vez por ano você criar um projeto e depois revisitar com tempo suficiente, vai poder vê que certas decisões não foram tão interessantes, porém isso não faz dele pior, apenas mostra a você mesmo o quanto você evoluiu num espaço de tempo.
+
+## Capítulo 7 - Princípios de design
+## Capítulo 8 - Reunindo feedback
+## Capítulo 9 - Estudos de usabilidade
+## Capítulo 10 - Você nunca termina
+## Capítulo 11 - Outros recurso
