@@ -34,3 +34,12 @@ Isso é interessante, pense em escolher uma linguagem, escolhar a mais antiga te
 
 É sempre vê os pontos positivos em contrapartida entender quais pontos negativos terá que lidar.
 
+## Equilibrando Arquitetura e Codificação
+
+Um arquiteto tem que conhecer todo o projeto e muitas vezes acaba se afastando do código, para ter mais contato com o que está sendo desenvolvido, algumas coisas podem ajudar:
+
+- Frequentemente fazer POCs (prova de conceitos): isso ajuda ele a testar e ideias e vê o que pode ser implemtado com antecedência, além de escrever o melhor código para produção, que pode ser usado como referência para orientar outros a seguirem;
+
+- Trabalhar nas correções de erros dentro de uma iteração: resolver pequenos problemas não só ajuda a equipe, mas coloca o arquiteto em contato direto com o código constantemente;
+
+- Automação: acredito que é uma das coisas que causa o maior impacto em qualquer projeto, quanto mais automações importante o projeto possui, menor a possibilidade de cometer erros e menor o tempo gasto fazendo tarefas repetitivas.

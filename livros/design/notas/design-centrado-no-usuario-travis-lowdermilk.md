@@ -226,6 +226,73 @@ Poucas perguntas podem mudar completamente sua percepção do seu projeto e faze
 Se uma vez por ano você criar um projeto e depois revisitar com tempo suficiente, vai poder vê que certas decisões não foram tão interessantes, porém isso não faz dele pior, apenas mostra a você mesmo o quanto você evoluiu num espaço de tempo.
 
 ## Capítulo 7 - Princípios de design
+
+### Princípio da proximidade (Princípio da Gestalt)
+
+Organizar itens em um projeto é uma tarefa que leva mais tempo conforme a quantidade de itens a serem organizados aumenta, essa organização tem um nome que é: Princípiode Gestalt.
+
+Elementos que possuem alguma relação devem permanecer juntos e elementos que não devem permanecer afastados, é simples ao mesmo tempo que para muitos pode parecer algo sem tanta importância, porém possui, pois tendemos a nós sentir melhor conforme temos as coisas organizadas de uma forma que nos deixa melhor.
+
+Imagine seu site como um mercado, mas em vez dos itens estarem organizados de uma forma por sessão, imagine que estão em lugares completamente diferentes, o arroz estão junto do sabão em pó e ao lado está a ração do cachorro. Essa falta de sentido na forma como as coisas estão organizadas faz você se incomodar e gastar muito mais tempo procurando o que precisa.
+
+### Visibilidade, feedback visual e proeminência visual
+
+A algumas padrões que normalmente seguimos ao desenvolver um projeto visual, usando algumas tecnicas que ajudam ao usuário entender melhor como usar o que foi criado:
+
+- Tipo de letra: 2 a 3 tipos de tipografia, com tamanhos bem definidos;
+- Opacidade: uma ferramenta que não vejo muito sendo usada;
+- Prominência: tamanho dos objetos;
+- Status: toda ação deve ter uma reação e gerar alguma resposta;
+- Cor/Constraste: a ferramenta mais usada em qualquer projeto, vai além do visual.
+
+### Hierarquia
+
+De forma simples todo projeto possui uma hierarquia de elementos, que vão desde o tamanho da fonte, até os elementos dentro da página, é uma das coisas mais importante e que melhor direciona o usuário para aonde desejamos que ele vá para encontrar o que ele está procurando.
+
+Pois conseguimos criar fluxos: o texto maior é lido primeiro que um texto menor, um ícone mais proeminente leva a uma interação muito mais rápida.
+
+### Modelos mentais e metáforas
+
+Ao longo do anos diversas empresas foram criados elementes e nós fomos nos acostumando a associar aquele simbolo a determinada ação. O símbolo de uma tesoura tem algo relacionado a corta, 3 traços está relacionado a um menu. Trocar esses elementos por outros que o usuário ainda vai ter que descobrir e criar uma associação na sua cabeça é extremante contraprodutivo, pois isso gera desconforto e esse padrão não vai ser seguido por nenhuma outra empresa o que pode muitas vezes afastar o seu usuário do seu produto. 
+
+### Revelação progressiva
+
+O elemento mais simples para entender esse ponto é menu, todas as vezes que precisamos organizar um conjunto de informações, tendemos a agrupar elas de alguma forma que seja simples para o usuário conseguir entender. Os menus tem esse papel, porém colocar tudo em um único menu é um erro.
+
+Todo e qualquer projeto precisa ser pensando de forma que você consiga enteder o que vai adicionar naquele menu e também o que é desnecessário, mesmo que alguns aplicativos acabem tendo a necessidade de agrupar um número enorme de informação, eles muitas vezes o fazem de forma que você só venha a interagir com eles em última instância, usando uma ordem lógica de prioridade.
+
+O que mais é usado, será colocado para aparacer primeiro e o que não, será colocado para aparecer depois, não só deixando o design mais limpo, mas também não sobrecarrendo o usuário.
+
+### Consistência
+
+O mercado cria padrões para que possamos seguir e assim criar uma consistência visual e para o usuário isso é muito bom, pois ao ter contanto com mais de um site ou aplicativo ele já sabe aonde está os elementos e não precisa ficar procurando.
+
+É importante entender que essa consistência deve exister dentro do seu próprio projeto, muito mais doque apenas seguir o que o mercado recomenda, você precisa criar um projeto que os itens façam sentido entre si.
+
+### Disponibilidade e restrições
+
+Se tem algo que você não quer que o usuário faça de forma descuidada, dificulte isso da melhor forma possivel, assim ele não cometerá erros os quais não queira.
+
+Quem desenvolve o fluxo de uso de uma aplicação, ferramenta ou site é você, então você tem o controle sobre o que o que usuário deve ou não deve fazer e o quão fácil ou dificil será faze-ló.
+
+### Confirmação
+
+Ao colocar pequenas caixas de diálogo para que o usuário não faça por acidente uma determinada ação, você evita que o mesmo acabe se estressando ao usar seu projeto.
+
+Quantas vezes você não fechou um arquivo que estava editando sem querer? Se a caixa de diálogo apareceu sua ação foi impedida e seu trabalho mantido e se não, tudo que você digitou, acabou se perde e você teve que reescrever.
+
+### A Lei de Hick
+
+A Lei de Hick trás muito o que é abordado no design minimalista, a ideia é simples: quantos mais informações eu tenho na tela, mais tempo o usuário irá gastar para fazer o que ele deseja fazer.
+
+O design minimalista, usa bastante esse conceito, manter na tela apenas o que minimo necessário, assim o usuário acaba não sendo distraído por outros elementos.
+
+### Lei de Fitt
+
+O tamanho dos elementos defini a precisão que usuário terá ao interagir com eles, de forma simples: imagine que o botão de enviar do seu telhado está bem menor, muito mais dificilmente você vai conseguir clicar e enviar sua mensagem.
+
+Dentro da área de desenvolvimento de interfaces temos diversas regras que definem o tamanho tanto dos elementos, quanto da fonte, mas isso não quer dizer que você não possa muitas vezes fazer uso disso para mudar um pouco a forma como seu usuário irá interagir com seu projeto. 
+
 ## Capítulo 8 - Reunindo feedback
 ## Capítulo 9 - Estudos de usabilidade
 ## Capítulo 10 - Você nunca termina
