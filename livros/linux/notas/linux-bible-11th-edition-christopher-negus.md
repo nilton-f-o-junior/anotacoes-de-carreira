@@ -2,9 +2,19 @@
 
 Esse material foi escrito com intuito de facilitar o acesso a comentários e detalhes importantes abordados ao longo do livro. Estou escrevendo meu próprio livro e estou buscando referências do material de outros autores.
 
-## Introdução
+[x] Chapter 1: Starting with.Linux
+[x] Chapter 2: Creating the.Perfect Linux Desktop
+[]
+[]
+[]
+[]
+[]
 
-### Entendo o Linux
+---
+
+## Chapter 1: Starting with.Linux
+
+### Understanding What Linux Is
 
 Linux é um sistema de computador, que permite o usuário a possibilidade e instalar aplicações para executar determinadas tarefas. Possuindo um conjunto de ferramentas para poder funcionar, sendo elas:
 
@@ -26,7 +36,7 @@ O sistema também disponibiliza uma grande quantidade de ferramentas voltadas pa
 - Programação em tempo real;
 - Armazenamento especializado.
 
-### História do Linux
+### Exploring Linux History
 
 1. A Origem: UNIX e a Cultura da Bell Labs
 
@@ -57,3 +67,127 @@ Para facilitar o uso do sistema por usuários não técnicos, surgiram as distri
 - Slackware: Uma das mais antigas ainda em uso.
 - Red Hat: Popularizou o gerenciamento de pacotes RPM e focou no mercado corporativo.
 - Debian: Conhecida pela estabilidade e pelo formato de pacotes .deb.
+
+
+## Chapter 2: Creating the.Perfect Linux Desktop
+
+Leia!
+
+
+## Chapter 3: Using the.Shell
+
+### About Shells and Terminal Windows
+
+O Linux permite o uso de mais de um terminal shell, porém o mais comum é o Bash shell, que leva o nome de Stephen Bourne.
+
+A popularidade de um shell se dá pela facilidade no processo de passar os comandos. Mesmo sendo o Bash o mais popular, outros vêm ganhando cada vez mais espaço nas distribuições, tais como:
+
+- Fish;
+- Zsh.
+
+#### Using the shell prompt
+
+Por padrão alguns siímbolos são usadas para definir o usuário:
+
+- $: usuário normal
+- #: usuário root
+
+Ao abrir um terminal padrão, você irá visualizar:
+
+```bash
+# [nome do usuário @ nome da máquina pasta atual]
+[nome@sistema desktop]:
+```
+
+### Running Commands
+
+Muitos comandos precisam apenas que o nome seja passado via terminal:
+
+```bash
+# date
+Sun Aug 16 03:22:34 PM -03 2026
+
+# pwd
+/home/user/git/
+
+# hotname
+mydesktop
+```
+
+#### Understanding command syntax
+
+Da mesma forma que muitos comandos funcionam apenas como nome, outros fazer uso de opção que podem ser passadas para uma resultado mais completo:
+
+```bash
+# ls (lista)
+downloads  pictures
+
+# ls -l (lista detalhada)
+total 0
+drwxr-xr-x 1 user users 52 Aug 15 18:57 downloads
+drwxr-xr-x 1 user users 20 Aug  6 14:23 pictures
+
+# ls -l -a (lista detalhada com arquivos ocultos)
+total 0
+drwxr-xr-x 1 user users  34 Aug  6 14:34 .
+drwxr-xr-x 1 user users  52 Aug 15 18:57 downloads
+drwxr-xr-x 1 user users  20 Aug  6 14:23 pictures
+
+# ls -l -a -t (lista detalhada com arquivos ocultos e ordendos por tempo)
+total 0
+drwxr-xr-x 1 user users  52 Aug 15 18:57 downloads
+drwxr-xr-x 1 user users  34 Aug  6 14:34 .
+drwxr-xr-x 1 user users  20 Aug  6 14:23 pictures
+
+# ls -lat (o mesmo resultado que -lat)
+total 0
+drwxr-xr-x 1 user users  52 Aug 15 18:57 downloads
+drwxr-xr-x 1 user users  34 Aug  6 14:34 .
+drwxr-xr-x 1 user users  20 Aug  6 14:23 pictures
+```
+As opções podem ser passadas separadas ou juntas e vão gerar o mesmo resultado.
+
+Algo muito importante é entender que os comandos podem ser passados por extenso e seu uso se da de uma maneira muito mais comum em scripts, pois fica muito mais fácil visualizar o que o script deve fazer.
+
+```bash
+# ls -a
+ls --all
+
+# ls -lat
+ls --format=long --all --sort=time
+```
+
+Para saber informações sobre o usuário:
+
+```bash
+# id
+uid=1000(user) gid=100(users) groups=100(users),1(wheel),57(networkmanager)
+```
+
+- uid: número de identificação do seu usuário;
+- 1000: numérico exclusivo atribuído a você (1000 indicar usuários comuns do sistema);
+- (user): nome de usuário (username).
+
+- gid: ID do seu grupo primário;
+- 100: número do grupo principal;
+- (users): nome do grupo primário.
+
+- groups: todos os grupos (secundários);
+- 100(users): grupo padrão de usuários comuns;
+- 1(wheel): grupo com permissão de administrador;
+- 57(networkmanager): grupo que permite gerenciar e alterar as conexões de rede do computador sem pedir senha de administrador.
+
+
+Para saber informações detalhadas do usuário logado no sistema:
+
+```bash
+# who -uH
+NAME     LINE         TIME             IDLE          PID COMMENT
+user     tty1         2026-08-16 12:12 03:42        1520
+user     pts/2        2026-08-16 15:19 00:34       19086  
+```
+
+- who: lista os usuários logados;
+- u: tempo de inatividade do usuário e o PID;
+- H: adiciona um cabeçalho no topo da tabela para identificar o que significa cada coluna.
+
