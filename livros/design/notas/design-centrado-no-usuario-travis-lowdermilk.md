@@ -6,12 +6,12 @@
 [x] Capítulo 3 - Trabalhando com usuários
 [x] Capítulo 4 - Planejar 
 [x] Capítulo 5 -  Criando um manifesto pessoa
-[] Capítulo 6 - Criatividade e experiência de usuário
-[] Capítulo 7 - Princípios de design
-[] Capítulo 8 - Reunindo feedback
-[] Capítulo 9 - Estudos de usabilidade
-[] Capítulo 10 - Você nunca termina
-[] Capítulo 11 - Outros recurso
+[x] Capítulo 6 - Criatividade e experiência de usuário
+[x] Capítulo 7 - Princípios de design
+[x] Capítulo 8 - Reunindo feedback
+[x] Capítulo 9 - Estudos de usabilidade
+[x] Capítulo 10 - Você nunca termina
+[x] Capítulo 11 - Outros recurso
 
 ## Capítulo 1 - Nosso mundo mudou
 
@@ -294,6 +294,105 @@ O tamanho dos elementos defini a precisão que usuário terá ao interagir com e
 Dentro da área de desenvolvimento de interfaces temos diversas regras que definem o tamanho tanto dos elementos, quanto da fonte, mas isso não quer dizer que você não possa muitas vezes fazer uso disso para mudar um pouco a forma como seu usuário irá interagir com seu projeto. 
 
 ## Capítulo 8 - Reunindo feedback
+
+Esse capítulo é bem interessante, pois da mesma forma que ele deixa claro a importância de ter o feedback do usuário, também aborda que nem sempre é a melhor experiência do mundo.
+
+Acho que a forma como o autor fala sobre isso é perfeita, por mais que seja bom, ninguém quer olhar para o seu trabalho e ter defeitos sendo apontados, ter mais trabalho a fazer ou pior ter que refazer algumas partes, porque simplemente não funciona como deveria.
+
+Chegar a essa altura do livro e em nenhum momento ter pensando na pergunta mais simples de todas que é: que problema meu projeto resolve? É complicado, mas ainda pode ser feito e ser respondida.
+
+### Quantos usuários serão necessários?
+
+A principio o livro recomenda no minimo 5 usuários, porém escalar demais esse número não vai trazer tantos resultados, pois lidar com as respostas pode não ser o melhor caminho a seguir.
+
+### Pesquisa
+
+Na parte de pesquisa a escala de Likert acaba sendo apontada, essa escala é muito comum em testes para vagas de trabalho:
+
+a. concordo plenamente
+...
+e. discordo plenamente 
+
+Porém, ao fazer uso o ideial é pensar bem na pergunta de forma a chegar na resposta de forma indireta:
+
+A pergunta errada:
+
+O recurso de mensagens é útil?
+
+a. Concordo plenamente
+b. Concordo
+c. Nem concordo nem discordo
+d. Discordo
+e. Discordo plenamente
+
+A pergunta correta:
+
+Eu uso o recurso de mensagens:
+
+a. Todo dia
+b. Algumas vezes por semana
+c. Algumas vezes por mês
+d. Raramente
+e. Nunca
+
+Essa mudança sútil, faz você chegar ao resultado desejado sem induzir quem ta respondendo.
+
+### Conduzindo entrevistas
+
+Leia!
+
+### Análise de tarefas
+
+Esse tópico é bem interessante, pois é muito usado por quem desenha interface. A gente acaba sempre pensando: quantos clicks são para realizar uma determinada ação.
+
+A análise de tarefas, nada mais é doque depois de desenhar um fluxo de uso para e anotar quantos cliks o usuário vai ter que fazer para realizar uma ação e assim, poder melhorar isso.
+
+### Avaliação heurística
+
+Leia!
+
+### Criação de storyboards
+
+O básico para qualquer projeto, pois facilita muito a visualização do projeto e quanto mais você se acostuma a fazer, mais você consegue vê o que vai ou não funcionar.
+
+### Usando protótipos
+
+Atualmete com a ajuda da IA, acredito que não existe um porque não criar um protótico funcional, sendo tão importante quanto o storyboard.
+
+### Testes A/B
+
+Leia!
+
 ## Capítulo 9 - Estudos de usabilidade
+
+Esse capítulo é aquele que eu simplemente digo: Leia!
+
+Sendo bem sincero, a certas coisas que a vivência teórica e prática entram em contradição, em outras elas se complementam. Falar sobre estudos de usabilidade, principalmente os citados nesse capítulo e no anterior, que envolvem sessões com usuário num ambiente controlado usando um script, vou ser sincero, acho que um capítulo é pouco e existem materiais melhores.
+
+Entendo a ideia do autor em querer abordar, porém se você já fez ou já participou de um ou dois, você percebe que não sai como você gostaria e que para você que está fazendo não é tão simples de analisar e para quem está respondendo, não é tão simples de verificar.
+
 ## Capítulo 10 - Você nunca termina
-## Capítulo 11 - Outros recurso
+
+### É impossível fazer certo da primeira vez
+
+Leia!
+
+### Esteja preparado para reiniciar
+
+Esse capítulo me fez lembrar uma frase do Fabio Akita, que é: escreva código e jogue fora.
+
+Acredito que muitos tem dificuldade em fazer isso, porém jogar fora o código não é jogar fora o que foi aprendido no processo, acho que essa experiência de ter que refazer e poder fazer de outra forma é melhor, doque guardar meia duzia de código num cofre, ele não vai agregar nada no seu aplicativo e na sua vida.
+
+### Últimas reflexões
+
+Leia!
+
+## Capítulo 11 - Outros recursos
+
+Recomendo que dê uma olhada no material disponibilizado pelo autor.
+
+## Nota
+
+O livro traz ao final de cada capítulo um resumo, acredito que ele ajuda, mas ainda assim cada um deveria ler e tentar tirar o que acredita ser a ideia geral e mais importante do todo, não é um resumo ruim, mas apenas que a leitura é tão fácil de compreender, que mastigar ainda mais pode ser desnecessário, porém compreensivel.
+
+Esse resumo contém muitos `Leia!`, enquanto estou estudando e escrevendo vejo tópicos que não tem necessidade em pontuar nada e que repetem algo já falado anteriomente, ou complementa uma ideia anterior.
