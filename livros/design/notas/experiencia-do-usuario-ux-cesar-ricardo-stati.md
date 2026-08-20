@@ -43,3 +43,18 @@ Outro detalhe importante, é que boa parte desse trabalho ele não é visivel, o
 
 - Navegação: uma página precisa está tão bem organizada quanto um mapa. Você odiaria abrir um mapa e não saber aonde está e para aonde vai.
 
+
+### Design centrado no usuário não é apenas design
+
+Ser design por muito tempo foi algo relacionado ao ato de projetar coisa para o dia a dia, tanto que os primeiros profissionais a trabalhar com design de papel, em revistas e jornais eram projetistas, desenhistas industriais.
+
+O tempo passa o design gráfico começa a ganha seu mercado de atividade e junto com a tecnologia mais e mais transformações, uma hora se cria os celulares smartphones e agora passamos a projetar sites, é importante salientar como dito no texto, que responsividade veio da necessidade de criar páginas que antes só eram acessadas no computador e notebook, para o acesso remoto via celular. 
+
+Como comentado por Nielsen, os primeiros sites eram sobrecarragos de informações, pois se acreditava que assim você conquistária a atenção do usuário, porém a usabilidade aqui já fazia o seu papel, quanto mais informação e dificuldade em acessar o que você precisava, mas os usuários passavam a procurar sites mais claros e diretos.
+
+É importante salientar que: por mais bonito que um site seja, a usabilidade é a facilidade do usuário em conseguir fazer o que deseja, da forma mais fácil e no menor tempo possível, o site ser ou não bonito estéticamente não muda nada em relação a usabilidade.
+
+### Design centrado no usuário não é relatório de problemas
+
+Leia!
+
