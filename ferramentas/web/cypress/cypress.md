@@ -475,7 +475,7 @@ describe('Login', () => {
 ```javascript
 describe('Login', () => {
 
-  it('Login com credênciais inválidas', () => {
+  it('Login com credenciais inválidas', () => {
 
     // Arrange
     cy.visit('http://0.0.0.0:8000/')

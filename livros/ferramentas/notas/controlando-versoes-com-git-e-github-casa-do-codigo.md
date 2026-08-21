@@ -364,7 +364,7 @@ Leia!
 
 Leia e veja vídeo ou siga o tutorial no Youtube
 
-## Hospedando o repositório no GitHu
+## Hospedando o repositório no GitHub
 
 5.1 Serviços de hospedagem de projetos
 
@@ -372,7 +372,7 @@ Pula!
 
 5.2 GitHub: a rede social dos desenvolvedores
 
-- Issue rracker: para criação e gestão de bugs e milestones do projeto;
+- Issue tracker: para criação e gestão de bugs e milestones do projeto;
 - Pull requests: para que outros usuários possam enviar seus commits com alterações no projeto, ou commits com correções de bugs;
 - Commit comments: para que os usuários possam comentar e discutir sobre as modificações no código, de um determinado commit.
 

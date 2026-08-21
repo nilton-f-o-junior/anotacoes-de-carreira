@@ -1,6 +1,6 @@
 # Organizando
 
-- Testes unitários em .rs normalmente a gente coloca direto no arquivo principal depois da nossa funcão, o rust quando compilar ele não gera isso no resultado final.
+- Testes unitários em .rs normalmente a gente coloca direto no arquivo principal depois da nossa função, o rust quando compilar ele não gera isso no resultado final.
 
 - Testes de integração para as funcionalidades maiores, podemos seguir com o padrão normal de mercado: /src /test podemos manter as duas pastas e criar fora. 
 
@@ -56,7 +56,7 @@ cargo test --test integracao      # só o arquivo tests/integracao.rs
 cargo test --doc                  # só os doc tests
 ```
 
-- Estamos fazendos os testes unitários e vai acabar se acumulando várias funcoes, metodos e testes, então podemos organizar o código da melhor forma possível para cada equipe, logo:
+- Estamos fazendo os testes unitários e vai acabar se acumulando várias funções, métodos e testes, então podemos organizar o código da melhor forma possível para cada equipe, logo:
 
 
 - Funções tudo junto e depois teste
@@ -124,7 +124,7 @@ mod tests_b {
 
 > Rust diferente de C, você pode organizar da forma como acreditar ser melhor!
 
-Análisando todos os dados da saída
+Analisando todos os dados da saída
 
 | Parte | Significado |
 |---|---|
@@ -164,7 +164,7 @@ mod test_a {
 ```
 
 
-Em rust mesmo que tenhamos uma ideia que o código é escrito para não ter erros como estouro de memoria, podemos testar situações assim e segue o cógido:
+Em rust, mesmo que tenhamos uma ideia de que o código é escrito para não ter erros como estouro de memória, podemos testar situações assim e segue o código:
 
 
 ```rust
@@ -184,7 +184,7 @@ mod tests_a {
 }
 ```
 
-Podemos também testar modulos em rust e como eles interagem entre si.
+Podemos também testar módulos em rust e como eles interagem entre si.
 
 
 ```rust
@@ -213,7 +213,7 @@ mod testes {
     use super::calculadora;
 
     #[test]
-    fn teste_calculadore() {
+    fn teste_calculadora() {
         assert_eq!(calculadora::soma(2, 2), 4);
         assert_eq!(calculadora::sub(2, 2), 0);
         assert_eq!(calculadora::mult(2, 2), 4);
