@@ -1,9 +1,9 @@
 # Linux - Bible
 
-Esse material foi escrito com intuito de facilitar o acesso a comentários e detalhes importantes abordados ao longo do livro. Estou escrevendo meu próprio livro e estou buscando referências do material de outros autores.
+Esse material foi escrito com o intuito de facilitar o acesso a comentários e detalhes importantes abordados ao longo do livro. Estou escrevendo meu próprio livro e estou buscando referências do material de outros autores.
 
-[x] Chapter 1: Starting with.Linux
-[x] Chapter 2: Creating the.Perfect Linux Desktop
+[x] Chapter 1: Starting with Linux
+[x] Chapter 2: Creating the Perfect Linux Desktop
 []
 []
 []
@@ -12,23 +12,23 @@ Esse material foi escrito com intuito de facilitar o acesso a comentários e det
 
 ---
 
-## Chapter 1: Starting with.Linux
+## Chapter 1: Starting with Linux
 
 ### Understanding What Linux Is
 
-Linux é um sistema de computador, que permite o usuário a possibilidade e instalar aplicações para executar determinadas tarefas. Possuindo um conjunto de ferramentas para poder funcionar, sendo elas:
+Linux é um sistema de computador, que permite ao usuário a possibilidade de instalar aplicações para executar determinadas tarefas. Possuindo um conjunto de ferramentas para poder funcionar, sendo elas:
 
 - Detecção e preparação do hardware;
 - Gerenciamento de processos;
 - Gerenciamento de memória;
 - Fornecendo interfaces de usuário;
 - Controlador de sistema de arquivos;
-- Provedor de acesso e autenticação usuário;
+- Provedor de acesso e autenticação de usuário;
 - Ferramentas de administrador;
 - Iniciador de serviços;
-- Ferramentas de Programação.
+- Ferramentas de programação.
 
-O sistema também disponibiliza uma grande quantidade de ferramentas voltadas para empresa:
+O sistema também disponibiliza uma grande quantidade de ferramentas voltadas para a empresa:
 
 - Clustering;
 - Virtualização;
@@ -48,7 +48,7 @@ O Linux é um "clone" do UNIX, sistema criado nos laboratórios da AT&T Bell Lab
 
 2. Comercialização
 
-Eventualmente, a AT&T comercializou o UNIX, o que levou a criação de padrões como o POSIX, que serviram de roteiro para a criação de sistemas compatíveis, como o próprio Linux.
+Eventualmente, a AT&T comercializou o UNIX, o que levou à criação de padrões como o POSIX, que serviram de roteiro para a criação de sistemas compatíveis, como o próprio Linux.
 
 3. O Movimento Software Livre (GNU)
 
@@ -69,12 +69,12 @@ Para facilitar o uso do sistema por usuários não técnicos, surgiram as distri
 - Debian: Conhecida pela estabilidade e pelo formato de pacotes .deb.
 
 
-## Chapter 2: Creating the.Perfect Linux Desktop
+## Chapter 2: Creating the Perfect Linux Desktop
 
 Leia!
 
 
-## Chapter 3: Using the.Shell
+## Chapter 3: Using the Shell
 
 ### About Shells and Terminal Windows
 
@@ -87,7 +87,7 @@ A popularidade de um shell se dá pela facilidade no processo de passar os coman
 
 #### Using the shell prompt
 
-Por padrão alguns siímbolos são usadas para definir o usuário:
+Por padrão, alguns símbolos são usados para definir o usuário:
 
 - $: usuário normal
 - #: usuário root
@@ -110,13 +110,13 @@ Sun Aug 16 03:22:34 PM -03 2026
 # pwd
 /home/user/git/
 
-# hotname
+# hostname
 mydesktop
 ```
 
 #### Understanding command syntax
 
-Da mesma forma que muitos comandos funcionam apenas como nome, outros fazer uso de opção que podem ser passadas para uma resultado mais completo:
+Da mesma forma que muitos comandos funcionam apenas com o nome, outros fazem uso de opções que podem ser passadas para um resultado mais completo:
 
 ```bash
 # ls (lista)
@@ -133,7 +133,7 @@ drwxr-xr-x 1 user users  34 Aug  6 14:34 .
 drwxr-xr-x 1 user users  52 Aug 15 18:57 downloads
 drwxr-xr-x 1 user users  20 Aug  6 14:23 pictures
 
-# ls -l -a -t (lista detalhada com arquivos ocultos e ordendos por tempo)
+# ls -l -a -t (lista detalhada com arquivos ocultos e ordenados por tempo)
 total 0
 drwxr-xr-x 1 user users  52 Aug 15 18:57 downloads
 drwxr-xr-x 1 user users  34 Aug  6 14:34 .
@@ -147,7 +147,7 @@ drwxr-xr-x 1 user users  20 Aug  6 14:23 pictures
 ```
 As opções podem ser passadas separadas ou juntas e vão gerar o mesmo resultado.
 
-Algo muito importante é entender que os comandos podem ser passados por extenso e seu uso se da de uma maneira muito mais comum em scripts, pois fica muito mais fácil visualizar o que o script deve fazer.
+Algo muito importante é entender que os comandos podem ser passados por extenso e seu uso se dá de uma maneira muito mais comum em scripts, pois fica muito mais fácil visualizar o que o script deve fazer.
 
 ```bash
 # ls -a
@@ -165,7 +165,7 @@ uid=1000(user) gid=100(users) groups=100(users),1(wheel),57(networkmanager)
 ```
 
 - uid: número de identificação do seu usuário;
-- 1000: numérico exclusivo atribuído a você (1000 indicar usuários comuns do sistema);
+- 1000: numérico exclusivo atribuído a você (1000 indica usuários comuns do sistema);
 - (user): nome de usuário (username).
 
 - gid: ID do seu grupo primário;
@@ -190,4 +190,3 @@ user     pts/2        2026-08-16 15:19 00:34       19086
 - who: lista os usuários logados;
 - u: tempo de inatividade do usuário e o PID;
 - H: adiciona um cabeçalho no topo da tabela para identificar o que significa cada coluna.
-
