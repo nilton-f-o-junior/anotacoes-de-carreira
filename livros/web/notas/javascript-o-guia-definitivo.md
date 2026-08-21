@@ -471,7 +471,7 @@ São os símbolos que realizam as operações fundamentais em JavaScript.
 `**`
 
 ```javascript
-// exponinciação
+// exponenciação
 5 ** 2  // 25
 ```
 
