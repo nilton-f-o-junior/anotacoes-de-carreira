@@ -204,7 +204,7 @@ ISO 9126:
   - Proteção frente a erros de usuários: verifica se o sistema consegue prevenir operações equivocadas por parte de quem o utiliza;
   - Estética/Atratividade: Considera se o software consegue angariar novos usuários pela interface gráfica e capacidade de automação;
   - Acessibilidade: garante que usuários com necessidades especiais consigam operar o software normalmente;
-  - Conformidade: cerifica a obediência a convenções, guias ou regulamentações de usabilidade.
+  - Conformidade: verifica a obediência a convenções, guias ou regulamentações de usabilidade.
 
 - Eficiência: foca no fornecimento de tempos de resposta satisfatórios e no uso racional de recursos.
   - Tempo de resposta: avalia se os resultados são fornecidos dentro dos prazos definidos nas especificações dos usuários;

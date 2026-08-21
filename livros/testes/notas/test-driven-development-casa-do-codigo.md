@@ -255,7 +255,7 @@ Explica como implementar o código de forma simples.
 
 4.3 Passos de Bebê (ou Baby Steps)
 
-Ele complementa a explicação e mostra como simnplificar a solução.
+Ele complementa a explicação e mostra como simplificar a solução.
 
 4.4 Usando baby steps de maneira consciente
 
