@@ -76,7 +76,7 @@
 
 - Responsabilidade Profissional
   - Assuma o controle de sua carreira e admita honestamente sua ignorância ou erros cometidos;
-  - Comprometa-se com o resultado e ser responsabilize diretamente pelas decisões e ações tomadas.
+  - Comprometa-se com o resultado e responsabilize-se diretamente pelas decisões e ações tomadas.
 
 - Soluções em vez de Desculpas
   - Evite culpar ferramentas ou colegas e foque em apresentar opções e soluções viáveis para resolver os problemas.
@@ -121,7 +121,7 @@
 ### 5. Sua carteira de conhecimentos
 
 - Análise Crítica e Oportunidades
-  - Assim que nem você, seu conhecimento envelhece, então busque novos conhecimentos para está se aprimorando;
+  - Assim como você, seu conhecimento envelhece, então busque novos conhecimentos para estar se aprimorando;
   - Aprenda uma nova linguagem;
   - Leia livros técnicos e não técnicos;
   - Analise criticamente o que lê e ouve, evitando ser influenciado por dogmas, propagandas de fornecedores ou modismos da mídia especializada.
@@ -133,7 +133,7 @@
   - Escolha o momento ideal para falar, tornando o conteúdo relevante para as prioridades e o estado emocional de quem o ouve;
   - Adapte seu estilo de comunicação, seja formal ou casual, para atender cada destinatário ou grupo de pessoas;
   - Mantenha as pessoas informadas e dê retorno constante, respondendo prontamente a e-mails e mensagens para que ninguém se sinta ignorado;
-  - Escute as pessoas, transformar reuniões em diálogos eficientes, encorajando as pessoas a falarem para que você também possa falar.
+  - Escute as pessoas, transformando reuniões em diálogos eficientes, encorajando as pessoas a falarem para que você também possa falar.
 
 ## Uma Abordagem Pragmática
 
@@ -158,7 +158,7 @@ O Conceito de Independência:
 
 Vantagens:
 
-- Ganho de Produtividade: mudanças localizadas reduzem o tempo de desenvolvimento e teste, permitindo que componentes pequenos e autônomos sejam codificados isoladamente, favorecendo a reutilização e gera mais funcionalidade por esforço unitário ao combinar componentes independentes;
+- Ganho de Produtividade: mudanças localizadas reduzem o tempo de desenvolvimento e teste, permitindo que componentes pequenos e autônomos sejam codificados isoladamente, favorecendo a reutilização e gerando mais funcionalidade por esforço unitário ao combinar componentes independentes;
 
 - Redução de Riscos: seções de código danificadas ficam isoladas, diminuindo a probabilidade de uma falha se espalhar por todo o sistema;
 
@@ -203,11 +203,11 @@ Vantagens:
 
 ## As Ferramentas Básicas
 
-Essa parte foi difícil, de verdade nada contra o livro, mas tem momento em que ele escreve texto demais para falar o óbvio, em diversos momentos isso é ótimo, pois fica didático, porém quando isso se repeti diversas versos em diversos momentos em que não é necessário o texto apenas fica cansativo e te faz pegar um longo caminho para chegar num ponto que você chegaria com 3x menos texto.
+Essa parte foi difícil, de verdade, nada contra o livro, mas tem momento em que ele escreve texto demais para falar o óbvio. Em diversos momentos isso é ótimo, pois fica didático, porém quando isso se repete diversas vezes em momentos em que não é necessário, o texto apenas fica cansativo e te faz pegar um longo caminho para chegar num ponto que você chegaria com 3x menos texto.
 
 ### 14. O poder do texto simples
 
-- Use texto sempre que possível, melhor doque códigos complexo, um bom texto facilita muito sua vida.
+- Use texto sempre que possível, melhor do que códigos complexos, um bom texto facilita muito sua vida.
 
 ### 15. Jogos de shell
 
@@ -220,7 +220,7 @@ Comece a usar:
 ### 16. Edição avançada
 
 - Não complique, use um bom editor de código e aprenda de verdade o que ele pode oferecer;
-- Recomendo que tenha um segunda opção, nunca se sabe.
+- Recomendo que tenha uma segunda opção, nunca se sabe.
 
 ### 17. Controle do código-fonte
 
@@ -236,7 +236,7 @@ Comece a usar:
 
 ### 20. Geradores de código
 
-Não apenas use IA, seja inteligente! Antes de tudo isso as pessoas sempre buscavam forma de fazer o trabalho repetitivo de formas a resolver o problema acertivamente, não se limite a IA ou a usar ela de uma forma repetitiva sempre.
+Não apenas use IA, seja inteligente! Antes de tudo isso, as pessoas sempre buscavam formas de fazer o trabalho repetitivo de forma a resolver o problema assertivamente. Não se limite a IA ou a usá-la de uma forma repetitiva sempre.
 
 ## Paranoia Pragmática
 
@@ -344,7 +344,7 @@ Exemplo:
 
 ### 37. Resolvendo problemas impossíveis
 
-- Esqueça tudo que o livro diz, guarde apenas essa dica: divida o código na metade e teste ambas as partes, achou a metade com erro? Divida outra vez na metade e teste outra vez! Dividir para consquistar. 
+- Esqueça tudo que o livro diz, guarde apenas essa dica: divida o código na metade e teste ambas as partes. Achou a metade com erro? Divida outra vez na metade e teste outra vez! Dividir para conquistar. 
 
 ### 38. Não antes de você estar pronto
 
@@ -396,5 +396,5 @@ cegamente;
 ### 46. Orgulho e preconceito
 
 - Faça um código bem escrito;
-- Assuma a responábilidade sobre o que escreveu;
-- Respeite o código dos outros, se vai dar opnião, saiba como o fazer;
+- Assuma a responsabilidade sobre o que escreveu;
+- Respeite o código dos outros, se vai dar opinião, saiba como fazê-lo;
