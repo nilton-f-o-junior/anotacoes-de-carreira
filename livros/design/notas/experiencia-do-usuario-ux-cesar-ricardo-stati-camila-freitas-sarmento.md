@@ -90,3 +90,65 @@ Aqui no final existe um pouco de aprofundamento para a ideia do usuário que ass
 - Cuidador: sabe muito bem o que quer e o que o usuário deseja;
 
 ### Planejamento e definição do projeto
+
+O processo de planejamento é parte importante do projeto, ele é um mapa que ajuda a orientar toda a equipe, de forma que todos apenas olhando, consigam entender aonde estão no projeto e aonde devem chegar. Existem várias ferramentas e métodos que ajudam a organizar tudo e isso muda de projeto a projeto. 
+
+Uma metodologia citada no livro é o Scrum, em que uma pessoa assumi a responsábilidade pelo projeto, de forma simples: o product owner, vai organizar o projeto, conversar com o cliente, alinhar as atividades com a equipe através de reuniões.
+
+Uma parte essencial é ter uma ideia clara dos requistos que o projeto possui:
+
+- Requisitos da aplicação: requisitos funcionais (RFs) e requisitos não funcionais (RNFs);
+- Requisitos do usuário: necessidades do usuário organizadas cm lista para serem avaliadas.
+
+### Modelos de dados e de fluxo de trabalho
+
+É normal durante o desenvolvimento criar diagramas que ajudam a orientar o desenvolvimento:
+
+- Diagrama de caso de uso;
+- Diagrama de sequência;
+- Diagrama de classe.
+
+Alguns desses diagramas podem ser desenvolvidos usando: https://www.drawio.com/
+
+
+## Documentação dos Protótipos e a importância da revisão da documentação
+
+Leia!
+
+### Restrições e narrativa
+
+Leia!
+
+Esse tópico pede um pouco mais de leitura, pois recomenda o uso de histórias para definir requisitos de uma aplicação, para muitos projetos a equipe conversa e vai definindo o que pode e o que não pode faltar, de forma que o projeto final vai possuir x coisas que normalmente respondem 3 perguntas:
+
+- para quem?
+- porquê?
+- como?
+
+Sei que normalmente se recomenda criar tramas elaboradas, mas no dia a dia, temos que ter uma ideia clara da equipe que estamos trabalhando e do projeto que estamos atuando, muitas vezes os requisitos e as ferramentas são levantas numa reunião usando um checklist e respondendo perguntas simples, para entender se faz ou não faz sentido naquele projeto.
+
+### Personas e cenários
+
+Leia!
+
+### Criatividade e experiência do usuário
+
+A criatividade é uma atividade continua que deve ser estimulada e que vai florecer conforme mais vezes você se coloca numa situação em que tem que pensar, testar e aplicar, para vê se faz sentido.
+
+É interessante saber que ao desenvolver um aplicativo, normalmente planejamos primeiro, criamos o layout depois e por fim programamos, porém durante o processo de criar algumas ideias podem surgir para adicionar algo que pode ter cido deixado esquecido ou não foi levado em consideração durante o planejamento.
+
+Nota: eu normalmente gosto de fazer os wireframes antes do planejamento, tenho uma ideia de aplicativo e desenho algumas telas, crio um fluxo fácil de visualizar e depois que os wireframes estão desenhados, eu faço o planejamento para do resto, normalmente assim eu pego muitas referências e vou entender o que realmente faz ou não faz sentido para chegar no resultado planejado.
+
+### Telas touchscreen diferem em navegabilidade em relação ao mouse
+
+Esse ponto eu achei interessante, mesmo sendo curto, pois atualmente estamos passando por um processo de automação tão significativo que as interações humanas vem dimuindo, mas todo o processo é feito apenas pelo cliente.
+
+Os projetos tem que possuir cada vez mais uma interação mais simples e fácil de ser seguida, pois o usuário vai ter que assumir esse sozinho. O toten cada vez mais ganha seu espaço e o sistema cada vez mais tem que ser simplificado e fácil de usar.
+
+### Metas de experiência do usuário
+
+Pula!
+
+## Pincípio da proximidade
+
+
