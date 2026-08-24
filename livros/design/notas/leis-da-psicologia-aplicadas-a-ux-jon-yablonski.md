@@ -1,7 +1,7 @@
 # Leis da Psicologia Aplicadas a UX - Jon Yablonski
 
-[] Capítulo 1 - Lei de Jakob
-[] Capítulo 2 - Lei de Fitts
+[x] Capítulo 1 - Lei de Jakob
+[x] Capítulo 2 - Lei de Fitts
 [] Capítulo 3 - 
 [] Capítulo 4 - 
 [] Capítulo 5 - 
@@ -62,3 +62,19 @@ Ao projetar o design de uma aplicação, algumas coisas parecem já ter sido dec
 - Ao criar um alvo de toque, temos que deixá-lo grande o suficiente para o usuário não ter dificuldades ao interagir;
 - Devemos sempre deixar uma distância considerável entre um botão e outro, pois clicar sem querer é algo desconfortável;
 - O botão deve estar colocado num lugar que facilmente pode ser clicado, por mais óbvio que isso pareça.
+
+### Alvos de toque
+
+Ao criar um objeto clicável o design deve levar em consideração o tamanho desse objeto, de forma que ele seja grande o suficiente para ser clicável em qualquer plataforma, de forma que o usuário não precise utilizar 2 mão em uma tela menor como smartphone.
+
+Lembrando de manter um espaçamento maior que 8px entre dois objetos que necessitam alguma interação, pois isso facilita o uso. Em caso de dúvidas, as empresas disponíbilizam um material de recomendação para tamanho mínimo tanto para botões quanto para outras partes da interface.
+
+- Android: https://developer.android.com/design/ui?hl=pt-br
+- Apple: https://developer.apple.com/design/
+- Desktop: https://m3.material.io/ (Melhor material)
+
+### Exemplos
+
+Um apontamento excelente foi a dica de usar etiquetas de texto, para selecionar o box de entrada de dados, durante o processo de desenvolvimento web o usuário ao clicar no nome da box do formulário pode selecionar o formulário, isso aumenta a área clicável.
+
+Outro detalhe muito importante é: o botão de enviar deve ficar logo após a última caixa a ser preenchida de um formulário, isso se dá pela falicidade do usuário depois de preencher, poder rapidamente mover pouco o dedo ou mouse e já efetuar a ação que deseja.
