@@ -190,3 +190,129 @@ user     pts/2        2026-08-16 15:19 00:34       19086
 - who: lista os usuários logados;
 - u: tempo de inatividade do usuário e o PID;
 - H: adiciona um cabeçalho no topo da tabela para identificar o que significa cada coluna.
+
+
+#### Locating commands
+
+Ao usar o which seguido do nome do comando, ele vai retornar o caminho aonde está locazidado o arquivo daquele comando.
+
+```bash
+# which nome_do_comando
+which ls
+# /usr/sbin/ls
+```
+
+##### Alias
+
+O livro não destaca muito esse ponto, mas isso é importante para o usuário: um alias é uma forma de criar um apelido para um comando ou script. Usamos atalhos assim para evitar ter que digitar o comando completo o tempo todo.
+
+Ao instalar um programa, para abri-lo você pode dar dois cliques sobre o ícone ou digitar o nome do comando no terminal:
+
+```bash
+# neovim
+nvim
+
+# helix
+hx
+```
+
+Para definir o nome de um alias, siga algumas regras simples:
+
+- Evite palavras reservadas a outros comandos existentes do sistema;
+- Evite palavras reservadas da sintaxe do seu shell (como if, for, function).
+
+Para criar o alias, você só precisa editar o arquivo de configuração do seu shell:
+
+```bash
+# Abra o arquivo correspondente ao seu shell (ex: ~/.bashrc, ~/.zshrc ou ~/.config/fish/config.fish)
+vim ~/.bashrc
+```
+
+Adicione o comando no arquivo seguindo a estrutura abaixo, depois basta salvar a alteração:
+
+```bash
+# Configurações do arquivo .bashrc
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# alias nome-do-atalho='comando completo'
+alias ls='ls --color=auto'
+
+PS1='[\u@\h \W]\$ '
+. "$HOME/.cargo/env"
+```
+
+Depois de salvar, recarregue as alterações feitas no seu arquivo de configuração:
+
+```bash
+source ~/.bashrc
+```
+
+### Recalling Commands Using Command History
+
+O terminal ele por mais simples que parece tem algumas ferramentas que facilitam bastante o seu uso no dia a dia:
+
+- history: armazena todos os últimos comandos que você utilizar via terminal, até você fechar a janela
+
+```bash
+# history
+history
+
+# 1 ls
+# 2 more
+# 3 vim
+```
+
+- autocompletar: o terminal também permite o uso do auto completar, usando a tecla TAB do teclado, basta digitar parte do comando e depois tab , funciona tanto para comando, quanto para o nome de arquivos e pastas.
+
+```bash
+# histo + tab
+history
+
+# neo + tab
+neovim
+```
+
+#### Navigating Command Lines
+
+Existem algumas combinações de teclas que facilitam o uso da navegação via terminal, como são muitas, vou apenas listar algumas:
+
+| Atalho | Significado |
+|---|---|
+| Ctrl+F | Avança um caractere. |
+| Ctrl+B | Retrocede um caractere. |
+| Alt+F | Avança uma palavra. |
+| Alt+B | Retrocede uma palavra. |
+| Ctrl+A | Vai para o início da linha atual. |
+| Ctrl+E | Vai para o fim da linha. |
+| Ctrl+L | Limpa a tela e deixa a linha no topo da tela. |
+
+#### Editing Command Lines
+
+| Atalho | Significado |
+|---|---|
+| Ctrl+D | Exclui o caractere atual. |
+| Backspace | Exclui o caractere anterior. |
+| Ctrl+T | Troca a posição do caractere atual com o anterior. |
+| Alt+T | Troca a posição da palavra atual com a anterior. |
+| Alt+U | Transforma a palavra atual em maiúsculas. |
+| Alt+L | Transforma a palavra atual em minúsculas. |
+| Alt+C | Transforma a palavra atual com a primeira letra maiúscula. |
+| Ctrl+V | Adiciona um caractere especial. Por exemplo, para adicionar um caractere de Tab, pressione Ctrl+V+Tab. |
+
+#### Cutting and Pasting Text from within Command Lines
+
+| Atalho | Significado |
+|---|---|
+| Ctrl+K | Recorta o texto até o fim da linha. |
+| Ctrl+U | Recorta o texto até o início da linha. |
+| Ctrl+W | Recorta a palavra localizada atrás do cursor. |
+| Alt+D | Recorta a palavra seguinte ao cursor. |
+| Ctrl+Y | Cola o texto recortado mais recentemente. |
+| Alt+Y | Retorna ao texto recortado anteriormente e cola-o. |
+| Ctrl+C | Exclui a linha inteira. |
+
+
+```bash
+
+```
