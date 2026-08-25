@@ -78,3 +78,79 @@ Lembrando de manter um espaçamento maior que 8px entre dois objetos que necessi
 Um apontamento excelente foi a dica de usar etiquetas de texto, para selecionar o box de entrada de dados, durante o processo de desenvolvimento web o usuário ao clicar no nome da box do formulário pode selecionar o formulário, isso aumenta a área clicável.
 
 Outro detalhe muito importante é: o botão de enviar deve ficar logo após a última caixa a ser preenchida de um formulário, isso se dá pela falicidade do usuário depois de preencher, poder rapidamente mover pouco o dedo ou mouse e já efetuar a ação que deseja.
+
+## Lei de Hick
+
+A lei de Hick, trás a ideia de quanto mais complexo for a decisão que o usuário deve tomar, mais você tem que pensar em como fazer.
+
+- Quando precisar perguntar coisas complexas, diminua a quantidade de opções que usuário terá que tomar;
+
+- Toda vez que o usuário tiver uma etapa mais complexa e que ele vai tomar ou responder muitas coisas, diminua isso de forma que cada etapa não se torne cansativa. Muito comum em formulários, em que ou você coloca pergunta por pergunta ou divide em pequenos blocos;
+
+- Sempre que possível, deixe uma opção como recomendada;
+
+- Divida muitas epatas em sessões que o usuário vá respondendo aos poucos, não em forma de um formulário com 20 questões por página;
+
+- Simplificar é bom, mas quando faz isso de forma extrema, comunicar e entender fica impossível.
+
+### Origem
+
+Leia!
+
+Vou pontuar apenas algo que achei muito interessante, que é o fato de que, quanto mais informação ou decisões que temos que tomar mais tempo levamos. O que me pegou, foi o fato de que isso numa rede social é o que faz ela ganhar tanto mercado, o usuário fica horas ali sem perceber, porém, dentro de um formulário, pesquisa ou qualquer outra coisa que necessita de tempo e atenção, o efeito é o contrário, o usuário apenas quer terminar o mais rápido para ir embora.
+
+### Carga Cognitiva
+
+Ao interagir com aplicativo ou ferramenta, estamos buscando realizar uma ação. O usuário ao ter seu primeiro contato com seu site, ele precisa entender como está organizada a informação, entender aonde está o que ele procura e depois fazer o que ele precisa, tudo isso envolve um gasto de energia que pode ser entendida como carga cognitiva.
+
+### Exemplo
+
+A algo muito importante nesse trecho do livro: o usuário não precisa ser sobrecarregado de informação, podemos passando o necessário aos poucos até que ele se familiarize.
+
+O Google Seach é um excelente resultado disso, primeiro você faz a pesquisa e depois quando aparecer os resultado, aparece os filtros, alguns pois outros seguem ocultos.
+
+A ideia de só mostre o necessário no momento necessário, é algo que acabamos fazendo por está acostumados, mas que faz total sentido no dia a dia.
+
+### Classicação de cartões (“Card Sorting”)
+
+Esse tópico, me lembrou muito o processo de decisão ao criar menus, quando você tem várias páginas e precisa organizar de uma forma que qualquer pessoa possa acessar o título e saber um pouco o que vai encontrar.
+
+As dicas:
+
+- Indetificar os tópicos: renomear todos os tópicos que sua página ou aplicativo irá possuir;
+- Organizar os tópicos: organizar os tópicos de forma que os que são parecidos fiquem juntos;
+- Nomear as categorias: esse é um dos últimos, pois você precisa saber tudo que compõem, depois separar de forma que faça sentido e por fim normear com base a agrupar aquele conjunto de obções de forma fácil.
+
+> Nota: o quarto tópico é entender o porque tomar a decisão de cada etapa.
+
+### Simplificação excessiva
+
+A ideia de simplificar não é ruim, porém precisa ser feita com cuidado. Simplificar é diminuir a quantidade de informação em uma página, porém sem prejudicar a navegação e o entendimento da página ou aplicativo.
+
+Ao usar ícones por exemplo, se diminui a quantidade de informação do tipo texto, porém isso precisa se feito de forma que o usuário entenda o que ele faz de forma clara.
+
+Exemplo: na maioria dos aplicativos o lápis é usado para editar uma informação, porém em um aplicativo de desenho o mesmo lápis ao ser clicado representa desenho.
+
+## Lei de Miller
+
+A lei de Miller fala sobre a quantidade de informação que armazenamos a curto prazo, sendo no máximo 7 +- 2, isso que dizer que algumas pessoas podem armazenar 5 ou outras podem armazenar 9, sendo imagens, numeros ou texto.
+
+### Visão Geral
+
+Leia!
+
+### Origens
+
+Leia!
+
+### Chunking (separação em blocos)
+
+Essa parte conversa muito com a Leia de Hick, pois nós seres humanos tendemos a organizar as informações de uma forma que possamos entender melhor e mais fácilmente, mesmo que nossa memória de curto prazo, seja limitada a pouca informação. ao organizar em blocos muita coisa, podemos mais fácilmente guardar.
+
+A lei se aplica bem na ideia de como organizamos muita coisa e facilitamos o acesso de curto prazo de quem está navegando.
+
+Exemplo:
+
+Imagine um texto de 100 linhas, não possui qualquer formatação, é muito mais dificil de ler, pois sua memória tenta guardar algumas partes, quebrar alguns trechos mais importantes e ela não consegue. Porém, ao formatar esse texto de uma forma melhor, com paragráfos, negritos, quebra de linhas, sua memória começa a dividir em pequenos blocos de informação e começa a quardar o que considera mais importante aos poucos.
+
+A lei de Miller da a ideia de que não é só simplificar a informação, mas fazer com que a organização dessa informação seja tão bem elaborada que você passa a guardar melhor as partes do todo. 

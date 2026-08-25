@@ -151,4 +151,31 @@ Pula!
 
 ## Pincípio da proximidade
 
+Leia!
+
+### Hierarquia
+
+De forma simples, os elementos de um porjeto, tem que possuir um hierarquia e isso vai facilitar o processo de consumo desse projeto, página ou aplicação.
+
+A hierarquia visual é feita não só posicionando os elementos, pode-se usar cores, pesos, tamanho de texto, ou elementos como desenhos, para fazer quem está visualizando, consiga ter um direcionamento do caminho que deve seguir.
+
+Existem algumas decisões comuns usadas em aplicativos e sites que facilitam a hora de criar as páginas, como: manter o menu sempre no topo da página, elementos clicáveis como chat no canto inferior, links possuem uma coloração diferente.
+
+Outro detalhe importante citado é o diagrama de afinidades, que ensina que elementos próximos devem possuir alguma relação, elementos mais afastados, não tem relação próxima.
+
+### Visibilidade
+
+A algumas tecnicas que podem ser exploradas para melhorar a visibilidade de um elemento no design, normalmente em projetos digitais essa liberdade é maior ainda, tendo como ferramentas:
+
+- Tipos de letra: recomenda-se o uso de mais de uma tipografia em qualquer projeto, mas nunca usar mais de 3 pois, pode começar a ficar confuso;
+
+- Opacidade: a opacidade pode ser bastante explorada em diversos elementos na tela, que vão desde textos a imagens, podendo ser usado de forma
+a sobrepor algo mais deixar visivel ou criar efeitos visuais interessantes;
+
+- Proeminência: tomando como base a hierarquia, a proeminência faz uso de elementos maiores com o objetivo de aumentar a visibilidade em coparação a outros;
+
+- Status: uma forma de fazer o usuário perceber que algo está acontecendo é o uso dos status, uma ferramenta de feedback para o usuário, logo feita uma determinada ação.
+
+- Cores: esse é um dos elementos mais conhecidos e mais usados, podendo ser feito uso de apenas 2 cores para explorar efeitos visuais interessantes. Mas vale salientar que, cores demais atrapalham a experiência de qualquer ferramente e deve-se manter o uso de algumas cores para feedback;
+
 
