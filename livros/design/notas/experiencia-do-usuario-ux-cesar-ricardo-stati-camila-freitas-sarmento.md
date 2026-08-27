@@ -93,12 +93,12 @@ Aqui no final existe um pouco de aprofundamento para a ideia do usuário que ass
 
 O processo de planejamento é parte importante do projeto, ele é um mapa que ajuda a orientar toda a equipe, de forma que todos apenas olhando, consigam entender aonde estão no projeto e aonde devem chegar. Existem várias ferramentas e métodos que ajudam a organizar tudo e isso muda de projeto a projeto. 
 
-Uma metodologia citada no livro é o Scrum, em que uma pessoa assumi a responsábilidade pelo projeto, de forma simples: o product owner, vai organizar o projeto, conversar com o cliente, alinhar as atividades com a equipe através de reuniões.
+Uma metodologia citada no livro é o Scrum, em que uma pessoa assume a responsabilidade pelo projeto, de forma simples: o product owner, vai organizar o projeto, conversar com o cliente, alinhar as atividades com a equipe através de reuniões.
 
-Uma parte essencial é ter uma ideia clara dos requistos que o projeto possui:
+Uma parte essencial é ter uma ideia clara dos requisitos que o projeto possui:
 
 - Requisitos da aplicação: requisitos funcionais (RFs) e requisitos não funcionais (RNFs);
-- Requisitos do usuário: necessidades do usuário organizadas cm lista para serem avaliadas.
+- Requisitos do usuário: necessidades do usuário organizadas em lista para serem avaliadas.
 
 ### Modelos de dados e de fluxo de trabalho
 
@@ -133,29 +133,29 @@ Leia!
 
 ### Criatividade e experiência do usuário
 
-A criatividade é uma atividade continua que deve ser estimulada e que vai florecer conforme mais vezes você se coloca numa situação em que tem que pensar, testar e aplicar, para vê se faz sentido.
+A criatividade é uma atividade contínua que deve ser estimulada e que vai florecer conforme mais vezes você se coloca numa situação em que tem que pensar, testar e aplicar, para ver se faz sentido.
 
-É interessante saber que ao desenvolver um aplicativo, normalmente planejamos primeiro, criamos o layout depois e por fim programamos, porém durante o processo de criar algumas ideias podem surgir para adicionar algo que pode ter cido deixado esquecido ou não foi levado em consideração durante o planejamento.
+É interessante saber que ao desenvolver um aplicativo, normalmente planejamos primeiro, criamos o layout depois e por fim programamos, porém durante o processo de criar algumas ideias podem surgir para adicionar algo que pode ter sido deixado esquecido ou não foi levado em consideração durante o planejamento.
 
 Nota: eu normalmente gosto de fazer os wireframes antes do planejamento, tenho uma ideia de aplicativo e desenho algumas telas, crio um fluxo fácil de visualizar e depois que os wireframes estão desenhados, eu faço o planejamento para do resto, normalmente assim eu pego muitas referências e vou entender o que realmente faz ou não faz sentido para chegar no resultado planejado.
 
 ### Telas touchscreen diferem em navegabilidade em relação ao mouse
 
-Esse ponto eu achei interessante, mesmo sendo curto, pois atualmente estamos passando por um processo de automação tão significativo que as interações humanas vem dimuindo, mas todo o processo é feito apenas pelo cliente.
+Esse ponto eu achei interessante, mesmo sendo curto, pois atualmente estamos passando por um processo de automação tão significativo que as interações humanas vem diminuindo, mas todo o processo é feito apenas pelo cliente.
 
-Os projetos tem que possuir cada vez mais uma interação mais simples e fácil de ser seguida, pois o usuário vai ter que assumir esse sozinho. O toten cada vez mais ganha seu espaço e o sistema cada vez mais tem que ser simplificado e fácil de usar.
+Os projetos tem que possuir cada vez mais uma interação mais simples e fácil de ser seguida, pois o usuário vai ter que assumir esse sozinho. O totem cada vez mais ganha seu espaço e o sistema cada vez mais tem que ser simplificado e fácil de usar.
 
 ### Metas de experiência do usuário
 
 Pula!
 
-## Pincípio da proximidade
+## Princípio da proximidade
 
 Leia!
 
 ### Hierarquia
 
-De forma simples, os elementos de um porjeto, tem que possuir um hierarquia e isso vai facilitar o processo de consumo desse projeto, página ou aplicação.
+De forma simples, os elementos de um projeto, tem que possuir uma hierarquia e isso vai facilitar o processo de consumo desse projeto, página ou aplicação.
 
 A hierarquia visual é feita não só posicionando os elementos, pode-se usar cores, pesos, tamanho de texto, ou elementos como desenhos, para fazer quem está visualizando, consiga ter um direcionamento do caminho que deve seguir.
 
@@ -165,17 +165,52 @@ Outro detalhe importante citado é o diagrama de afinidades, que ensina que elem
 
 ### Visibilidade
 
-A algumas tecnicas que podem ser exploradas para melhorar a visibilidade de um elemento no design, normalmente em projetos digitais essa liberdade é maior ainda, tendo como ferramentas:
+Há algumas técnicas que podem ser exploradas para melhorar a visibilidade de um elemento no design, normalmente em projetos digitais essa liberdade é maior ainda, tendo como ferramentas:
 
 - Tipos de letra: recomenda-se o uso de mais de uma tipografia em qualquer projeto, mas nunca usar mais de 3 pois, pode começar a ficar confuso;
 
 - Opacidade: a opacidade pode ser bastante explorada em diversos elementos na tela, que vão desde textos a imagens, podendo ser usado de forma
-a sobrepor algo mais deixar visivel ou criar efeitos visuais interessantes;
+a sobrepor algo mas deixar visível ou criar efeitos visuais interessantes;
 
-- Proeminência: tomando como base a hierarquia, a proeminência faz uso de elementos maiores com o objetivo de aumentar a visibilidade em coparação a outros;
+- Proeminência: tomando como base a hierarquia, a proeminência faz uso de elementos maiores com o objetivo de aumentar a visibilidade em comparação a outros;
 
 - Status: uma forma de fazer o usuário perceber que algo está acontecendo é o uso dos status, uma ferramenta de feedback para o usuário, logo feita uma determinada ação.
 
-- Cores: esse é um dos elementos mais conhecidos e mais usados, podendo ser feito uso de apenas 2 cores para explorar efeitos visuais interessantes. Mas vale salientar que, cores demais atrapalham a experiência de qualquer ferramente e deve-se manter o uso de algumas cores para feedback;
+- Cores: esse é um dos elementos mais conhecidos e mais usados, podendo ser feito uso de apenas 2 cores para explorar efeitos visuais interessantes. Mas vale salientar que, cores demais atrapalham a experiência de qualquer ferramenta e deve-se manter o uso de algumas cores para feedback;
+
+### Heurística
+
+Esse trecho vou fazer alguns pequenos apontamentos:
+
+- Visibilidade de status: acredito que todo profissional, sempre da feedbacks para as ações do usuário;
+- Correspondência entre o sistema e o mundo real: use palavras e ícones do mundo real, para representar coisas no mundo digital;
+-  Controle e liberdade do usuário: o sistema deve ser simples e fácil de usar;
+- Consistência e padrões: respeite os padrões que você estabeleceu no seu projeto, tanto cores quanto formatos;
+- Prevenção de erros: sempre que implementar algo importante adicione uma caixa de diálogo confirmando a ação;
+- Reconhecimento em vez de recordação: sempre que possível adicionar recentes e coisa que facilitam a visita a mesma página;
+- Flexibilidade e eficiência de uso: o sistema sempre deve ser convidativo, principalmente quando acessado a primeira vez;
+- Design estético e minimalista: não exagere e sobrecarregue o usuário visualmente, é cansativo e geram ruídos;
+- Ajuda aos usuários para reconhecer, diagnosticar e recuperar erros;
+- Ajuda e documentação: se seu sistema é complicado, sempre o torne o mais fácil possível de se entender, principalmente API.
+
+
+### Modelos mentais e metáforas
+
+Leia!
+
+
+## Feedback do usuário
+
+Leia!
+
+## Materiais e Métodos
+
+Leia!
+
+## Nota!
+
+Queria de verdade resumir algo desses últimos capítulos, porém eles são cópias enfeitadas do texto que Lowdermilk, sigo com a mesma crítica, esse livro só existe como uma cópia complementar e infelizmente, complementa pouco. Porém tem um texto no geral mais interessante que o Usabilidade, se você ler um deles, não precisa ler o outro.
+
+
 
 
